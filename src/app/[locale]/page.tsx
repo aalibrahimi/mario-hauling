@@ -4,13 +4,14 @@ import { Check, CheckCircle, Phone, Recycle } from 'lucide-react';
 import { motion, useInView } from 'motion/react';
 import {useTranslations} from 'next-intl';
 import Image from 'next/image';
+import { Card, CardContent } from "@/components/ui/card"
 
 export default function Home() {
   const t = useTranslations('HomePage');
-const [servicesRef, servicesInView] = useInView({
-    triggerOnce: true,
-    threshold: 0.1,
-  })
+  // const [servicesRef, servicesInView] = useInView({
+  //   triggerOnce: true,
+  //   threshold: 0.1,
+  // })
   const services = [ 
     { name: "Appliance Revomal", icon: "🧺"},
     { name: "Furniture Hauling", icon: "🛋️"},
@@ -154,11 +155,14 @@ const [servicesRef, servicesInView] = useInView({
 
         {/* Finally time to cook  */}
         <section className="py-4 bg-green-800 text-white overflow-hidden relative">
-          <div className="whitespace-nowrap inline-flex animate-margquee">
-
+          <div className="whitespace-nowrap inline-flex animate-marquee">
+              {/* mapping out the for loop for x scroll animation "_" parameter is for any, works even without it */}
+                {/* spread operatot to initialize emptry arrays ... */}
                 {[...Array(3)].map((_, i) => (
                     <div key={i} className="flex space-x-8">
-                      {services.map((service, index) =>(
+                       {/* Mapping over the services array to display icons and names */}
+                      {/* The "?" makes it so that this only runs if 'services' is defined and is iterable */}
+                      {services?.map((service, index) =>(
                          <div key={index} className="flex items-center space-x-2 mx-4">
                             <span className="text-2xl">{service.icon}</span>    
                             <span className="text-lg font-semi-bold">{service.name}</span>
@@ -169,6 +173,9 @@ const [servicesRef, servicesInView] = useInView({
                 ))}
           </div>
         </section>
+
+   
+
       </main>
        
   );
