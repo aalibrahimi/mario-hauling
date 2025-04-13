@@ -7,10 +7,10 @@ import Image from 'next/image';
 
 export default function Home() {
   const t = useTranslations('HomePage');
-// const [servicesRef, servicesInView] = useInView({
-//     triggerOnce: true,
-//     threshold: 0.1,
-//   })
+const [servicesRef, servicesInView] = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  })
   const services = [ 
     { name: "Appliance Revomal", icon: "🧺"},
     { name: "Furniture Hauling", icon: "🛋️"},
@@ -147,13 +147,28 @@ export default function Home() {
                   </li>
                 ) ) }
               </ul>
-        
             </motion.div>
           </div>
         </div>
       </section>
 
-     =
+        {/* Finally time to cook  */}
+        <section className="py-4 bg-green-800 text-white overflow-hidden relative">
+          <div className="whitespace-nowrap inline-flex animate-margquee">
+
+                {[...Array(3)].map((_, i) => (
+                    <div key={i} className="flex space-x-8">
+                      {services.map((service, index) =>(
+                         <div key={index} className="flex items-center space-x-2 mx-4">
+                            <span className="text-2xl">{service.icon}</span>    
+                            <span className="text-lg font-semi-bold">{service.name}</span>
+                            <span className="text-green-300 mx-4">•</span>
+                        </div>
+                      ))}
+                    </div>
+                ))}
+          </div>
+        </section>
       </main>
        
   );
