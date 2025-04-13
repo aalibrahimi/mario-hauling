@@ -45,6 +45,7 @@
     "react-day-picker": "^9.6.4",
     "react-dom": "^19.1.0",
     "react-hook-form": "^7.55.0",
+    "react-intersection-observer": "^9.16.0",
     "react-resizable-panels": "^2.1.7",
     "resend": "^4.2.0",
     "rtl-detect": "^1.1.2",
