@@ -155,7 +155,7 @@ export function Navbar(): React.ReactElement {
                       legacyBehavior
                       passHref
                     >
-                      <NavigationMenuLink className="text-black dark:text-white hover:text-white dark:hover:text-black hover:bg-green-700 dark:hover:bg-green-600 transition-colors px-3 py-2 rounded-md font-medium text-center">
+                      <NavigationMenuLink className="navItems text-black dark:text-white hover:bg-transparent transition-colors px-3 py-2 rounded-md font-medium text-center">
                         {route.title}
                       </NavigationMenuLink>
                     </Link>
