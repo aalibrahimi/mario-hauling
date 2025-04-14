@@ -3,6 +3,7 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import GradientText from "./GradientText";
+import { Clock, MapPin, Phone, Recycle } from "lucide-react";
 
 interface FooterLink {
   name: string;
@@ -47,7 +48,7 @@ export function Footer(): React.ReactElement {
   return (
     <footer className="border-t border-gray-200 dark:border-gray-800 bg-amber-100 text-black dark:bg-[#000000] dark:text-white mt-auto">
       <div className="container mx-auto py-10 text-center px-4">
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-4 text-center">
+        {/* <div className="grid grid-cols-1 gap-8 md:grid-cols-4 text-center">
           <div className="flex flex-col items-center">
             <Link href="/" draggable={false} className="flex items-center space-x-2 justify-center">
               <Image src="/logoPlaceholder.png" alt="Logo" draggable={false} height={45} width={45} />
@@ -74,10 +75,44 @@ export function Footer(): React.ReactElement {
               </ul>
             </div>
           ))}
-        </div>
-
+        </div> */}
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <div className="flex items-center mb-4">
+                <Recycle className="h-6 w-6 text-green-300 mr-2" />
+                <h3 className="text-xl font-bold">Mario's Hauling</h3>
+              </div>
+              <p className="text-green-100 mb-4">
+                Professional hauling services available 24/7. No job too big or small.
+              </p>
+              <div className="flex items-center space-x-2 text-green-100">
+                <MapPin className="h-5 w-5 text-green-300" />
+                <span>Serving the Greater San Jose Area</span>
+              </div>
+            </div>
+            <div>
+              <h3 className="text-lg font-bold mb-4">Contact Us</h3>
+              <div className="space-y-2">
+                <p className="flex items-center">
+                  <Phone className="h-5 w-5 text-green-300 mr-2" />
+                  <a href="tel:4084492317" className="hover:text-green-300 transition-colors">
+                    (408) 449-2317
+                  </a>
+                </p>
+                <p className="flex items-center">
+                  <Clock className="h-5 w-5 text-green-300 mr-2" />
+                  Available 24/7
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="border-t border-green-700 mt-6 pt-6 text-center text-green-200 text-sm">
+            <p>&copy; {new Date().getFullYear()} Mario's Hauling. All rights reserved.</p>
+          </div>
+       
         <div className="mt-10 border-t border-gray-200 dark:border-gray-800 pt-6">
-          <div className="flex flex-col items-center justify-between gap-4 md:flex-row md:justify-center">
+          {/* <div className="flex flex-col items-center justify-between gap-4 md:flex-row md:justify-center">
             <p className="text-center text-sm text-gray-600 dark:text-gray-400">
               © {new Date().getFullYear()} {t('rights')}
             </p>
@@ -86,7 +121,7 @@ export function Footer(): React.ReactElement {
                 {t('customLink')}
               </Link>
             </div>
-          </div>
+          </div> */}
           <div className="mt-4 flex flex-row items-center justify-center gap-2">
             {/* CodeWithAli Branding - Same Line */}
             {/* <div className="mt-10 flex flex-col items-center justify-center"> */}
