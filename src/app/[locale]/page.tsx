@@ -44,26 +44,7 @@ export default function Home() {
   }
 
   return (
-    <main className="flex min-h-screen flex-col">
-     {/* Header im gonna put it for now*/}
-     <header className="bg-white border-b border-green-100 sticky top-0 z-50">
-       <div className="container mx-auto px-4 py-3 flex items-center justify-between">
-         <div className="flex flex-center">
-           <Recycle className='h-6 w-6 text-green-600 mr-2' />
-           <span className="font-bold text-green-800 text-lg">Mario's Hauling</span>
-         </div>
-         <div className="flex items-center">
-           <a href="tel: (408) 449-2317 " className="flex items-center text-green-700 font-medium hover:text-green-500 transition-colors" >
-             <Phone className='h-4 w-4 mr-1'/>
-             <span className="hidden sm:inline">(408) 449-2317</span>
-           </a>
-           <Button size='sm' className='ml-4 bg-green-600 hover:bg-greeen-700 text-white' >
-           Get a Quote
-           </Button>
-         </div>
-       </div>
-     </header>
- 
+    <main className="flex min-h-screen flex-col"> 
      {/* hero section here we gooo */}
             {/* Hero Section - Reduced Height */}
             <section className="relative py-12 md:py-16 flex items-center justify-center overflow-hidden bg-gradient-to-r from-green-800 to-green-700 text-white">
@@ -161,7 +142,8 @@ export default function Home() {
            <div className="whitespace-nowrap inline-flex animate-marquee">
                {/* mapping out the for loop for x scroll animation "_" parameter is for any, works even without it */}
                  {/* spread operatot to initialize emptry arrays ... */}
-                 {[...Array(3)].map((_, i) => (
+                 {/* *Put even numbers for arrays so it does smooth scroll animation loop */}
+                 {[...Array(4)].map((_, i) => (
                      <div key={i} className="flex space-x-8">
                         {/* Mapping over the services array to display icons and names */}
                        {/* The "?" makes it so that this only runs if 'services' is defined and is iterable */}
@@ -189,7 +171,7 @@ export default function Home() {
           >
             {services.map((service, index) => (
                <motion.div key={index} variants={fadeInUp}>
-                <Card className="h-full hover:shadow-md transition-shadow border-green-100">
+                <Card className="h-full hover:shadow-md dark:hover:shadow-black/80 hover:shadow-black/40 transition-shadow border-green-400">
                   <CardContent className="p-4">
                     <div className="flex items-center space-x-3">
                       <div className="text-2xl">{service.icon}</div>
