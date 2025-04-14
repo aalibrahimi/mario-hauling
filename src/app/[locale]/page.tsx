@@ -282,6 +282,81 @@ export default function Home() {
               </div>
             </section>
 
+
+            {/* Testimonials */}
+
+       <section className="py-16 bg-white">
+        <div className="container px-4 md:px-6">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+            className="text-center mb-10"
+          >
+            <h2 className="text-3xl font-bold mb-3 text-green-800">What Our Customers Say</h2>
+            <p className="text-slate-600 max-w-2xl mx-auto">
+              Don't just take our word for it. Here's what our satisfied customers have to say.
+            </p>
+          </motion.div>
+
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={staggerContainer}
+            className="grid grid-cols-1 md:grid-cols-3 gap-6"
+          >
+            {[1, 2, 3].map((_, index) => (
+              <motion.div key={index} variants={fadeInUp}>
+                <Card className="h-full border-green-100">
+                  <CardContent className="p-6">
+                    <div className="flex mb-4">
+                      {[...Array(5)].map((_, i) => (
+                        <Star key={i} className="h-5 w-5 fill-yellow-500 text-yellow-500" />
+                      ))}
+                    </div>
+                    <p className="text-slate-600 mb-4">
+                      "Mario was prompt, professional, and efficient. He hauled away all our construction debris in no
+                      time. Highly recommend!"
+                    </p>
+                    <div className="flex items-center">
+                      <div className="w-10 h-10 rounded-full bg-green-100 mr-3"></div>
+                      <div>
+                        <p className="font-medium text-green-800">Happy Customer</p>
+                        <p className="text-sm text-slate-500">San Jose, CA</p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
+      </section>
+
+       
+      {/* Call to Action */}
+      <section className="py-12 bg-green-600 text-white">
+        <div className="container px-4 md:px-6">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+            className="text-center"
+          >
+            <h2 className="text-3xl font-bold mb-3">Ready to Clear the Clutter?</h2>
+            <p className="text-green-100 max-w-2xl mx-auto mb-6">
+              Mario is ready to help with all your hauling needs 24/7. One call does it all!
+            </p>
+            <Button size="lg" className="bg-white hover:bg-green-50 text-green-800">
+              <Phone className="mr-2 h-5 w-5" /> Call Now: (408) 449-2317
+            </Button>
+          </motion.div>
+        </div>
+      </section>
+
     </main>
   )
 }
