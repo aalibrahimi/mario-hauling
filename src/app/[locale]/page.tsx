@@ -206,6 +206,21 @@ export default function Home() {
         </div>
       </section>
      
+    {/* junk removal */}
+     {/* Call to Action Banner */}
+     <section className="bg-green-700 text-white py-6 ">
+        <div className="container px-4 md:px-6 max-w-6xl lg:max-w-[2500px]">
+          <div className="flex flex-col md:flex-row items-center justify-between ">
+            <div className="mb-4 md:mb-0">
+              <h3 className="text-xl font-bold ">Need junk removed today?</h3>
+              <p className="text-green-100">Mario is ready to help 24/7!</p>
+            </div>
+            <Button size="lg" className="bg-white hover:bg-green-100 text-green-800 ">
+              <Phone className="mr-2 h-4 w-4" /> Call (408) 449-2317
+            </Button>
+          </div>
+        </div>
+      </section>
  
 
     </main>
