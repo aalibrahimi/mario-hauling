@@ -222,6 +222,65 @@ export default function Home() {
         </div>
       </section>
  
+ {/* How it works */}
+            <section className="py-16 bg-green-50">
+              <div className="container px-4 md:px-6">
+                <motion.div
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once : true}}
+                  variants={{fadeInUp}}
+                  className="text-center mb-10"
+                >
+                  <h2 className="text-3xl font-bold mb-3 text-green-800">How it works</h2>
+                  <p className="text-slate-600 max-w-2xl mx-auto">
+                    Simple, fast, and hassle-free hauling in just three easy steps. 
+                  </p>
+                </motion.div>
+
+                <motion.div
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{once : true}}
+                  variants={staggerContainer}
+                  className="grid grid-cols-1 md:grid-cols-3 gap-8"
+                >
+                  <motion.div
+                  variants={fadeInUp} className="text-center">
+                    <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <Phone className="h-8 w-8 text-green-600"/>
+                    </div>
+                    <h3 className="text-xl font-bold mb-2 text-green-800">1. Call Us</h3>
+                    <p className="text-slate-600">Call (408) 449-2317 anytime, day or night. </p>
+                  </motion.div>
+
+                  {/* second number */}
+                  <motion.div
+                    variants={fadeInUp}
+                    className="text-center"
+                  >
+                    <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <Truck className="h-8 w-8 text-green-600"/>
+                    </div>
+                    <h3 className="text-xl font-bold mb-2 text-green-800">2. We Arrive</h3>
+                    <p className="text-slate-600">Mario arrives promptly at the scheduledd time ready to haul</p>
+                  </motion.div>
+
+                  {/* thirdd number */}
+                  <motion.div
+                  variants={fadeInUp}
+                  className="text-center"
+                  >
+                    <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <ArrowRight className="h-8 w-8 text-green-600"/>
+                    </div>
+                    <h3 className="text-xl font-bold mb-2 text-green-800">3. We Haul</h3>
+                    <p className="text-slate-600">We Quickly load and haul away your items, leaving your space clean</p>
+
+                  </motion.div>
+                </motion.div>
+              </div>
+            </section>
 
     </main>
   )
