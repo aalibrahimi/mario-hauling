@@ -99,7 +99,7 @@ export default function Home() {
                  <Button
                    size="lg"
                    variant="outline"
-                   className="border-white text-white hover:bg-white hover:text-green-800"
+                   className="border-green-400 text-green-800 dark:text-white hover:bg-white hover:text-green-500"
                  >
                    Request Service
                  </Button>
@@ -291,22 +291,22 @@ export default function Home() {
           >
             {[1, 2, 3].map((_, index) => (
               <motion.div key={index} variants={fadeInUp}>
-                <Card className="h-full border-green-100">
+                <Card className="h-full border-green-400">
                   <CardContent className="p-6">
                     <div className="flex mb-4">
                       {[...Array(5)].map((_, i) => (
                         <Star key={i} className="h-5 w-5 fill-yellow-500 text-yellow-500" />
                       ))}
                     </div>
-                    <p className="text-slate-600 mb-4">
+                    <p className="dark:text-white mb-4">
                       "Mario was prompt, professional, and efficient. He hauled away all our construction debris in no
                       time. Highly recommend!"
                     </p>
                     <div className="flex items-center">
                       <div className="w-10 h-10 rounded-full bg-green-100 mr-3"></div>
                       <div>
-                        <p className="font-medium text-green-800">Happy Customer</p>
-                        <p className="text-sm text-slate-500">San Jose, CA</p>
+                        <p className="font-medium text-green-600">Happy Customer</p>
+                        <p className="text-sm dark:text-white">San Jose, CA</p>
                       </div>
                     </div>
                   </CardContent>
