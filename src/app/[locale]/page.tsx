@@ -179,7 +179,7 @@ export default function Home() {
 
       {/* Services Section */}
 
-      <section className="py-16 bg-white " ref={servicesRef}>
+      <section className="py-16 bg-white  flex text-center justify-center " ref={servicesRef}>
         <div className="container px-4 md:px-6 flex flex-col justify-center items-center">
           <motion.div
             initial="hidden"
@@ -208,11 +208,11 @@ export default function Home() {
      
     {/* junk removal */}
      {/* Call to Action Banner */}
-     <section className="bg-green-700 text-white py-6 ">
-        <div className="container px-4 md:px-6 max-w-6xl lg:max-w-[2500px]">
+     <section className="bg-green-700 text-white py-6 flex text-center justify-center">
+        <div className="container px-4 md:px-6 max-w-6xl ">
           <div className="flex flex-col md:flex-row items-center justify-between ">
             <div className="mb-4 md:mb-0">
-              <h3 className="text-xl font-bold ">Need junk removed today?</h3>
+              <h3 className="text-xl font-bold">Need junk removed today?</h3>
               <p className="text-green-100">Mario is ready to help 24/7!</p>
             </div>
             <Button size="lg" className="bg-white hover:bg-green-100 text-green-800 ">
@@ -223,7 +223,7 @@ export default function Home() {
       </section>
  
  {/* How it works */}
-            <section className="py-16 bg-green-50">
+            <section className="py-16 bg-green-50 flex text-center justify-center">
               <div className="container px-4 md:px-6">
                 <motion.div
                   initial="hidden"
@@ -285,7 +285,7 @@ export default function Home() {
 
             {/* Testimonials */}
 
-       <section className="py-16 bg-white">
+       <section className="py-16 bg-white flex text-center justify-center  ">
         <div className="container px-4 md:px-6">
           <motion.div
             initial="hidden"
@@ -337,7 +337,7 @@ export default function Home() {
 
        
       {/* Call to Action */}
-      <section className="py-12 bg-green-600 text-white">
+      <section className="py-12 bg-green-600 text-white flex text-center justify-center">
         <div className="container px-4 md:px-6">
           <motion.div
             initial="hidden"
