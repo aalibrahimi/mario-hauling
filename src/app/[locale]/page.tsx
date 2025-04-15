@@ -2,10 +2,11 @@
 import Image from "next/image"
 import { motion } from "framer-motion"
 import { useInView } from "react-intersection-observer"
-import { Phone, Clock, Truck, ArrowRight, MapPin, Star, Recycle, CheckCircle } from "lucide-react"
+import { Phone, Clock, Truck, ArrowRight, MapPin, Star, Recycle, CheckCircle, ChevronRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { useTranslations } from "next-intl"
+import Link from "next/link"
 
 export default function Home() {
   const t = useTranslations('HomePage');
@@ -15,6 +16,7 @@ export default function Home() {
   })
 
   const services = [
+    // add slug at the end and the json name for it as shown in the slug file over yonder
     { name: "Appliance Removal", icon: "🧺" , image:"/placeholder.svg?height=600&width=800", description: "Professional removal of refrigerators, washers, dryers, and other houshold appliances"},
     { name: "Furniture Hauling", icon: "🛋️" , image:"/placeholder.svg?height=600&width=800", description: "Fast and careful removal of sofas, tables, and all types of furniture"},
     { name: "Green Waste", icon: "🌿",  image:"/placeholder.svg?height=600&width=800", description: "Enviromentally friendly disposal of yard waste, branches, leaves, and plant material" },
@@ -161,29 +163,65 @@ export default function Home() {
 
       {/* Services Section */}
 
-      <section className="py-16 bg-white  flex text-center justify-center " ref={servicesRef}>
-        <div className="container px-4 md:px-6 flex flex-col justify-center items-center">
+    {/* Services Section - Revamped with Project Cards */}
+    <section className="py-16 bg-white" ref={servicesRef}>
+        <div className="container px-4 md:px-6">
           <motion.div
             initial="hidden"
-            animate={servicesInView ? "visible"  : "hidden" }
+            animate={servicesInView ? "visible" : "hidden"}
+            variants={fadeInUp}
+            className="text-center mb-10"
+          >
+            <h2 className="text-3xl font-bold mb-3 text-green-800">Our Hauling Services</h2>
+            <p className="text-slate-600 max-w-2xl mx-auto">
+              Click on any service to view our portfolio and past projects.
+            </p>
+          </motion.div>
+
+          <motion.div
+            initial="hidden"
+            animate={servicesInView ? "visible" : "hidden"}
             variants={staggerContainer}
-            className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 "
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
           >
             {services.map((service, index) => (
-               <motion.div key={index} variants={fadeInUp}>
-                <Card className="h-full hover:shadow-md dark:hover:shadow-black/80 hover:shadow-black/40 transition-shadow border-green-400">
-                  <CardContent className="p-4">
-                    <div className="flex items-center space-x-3">
-                      <div className="text-2xl">{service.icon}</div>
+              <motion.div key={index} variants={fadeInUp}>
+                <Link href={`/portfolio/${service.slug}`} className="block h-full">
+                  <div className="group relative h-64 overflow-hidden rounded-lg shadow-md transition-all duration-300 hover:shadow-xl">
+                    {/* Image */}
+                    <Image
+                      src={service.image || "/placeholder.svg"}
+                      alt={service.name}
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-110"
+                    />
+
+                    {/* Overlay with service name - always visible */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-green-900/90 to-transparent p-4 flex flex-col justify-end">
+                      <h3 className="text-white text-xl font-bold flex items-center">
+                        <span className="mr-2">{service.icon}</span>
+                        {service.name}
+                      </h3>
+                    </div>
+
+                    {/* Hover overlay with description */}
+                    <div className="absolute inset-0 bg-green-800/90 p-6 flex flex-col justify-between opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                       <div>
-                        <h3 className="font-bold text-green-800">{service.name}</h3>
+                        <h3 className="text-white text-xl font-bold mb-3 flex items-center">
+                          <span className="mr-2">{service.icon}</span>
+                          {service.name}
+                        </h3>
+                        <p className="text-green-100 mb-4">{service.description}</p>
+                      </div>
+                      <div className="flex justify-between items-center">
+                        <span className="text-green-300 text-sm">View Projects</span>
+                        <ChevronRight className="h-5 w-5 text-green-300" />
                       </div>
                     </div>
-                  </CardContent>
-                </Card>
-                </motion.div>
+                  </div>
+                </Link>
+              </motion.div>
             ))}
-
           </motion.div>
         </div>
       </section>
