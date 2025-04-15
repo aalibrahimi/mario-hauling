@@ -3,7 +3,7 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import GradientText from "./GradientText";
-import { Clock, MapPin, Phone, Recycle } from "lucide-react";
+import { Check, Clock, MapPin, Phone, Recycle } from "lucide-react";
 
 interface FooterLink {
   name: string;
@@ -46,7 +46,7 @@ export function Footer(): React.ReactElement {
   ];
 
   return (
-    <footer className="border-t border-gray-200 dark:border-gray-800 bg-amber-100 text-black dark:bg-[#000000] dark:text-white mt-auto">
+    <footer className="border-t border-gray-200 dark:border-gray-800 bg-white text-green-600 dark:bg-[#020618] dark:text-white mt-auto">
       <div className="container mx-auto py-10 text-center px-4">
         {/* <div className="grid grid-cols-1 gap-8 md:grid-cols-4 text-center">
           <div className="flex flex-col items-center">
@@ -78,36 +78,38 @@ export function Footer(): React.ReactElement {
         </div> */}
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div>
+            <section className="flex flex-col items-start">
               <div className="flex items-center mb-4">
-                <Recycle className="h-6 w-6 text-green-300 mr-2" />
+                <Recycle className="h-6 w-6 text-green-400 mr-2" />
                 <h3 className="text-xl font-bold">Mario's Hauling</h3>
               </div>
-              <p className="text-green-100 mb-4">
+              <p className="text-black dark:text-white mb-4">
+                <Check className="inline-flex text-green-400 mr-2" />
                 Professional hauling services available 24/7. No job too big or small.
               </p>
-              <div className="flex items-center space-x-2 text-green-100">
-                <MapPin className="h-5 w-5 text-green-300" />
+              <div className="flex items-center space-x-2 text-black dark:text-white">
+                <MapPin className="h-5 w-5 text-green-400" />
                 <span>Serving the Greater San Jose Area</span>
               </div>
-            </div>
-            <div>
+            </section>
+            
+            <section className="flex flex-col items-start">
               <h3 className="text-lg font-bold mb-4">Contact Us</h3>
               <div className="space-y-2">
                 <p className="flex items-center">
-                  <Phone className="h-5 w-5 text-green-300 mr-2" />
-                  <a href="tel:4084492317" className="hover:text-green-300 transition-colors">
+                  <Phone className="h-5 w-5 text-green-400 mr-2" />
+                  <a href="tel:4084492317" className="hover:text-green-400 text-black dark:text-white transition-colors">
                     (408) 449-2317
                   </a>
                 </p>
                 <p className="flex items-center">
-                  <Clock className="h-5 w-5 text-green-300 mr-2" />
-                  Available 24/7
+                  <Clock className="h-5 w-5 text-green-400 mr-2" />
+                  <span className="text-black dark:text-white">Available 24/7</span>
                 </p>
               </div>
-            </div>
+            </section>
           </div>
-          <div className="border-t border-green-700 mt-6 pt-6 text-center text-green-200 text-sm">
+          <div className="border-t border-green-600 mt-6 pt-6 text-center text-green-600 text-sm">
             <p>&copy; {new Date().getFullYear()} Mario's Hauling. All rights reserved.</p>
           </div>
        

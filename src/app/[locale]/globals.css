@@ -163,3 +163,16 @@
   animation: marquee 30s linear infinite;
   
 }
+
+.navItems::after {
+  display: block;
+  content: '';
+  border-bottom: green 2px solid;
+  border-radius: 5px;
+  width: 0px;
+  transition: all 0.3s ease-in-out;
+}
+
+.navItems:hover::after {
+  width: 100%;
+}
