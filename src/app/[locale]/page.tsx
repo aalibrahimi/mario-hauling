@@ -15,17 +15,17 @@ export default function Home() {
   })
 
   const services = [
-    { name: "Appliance Removal", icon: "🧺" },
-    { name: "Furniture Hauling", icon: "🛋️" },
-    { name: "Green Waste", icon: "🌿" },
-    { name: "Construction Debris", icon: "🏗️" },
-    { name: "Household Junk", icon: "🗑️" },
-    { name: "Kitchen & Bath Demo", icon: "🚿" },
-    { name: "Junk Removal", icon: "📦" },
-    { name: "Dirt Removal", icon: "🌱" },
-    { name: "Concrete Removal", icon: "🧱" },
-    { name: "Roof Removal", icon: "🏠" },
-    { name: "Yard Clean Up", icon: "🌳" },
+    { name: "Appliance Removal", icon: "🧺" , image:"/placeholder.svg?height=600&width=800", description: "Professional removal of refrigerators, washers, dryers, and other houshold appliances"},
+    { name: "Furniture Hauling", icon: "🛋️" , image:"/placeholder.svg?height=600&width=800", description: "Fast and careful removal of sofas, tables, and all types of furniture"},
+    { name: "Green Waste", icon: "🌿",  image:"/placeholder.svg?height=600&width=800", description: "Enviromentally friendly disposal of yard waste, branches, leaves, and plant material" },
+    { name: "Construction Debris", icon: "🏗️",  image:"/placeholder.svg?height=600&width=800", description: "Efficient cleanup and removal of construction  and renovation debris" },
+    { name: "Household Junk", icon: "🗑️",  image:"/placeholder.svg?height=600&width=800", description: "Complete removal of householdd clutter, junk, and unwanted items" },
+    { name: "Kitchen & Bath Demo", icon: "🚿" ,  image:"/placeholder.svg?height=600&width=800", description: "Demolition and removal services for kitchen and bathroom renovation projects"},
+    { name: "Junk Removal", icon: "📦" ,  image:"/placeholder.svg?height=600&width=800", description: "Comprehensive junk removal servicess for homes and business"},
+    { name: "Dirt Removal", icon: "🌱" ,  image:"/placeholder.svg?height=600&width=800", description: "Removal and disposal of dirt, soil, and earth from landscaping or construction projects."},
+    { name: "Concrete Removal", icon: "🧱" ,  image:"/placeholder.svg?height=600&width=800", description: "Breaking and hauling away concrete from driveways, patios, and other areas."},
+    { name: "Roof Removal", icon: "🏠" ,  image:"/placeholder.svg?height=600&width=800", description: "safe and efficient removal of old roofing materials during placement projects."},
+    { name: "Yard Clean Up", icon: "🌳" ,  image:"/placeholder.svg?height=600&width=800", description: "Complete yard cleanup including debris removal and hauling"},
   ]
 
   const fadeInUp = {
