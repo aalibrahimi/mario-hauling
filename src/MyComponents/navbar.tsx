@@ -90,6 +90,8 @@ export function Navbar(): React.ReactElement {
   return (
     <header className="sticky top-0 z-40 w-full border-b border-green-700 dark:border-green-500 bg-white text-black dark:bg-[#020618] dark:text-white">
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
+        {/* Add YELP icon and link it to his YELP */}
+        {/* Free estimation --> calls */}
         {/* Left section: Logo and mobile menu toggle */}
         <div className="flex items-center gap-4">
           <Link

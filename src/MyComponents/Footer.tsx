@@ -89,7 +89,7 @@ export function Footer(): React.ReactElement {
               </p>
               <div className="flex items-center space-x-2 text-black dark:text-white">
                 <MapPin className="h-5 w-5 text-green-400" />
-                <span>Serving the Greater San Jose Area</span>
+                <span>All the Bay Area</span>
               </div>
             </section>
             
@@ -113,7 +113,7 @@ export function Footer(): React.ReactElement {
             <p>&copy; {new Date().getFullYear()} Mario's Hauling. All rights reserved.</p>
           </div>
        
-        <div className="mt-10 border-t border-gray-200 dark:border-gray-800 pt-6">
+        <div className="mt-10">
           {/* <div className="flex flex-col items-center justify-between gap-4 md:flex-row md:justify-center">
             <p className="text-center text-sm text-gray-600 dark:text-gray-400">
               © {new Date().getFullYear()} {t('rights')}
