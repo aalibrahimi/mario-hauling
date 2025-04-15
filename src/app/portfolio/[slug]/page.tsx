@@ -3,11 +3,10 @@ import Link from "next/link"
 import { ArrowLeft, Phone } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
-// mock data
-// In a real application, this would fetch data from a database or API obv
+// This is a mock function to simulate getting service data
+// In a real application, this would fetch data from a database or API
 function getServiceData(slug: string) {
   const services = {
-    // so  these string names is what you will be using to route them back to the page.tsx in local. 
     "appliance-removal": {
       name: "Appliance Removal",
       description: "Professional removal of refrigerators, washers, dryers, and other household appliances.",
