@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { useTranslations } from "next-intl"
 import Link from "next/link"
+import ServicesSection from "@/MyComponents/serviceSection"
 
 export default function Home() {
   const t = useTranslations('HomePage');
@@ -163,68 +164,7 @@ export default function Home() {
 
       {/* Services Section */}
 
-    {/* Services Section - Revamped with Project Cards */}
-    <section className="py-16 bg-white" ref={servicesRef}>
-        <div className="container px-4 md:px-6">
-          <motion.div
-            initial="hidden"
-            animate={servicesInView ? "visible" : "hidden"}
-            variants={fadeInUp}
-            className="text-center mb-10"
-          >
-            <h2 className="text-3xl font-bold mb-3 text-green-800">Our Hauling Services</h2>
-            <p className="text-slate-600 max-w-2xl mx-auto">
-              Click on any service to view our portfolio and past projects.
-            </p>
-          </motion.div>
-
-          <motion.div
-            initial="hidden"
-            animate={servicesInView ? "visible" : "hidden"}
-            variants={staggerContainer}
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
-          >
-            {services.map((service, index) => (
-              <motion.div key={index} variants={fadeInUp}>
-                <Link href={`/portfolio/${service.slug}`} className="block h-full">
-                  <div className="group relative h-64 overflow-hidden rounded-lg shadow-md transition-all duration-300 hover:shadow-xl">
-                    {/* Image */}
-                    <Image
-                      src={service.image || "/placeholder.svg"}
-                      alt={service.name}
-                      fill
-                      className="object-cover transition-transform duration-500 group-hover:scale-110"
-                    />
-
-                    {/* Overlay with service name - always visible */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-green-900/90 to-transparent p-4 flex flex-col justify-end">
-                      <h3 className="text-white text-xl font-bold flex items-center">
-                        <span className="mr-2">{service.icon}</span>
-                        {service.name}
-                      </h3>
-                    </div>
-
-                    {/* Hover overlay with description */}
-                    <div className="absolute inset-0 bg-green-800/90 p-6 flex flex-col justify-between opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                      <div>
-                        <h3 className="text-white text-xl font-bold mb-3 flex items-center">
-                          <span className="mr-2">{service.icon}</span>
-                          {service.name}
-                        </h3>
-                        <p className="text-green-100 mb-4">{service.description}</p>
-                      </div>
-                      <div className="flex justify-between items-center">
-                        <span className="text-green-300 text-sm">View Projects</span>
-                        <ChevronRight className="h-5 w-5 text-green-300" />
-                      </div>
-                    </div>
-                  </div>
-                </Link>
-              </motion.div>
-            ))}
-          </motion.div>
-        </div>
-      </section>
+  <ServicesSection />
      
     {/* junk removal */}
      {/* Call to Action Banner */}
