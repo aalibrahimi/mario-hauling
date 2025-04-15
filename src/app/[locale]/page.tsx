@@ -102,7 +102,7 @@ export default function Home() {
                  <Button
                    size="lg"
                    variant="outline"
-                   className="border-green-400 text-green-800 dark:text-white hover:bg-white hover:text-green-500"
+                   className="border-green-400 text-green-800 dark:text-white dark:hover:text-black hover:bg-white hover:text-green-500"
                  >
                    Request Service
                  </Button>
