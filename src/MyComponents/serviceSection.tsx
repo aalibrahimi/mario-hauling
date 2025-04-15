@@ -67,26 +67,26 @@ const ServicesSection = () => {
   };
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-white dark:bg-black">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           {/* Simple Header */}
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-green-800 mb-3">Our Services</h2>
-            <p className="text-gray-600">Whatever you need hauled away, we've got you covered.</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-green-800 dark:text-green-400 mb-3">Our Services</h2>
+            <p className="text-gray-600 dark:text-gray-300">Whatever you need hauled away, we've got you covered.</p>
           </div>
 
           {/* Category Selection */}
           <div className="flex justify-center mb-12">
-            <div className="inline-flex rounded-lg p-1 bg-gray-100">
+            <div className="inline-flex rounded-lg p-1 bg-gray-100 dark:bg-gray-800">
               {categories.map((category) => (
                 <button
                   key={category.id}
                   onClick={() => setActiveCategory(category.id)}
                   className={`px-5 py-2 rounded-md text-sm font-medium transition-all duration-200 ${
                     activeCategory === category.id
-                      ? "bg-green-600 text-white shadow-md"
-                      : "text-gray-600 hover:text-green-600"
+                      ? "bg-green-600 text-white shadow-md dark:bg-green-700"
+                      : "text-gray-600 hover:text-green-600 dark:text-gray-300 dark:hover:text-green-400"
                   }`}
                 >
                   {category.label}
@@ -105,7 +105,7 @@ const ServicesSection = () => {
               transition={{ duration: 0.3 }}
               className="space-y-6"
             >
-              {services[activeCategory].map((service, index) => (
+              {services[activeCategory].map((service : any, index : any) => (
                 <motion.div
                   key={service.name}
                   initial={{ opacity: 0, y: 20 }}
@@ -116,20 +116,20 @@ const ServicesSection = () => {
                   }}
                   className="group"
                 >
-                  <div className="flex items-center border-b border-gray-100 pb-6">
-                    <div className="bg-green-50 rounded-full p-4 mr-6">
+                  <div className="flex items-center border-b border-gray-100 dark:border-gray-700 pb-6">
+                    <div className="bg-green-50 dark:bg-green-900/30 rounded-full p-4 mr-6">
                       <span className="text-3xl">{service.icon}</span>
                     </div>
                     
                     <div className="flex-grow">
-                      <h3 className="text-xl font-bold text-gray-900 mb-1">{service.name}</h3>
-                      <p className="text-gray-600">{service.description}</p>
+                      <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-1">{service.name}</h3>
+                      <p className="text-gray-600 dark:text-gray-300">{service.description}</p>
                     </div>
                     
                     <div className="hidden md:block">
                       <Button 
                         size="sm" 
-                        className="bg-white text-green-600 border border-green-200 hover:bg-green-50 group-hover:bg-green-600 group-hover:text-white transition-colors"
+                        className="bg-white dark:bg-gray-800 text-green-600 dark:text-green-400 border border-green-200 dark:border-green-700 hover:bg-green-500 dark:hover:bg-green-700 hover:text-white dark:hover:text-white group-hover:bg-green-600 dark:group-hover:bg-green-700 group-hover:text-white dark:group-hover:text-white transition-colors"
                       >
                         Get Quote
                         <ChevronRight className="h-4 w-4 ml-1 transform group-hover:translate-x-1 transition-transform" />
@@ -141,28 +141,16 @@ const ServicesSection = () => {
             </motion.div>
           </AnimatePresence>
 
-          {/* Mobile Call Button */}
-          <div className="md:hidden mt-8 text-center">
-            <Button 
-              size="lg" 
-              className="bg-green-600 hover:bg-green-700 text-white"
-            >
-              <Phone className="h-4 w-4 mr-2" /> Call For Free Estimate
-            </Button>
-          </div>
-
           {/* View All Services Link */}
           <div className="mt-12 text-center">
             <a 
               href="/services" 
-              className="inline-flex items-center text-green-600 font-medium hover:text-green-700 transition-colors"
+              className="inline-flex items-center text-green-600 dark:text-green-400 font-medium hover:text-green-700 dark:hover:text-green-300 transition-colors"
             >
               View all our services
-              <ArrowRight className="h-4 w-4 ml-1" />
+              <ArrowRight className="h-4 w-4 ml-1 animate-pulse" />
             </a>
           </div>
-
-       
         </div>
       </div>
     </section>

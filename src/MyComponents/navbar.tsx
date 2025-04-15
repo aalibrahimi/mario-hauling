@@ -88,7 +88,7 @@ export function Navbar(): React.ReactElement {
   }, [locale]);
 
   return (
-    <header className="sticky top-0 z-40 w-full border-b border-green-700 dark:border-green-500 bg-white text-black dark:bg-[#020618] dark:text-white">
+    <header className="sticky top-0 z-40 w-full border-b border-green-700 dark:border-green-500 bg-white text-black dark:bg-black dark:text-white">
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         {/* Add YELP icon and link it to his YELP */}
         {/* Free estimation --> calls */}
@@ -227,7 +227,7 @@ export function Navbar(): React.ReactElement {
 
       {/* Mobile Navigation Menu */}
       <div
-        className={`md:hidden absolute w-full bg-white dark:bg-[#020618] text-black dark:text-white border-b border-green-600 dark:border-green-800 shadow-lg transition-all duration-300 ease-in-out ${
+        className={`md:hidden absolute w-full bg-white dark:bg-black text-black dark:text-white border-b border-green-600 dark:border-green-800 shadow-lg transition-all duration-300 ease-in-out ${
           isMobileMenuOpen
             ? "max-h-screen opacity-100 translate-y-0"
             : "max-h-0 opacity-0 -translate-y-4 pointer-events-none"

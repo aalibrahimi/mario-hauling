@@ -8,6 +8,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { useTranslations } from "next-intl"
 import Link from "next/link"
 import ServicesSection from "@/MyComponents/serviceSection"
+import { Badge } from "@/components/ui/badge"
 
 export default function Home() {
   const t = useTranslations('HomePage');
@@ -47,10 +48,10 @@ export default function Home() {
   }
 
   return (
-    <main className="flex min-h-screen flex-col"> 
+    <main className="flex min-h-screen flex-col bg-white "> 
      {/* hero section here we gooo */}
             {/* Hero Section - Reduced Height */}
-            <section className="relative py-12 md:py-16 flex items-center justify-center overflow-hidden bg-gradient-to-r from-green-800 to-green-700 text-white">
+            <section className="relative py-12 md:py-16 flex items-center justify-center overflow-hidden bg-gradient-to-r from-green-800 to-green-700 text-white ">
          <div className="absolute inset-0 z-0 opacity-20">
            <Image
              src="/placeholder.svg?height=800&width=1920"
@@ -107,6 +108,15 @@ export default function Home() {
                    Request Service
                  </Button>
                </motion.div>
+
+               <motion.div
+                initial = {{ opacity : 0, y: 20 }}
+                animate= {{ opacity : 1, y: 0}}
+                transition = {{ duration : 0.8, delay: 0.7 }}
+                
+               >
+                <Badge className="bg"> Free Estimates</Badge>
+               </motion.div>
              </div>
  
              <motion.div
@@ -141,7 +151,7 @@ export default function Home() {
        </section>
  
          {/* Finally time to cook  */}
-         <section className="py-4 bg-green-800 text-white overflow-hidden relative">
+         <section className="py-4 bg-green-800 dark:bg-black text-white overflow-hidden relative">
            <div className="whitespace-nowrap inline-flex animate-marquee">
                {/* mapping out the for loop for x scroll animation "_" parameter is for any, works even without it */}
                  {/* spread operatot to initialize emptry arrays ... */}
@@ -245,7 +255,7 @@ export default function Home() {
 
             {/* Testimonials */}
 
-       <section className="py-16 bg-white flex text-center justify-center  ">
+       <section className="py-16 bg-white flex text-center justify-center dark:bg-[#fff] ">
         <div className="container px-4 md:px-6">
           <motion.div
             initial="hidden"
@@ -269,14 +279,14 @@ export default function Home() {
           >
             {[1, 2, 3].map((_, index) => (
               <motion.div key={index} variants={fadeInUp}>
-                <Card className="h-full border-green-400">
+                <Card className="h-full border-green-400 bg-white dark:bg-white dark:text-black ">
                   <CardContent className="p-6">
-                    <div className="flex mb-4">
+                    <div className="flex mb-4 bg">
                       {[...Array(5)].map((_, i) => (
                         <Star key={i} className="h-5 w-5 fill-yellow-500 text-yellow-500" />
                       ))}
                     </div>
-                    <p className="dark:text-white mb-4">
+                    <p className=" mb-4">
                       "Mario was prompt, professional, and efficient. He hauled away all our construction debris in no
                       time. Highly recommend!"
                     </p>
@@ -284,7 +294,7 @@ export default function Home() {
                       <div className="w-10 h-10 rounded-full bg-green-100 mr-3"></div>
                       <div>
                         <p className="font-medium text-green-600">Happy Customer</p>
-                        <p className="text-sm dark:text-white">San Jose, CA</p>
+                        <p className="text-sm ">San Jose, CA</p>
                       </div>
                     </div>
                   </CardContent>
