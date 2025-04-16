@@ -176,3 +176,29 @@
 .navItems:hover::after {
   width: 100%;
 }
+
+::selection{
+  background: none;
+  color: rgb(46, 224, 46);
+}
+
+/* Width of the scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track (the background) */
+::-webkit-scrollbar-track {
+  background-color: rgb(0, 0, 0); /* green track */
+}
+
+/* Thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+  background-color: rgb(0, 183, 74); /* brighter green thumb */
+  border-radius: 4px;
+}
+
+/* Optional: Hover effect */
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(0, 150, 60);
+}
