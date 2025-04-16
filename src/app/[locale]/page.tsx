@@ -186,14 +186,16 @@ export default function Home() {
               <p className="text-green-100">Mario is ready to help 24/7!</p>
             </div>
             <Button size="lg" className="bg-white hover:bg-green-100 text-green-800 ">
-              <Phone className="mr-2 h-4 w-4" /> Call (408) 449-2317
+              <Phone className="mr-2 h-4 w-4 dark:text-black" /> 
+                 <span className="dark:text-black">Call (408) 449-2317
+                 </span>
             </Button>
           </div>
         </div>
       </section>
  
  {/* How it works */}
-            <section className="py-16 bg-green-50 flex text-center justify-center">
+            <section className="py-16 bg-green-50 flex text-center justify-center dark:bg-green-700 ">
               <div className="container px-4 md:px-6">
                 <motion.div
                   initial="hidden"
@@ -202,8 +204,8 @@ export default function Home() {
                   variants={{fadeInUp}}
                   className="text-center mb-10"
                 >
-                  <h2 className="text-3xl font-bold mb-3 text-green-800">How it works</h2>
-                  <p className="text-slate-600 max-w-2xl mx-auto">
+                  <h2 className="text-3xl font-bold mb-3 text-green-800 dark:text-black">How it works</h2>
+                  <p className="text-slate-600 max-w-2xl mx-auto dark:text-gray-100">
                     Simple, fast, and hassle-free hauling in just three easy steps. 
                   </p>
                 </motion.div>
@@ -218,10 +220,10 @@ export default function Home() {
                   <motion.div
                   variants={fadeInUp} className="text-center">
                     <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <Phone className="h-8 w-8 text-green-600"/>
+                      <Phone className="h-8 w-8 text-green-600  "/>
                     </div>
-                    <h3 className="text-xl font-bold mb-2 text-green-800">1. Call Us</h3>
-                    <p className="text-slate-600">Call (408) 449-2317 anytime, day or night. </p>
+                    <h3 className="text-xl font-bold mb-2 text-green-800 dark:text-white ">1. Call Us</h3>
+                    <p className="text-slate-600 dark:text-gray-100">Call (408) 449-2317 anytime, day or night. </p>
                   </motion.div>
 
                   {/* second number */}
@@ -232,8 +234,8 @@ export default function Home() {
                     <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                       <Truck className="h-8 w-8 text-green-600"/>
                     </div>
-                    <h3 className="text-xl font-bold mb-2 text-green-800">2. We Arrive</h3>
-                    <p className="text-slate-600">Mario arrives promptly at the scheduledd time ready to haul</p>
+                    <h3 className="text-xl font-bold mb-2 text-green-800 dark:text-white ">2. We Arrive</h3>
+                    <p className="text-slate-600  dark:text-gray-100">Mario arrives promptly at the scheduledd time ready to haul</p>
                   </motion.div>
 
                   {/* thirdd number */}
@@ -244,8 +246,8 @@ export default function Home() {
                     <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                       <ArrowRight className="h-8 w-8 text-green-600"/>
                     </div>
-                    <h3 className="text-xl font-bold mb-2 text-green-800">3. We Haul</h3>
-                    <p className="text-slate-600">We Quickly load and haul away your items, leaving your space clean</p>
+                    <h3 className="text-xl font-bold mb-2 text-green-800 dark:text-white">3. We Haul</h3>
+                    <p className="text-slate-600 dark:text-gray-100">We Quickly load and haul away your items, leaving your space clean</p>
 
                   </motion.div>
                 </motion.div>
@@ -253,58 +255,72 @@ export default function Home() {
             </section>
 
 
-            {/* Testimonials */}
+          {/* Testimonials */}
+{/* Testimonials */}
+<section className="py-16 bg-white flex text-center justify-center dark:bg-[#000]">
+  <div className="container px-4 md:px-6">
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      variants={fadeInUp}
+      className="text-center mb-10"
+    >
+      <h2 className="text-3xl font-bold mb-3 text-green-800 dark:text-green-400">What Our Customers Say</h2>
+      <p className="text-slate-600 dark:text-gray-300 max-w-2xl mx-auto">
+        Don't just take our word for it. Here's what our satisfied customers have to say.
+      </p>
+    </motion.div>
 
-       <section className="py-16 bg-white flex text-center justify-center dark:bg-[#fff] ">
-        <div className="container px-4 md:px-6">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={fadeInUp}
-            className="text-center mb-10"
-          >
-            <h2 className="text-3xl font-bold mb-3 text-green-800">What Our Customers Say</h2>
-            <p className="text-slate-600 max-w-2xl mx-auto">
-              Don't just take our word for it. Here's what our satisfied customers have to say.
-            </p>
-          </motion.div>
-
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={staggerContainer}
-            className="grid grid-cols-1 md:grid-cols-3 gap-6"
-          >
-            {[1, 2, 3].map((_, index) => (
-              <motion.div key={index} variants={fadeInUp}>
-                <Card className="h-full border-green-400 bg-white dark:bg-white dark:text-black ">
-                  <CardContent className="p-6">
-                    <div className="flex mb-4 bg">
-                      {[...Array(5)].map((_, i) => (
-                        <Star key={i} className="h-5 w-5 fill-yellow-500 text-yellow-500" />
-                      ))}
-                    </div>
-                    <p className=" mb-4">
-                      "Mario was prompt, professional, and efficient. He hauled away all our construction debris in no
-                      time. Highly recommend!"
-                    </p>
-                    <div className="flex items-center">
-                      <div className="w-10 h-10 rounded-full bg-green-100 mr-3"></div>
-                      <div>
-                        <p className="font-medium text-green-600">Happy Customer</p>
-                        <p className="text-sm ">San Jose, CA</p>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-              </motion.div>
-            ))}
-          </motion.div>
-        </div>
-      </section>
-
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      variants={staggerContainer}
+      className="grid grid-cols-1 md:grid-cols-3 gap-6"
+    >
+      {[
+        {
+          quote: "Mario did a fast and efficient job at a very reasonable cost. I had a full load of all types of construction debris. I highly recommend his services!",
+          name: "Jeffrey B.",
+          location: "San Jose, CA"
+        },
+        {
+          quote: "Communicative, fair pricing, efficient. We filled his truck with junk from our storage section of our shop, same day after seeing his truck in the Home Depot parking lot. Very professional.",
+          name: "Arun C.",
+          location: "Seattle, WA"
+        },
+        {
+          quote: "Quick response on the phone within minutes. Nice tracking system to keep customers updated live time where the crew is. Prompt phone call. Punctuate and efficient service. Great price!! Highly recommended.",
+          name: "Mai T..",
+          location: "San Francisco, CA"
+        }
+      ].map((testimonial, index) => (
+        <motion.div key={index} variants={fadeInUp}>
+          <Card className="h-full border-green-400 dark:border-green-800 bg-white dark:bg-gray-900">
+            <CardContent className="p-6">
+              <div className="flex mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="h-5 w-5 fill-yellow-500 text-yellow-500" />
+                ))}
+              </div>
+              <p className="mb-4 dark:text-gray-300">
+                "{testimonial.quote}"
+              </p>
+              <div className="flex items-center">
+                <div className="w-10 h-10 rounded-full bg-green-100 dark:bg-green-900 mr-3"></div>
+                <div>
+                  <p className="font-medium text-green-600 dark:text-green-400">{testimonial.name}</p>
+                  <p className="text-sm dark:text-gray-400">{testimonial.location}</p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </motion.div>
+      ))}
+    </motion.div>
+  </div>
+</section>
        
       {/* Call to Action */}
       <section className="py-12 bg-green-600 text-white flex text-center justify-center">
