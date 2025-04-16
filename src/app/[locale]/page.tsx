@@ -49,9 +49,9 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen flex-col bg-white "> 
-     {/* hero section here we gooo */}
+   {/* hero section here we gooo */}
             {/* Hero Section - Reduced Height */}
-            <section className="relative py-12 md:py-16 flex items-center justify-center overflow-hidden bg-gradient-to-r from-green-800 to-green-700 text-white ">
+            <section className="relative py-12 md:py-16 flex items-center justify-center overflow-hidden bg-gradient-to-r from-green-800 to-green-700 dark:from-green-900 dark:to-green-950 text-white">
          <div className="absolute inset-0 z-0 opacity-20">
            <Image
              src="/placeholder.svg?height=800&width=1920"
@@ -68,7 +68,7 @@ export default function Home() {
                  initial={{ scale: 0.8, opacity: 0 }}
                  animate={{ scale: 1, opacity: 1 }}
                  transition={{ duration: 0.5 }}
-                 className="inline-block bg-white text-green-800 font-bold px-3 py-1 rounded-full text-sm w-fit"
+                 className="inline-block bg-white dark:bg-green-800 text-green-800 dark:text-white font-bold px-3 py-1 rounded-full text-sm w-fit"
                >
                  Available 24/7
                </motion.div>
@@ -97,13 +97,14 @@ export default function Home() {
                  transition={{ duration: 0.8, delay: 0.6 }}
                  className="flex flex-col sm:flex-row gap-3"
                >
-                 <Button size="lg" className="bg-white hover:bg-green-100 text-green-800">
-                   <Phone className="mr-2 h-4 w-4" /> Call Now: (408) 449-2317
+                 <Button size="lg" className="bg-white hover:bg-green-100 text-green-800 dark:bg-green-700 dark:hover:bg-green-800 dark:text-white">
+                   <Phone className="mr-2 h-4 w-4" /> 
+                   <span className="text-black">Call Now: (408) 449-2317</span>
                  </Button>
                  <Button
                    size="lg"
                    variant="outline"
-                   className="border-green-400 text-green-800 dark:text-white dark:hover:text-black hover:bg-white hover:text-green-500"
+                   className="border-green-400 text-black hover:bg-white hover:text-green-500 dark:border-green-600 dark:text-white dark:hover:bg-green-800"
                  >
                    Request Service
                  </Button>
@@ -113,9 +114,8 @@ export default function Home() {
                 initial = {{ opacity : 0, y: 20 }}
                 animate= {{ opacity : 1, y: 0}}
                 transition = {{ duration : 0.8, delay: 0.7 }}
-                
                >
-                <Badge className="bg"> Free Estimates</Badge>
+                <Badge className="bg-green-600 dark:bg-green-700 text-white"> Free Estimates</Badge>
                </motion.div>
              </div>
  
@@ -143,7 +143,7 @@ export default function Home() {
                      <CheckCircle className='h-4 w-4 mr-2 text-green mt-1 flex-shrink-0' />
                      <span>{item}</span>
                    </li>
-                 ) ) }
+                 ))}
                </ul>
              </motion.div>
            </div>
