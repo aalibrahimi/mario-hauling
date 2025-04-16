@@ -1,37 +1,65 @@
+"use client"
+import { motion } from "motion/react";
 import Image from "next/image";
 import React from "react";
 
 export default function About() {
+
+  // same animation as knozorion here wwe go
+  const fadeInLeft = {
+    hidden : { opacity : 0, x: -50},
+    visible : { opacity :  1, x: 0, transition: {duration : 0.6 }},
+
+  };
+  const fadeInRight = {
+    hidden : { opacity: 0, x : 50},
+    visible : { opacity : 1, x: 0, transition: {duration : 0.6} },
+  };
+
+  const fadeInUp = {
+    hidden : { opacity: 0, y: 20},
+    visible : { opacity : 1, y: 0, transition : {duration : 0.6 }}
+  };
+
+
+
   return (
     <div className="bg-white h-full w-full">
       {/* Header */}
-      <section className="text-black bg-green-500 h-100 w-full flex flex-col justify-center">
-        <span className="flex flex-col items-center gap-5">
-          <h3 className="text-4xl font-bold">
-            What does Mario's Hauling do? Well, it's simple—we specialize in a
-            wide range of services.
-          </h3>
-          <p className=" text-xl italic">
-            Driven by our burning passion and dedication to excellence, our mission is to go
-          </p>
-          <p className=" text-xl italic">bove and beyond to deliver the highest quality service possible,</p>
-          <p className=" text-xl italic">ensuring every client is satisfied and every project is handled with</p>
-          <p className=" text-xl italic">care, professionalism, and efficiency.</p>
-          {/* <p className="text-xl italic">
-            Driven by our
-            burning passion and dedication to excellence, our mission is to go
-            above and beyond to deliver the highest quality service possible,
-            ensuring every client is satisfied and every project is handled with
-            care, professionalism, and efficiency.
-          </p> */}
-        </span>
-      </section>
+ <motion.section 
+        initial="hidden"
+        animate="visible"
+        variants={fadeInUp}
+        className="text-black dark:text-white bg-green-500 dark:bg-green-800 py-16 w-full"
+      >
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">About Mario's Hauling</h1>
+            <div className="text-xl italic">
+              <p>Driven by our burning passion and dedication to excellence, our mission is to go</p>
+              <p>above and beyond to deliver the highest quality service possible,</p>
+              <p>ensuring every client is satisfied and every project is handled with</p>
+              <p>care, professionalism, and efficiency.</p>
+            </div>
+          </div>
+        </div>
+      </motion.section>
+
+
 
       <br />
 
+   
       {/* Images Display */}
       <section className="flex flex-col text-black px-10 gap-10">
         {/* Hauling */}
+        <motion.section
+        initial="hidden"
+        animate="visible"
+        variants={fadeInRight}
+        className=""
+
+      >
         <div className="bg-green-500/10 flex items-center justify-center gap-10 p-5 rounded-2xl">
           <Image
             src="/image4.jpg"
@@ -50,7 +78,18 @@ export default function About() {
           </div>
         </div>
 
+      </motion.section>
+
+
         {/* Furniture */}
+
+      <motion.section
+        initial="hidden"
+        animate="visible"
+        variants={fadeInLeft}
+        className=""
+      >
+
         <div className="bg-green-500/10 flex items-center justify-center gap-10 p-5 rounded-2xl">
           <div className="flex flex-col w-100 h-full items-center gap-5">
             <span className="text-4xl font-semibold">Furniture</span>
@@ -64,6 +103,15 @@ export default function About() {
             className="w-75 h-auto rounded-sm"
           />
         </div>
+      </motion.section>
+
+
+      <motion.section
+      initial="hidden"
+      animate="visible"
+      variants={fadeInRight}
+      className=""
+      >
 
         {/* Green Waste */}
         <div className="bg-green-500/10 flex items-center justify-center gap-10 p-5 rounded-2xl">
@@ -80,6 +128,16 @@ export default function About() {
           </div>
         </div>
 
+      </motion.section>
+
+{/* construction debreeezy */}
+    <motion.section
+    initial="hidden"
+    animate="visible"
+    variants={fadeInUp}
+    className=""
+    >
+
         <div className="bg-green-500/10 flex items-center justify-center gap-10 p-5 rounded-2xl">
           <div className="flex flex-col w-100 h-full items-center gap-5">
             <span className="text-4xl font-semibold">Construction Debris & Household Junk</span>
@@ -93,6 +151,15 @@ export default function About() {
             className="w-75 h-auto rounded-sm"
           />
         </div>
+    </motion.section>
+
+{/* kitchen and bathroom Demolitions */}
+<motion.section
+  initial = "hidden"
+  animate = "visible"
+  variants = {fadeInRight}
+  className=""
+>
 
         <div className="bg-green-500/10 flex items-center justify-center gap-10 p-5 rounded-2xl">
           <Image
@@ -108,6 +175,16 @@ export default function About() {
           </div>
         </div>
 
+</motion.section>
+
+{/* fency teardowns */}
+<motion.section
+  initial = "hidden"
+  animate = "visible"
+  variants={fadeInLeft}
+
+>
+
         <div className="bg-green-500/10 flex items-center justify-center gap-10 p-5 rounded-2xl">
           <div className="flex flex-col w-100 h-full items-center gap-5">
             <span className="text-4xl font-semibold">Fence Teardowns</span>
@@ -121,6 +198,14 @@ export default function About() {
             className="w-75 h-auto rounded-sm"
           />
         </div>
+</motion.section>
+
+{/* handyman */}
+<motion.section
+  initial="hidden"
+  animate="visible"
+  variants={fadeInUp}
+>
 
         <div className="bg-green-500/10 flex items-center justify-center gap-10 p-5 rounded-2xl">
           <Image
@@ -135,6 +220,7 @@ export default function About() {
             <span className="text-xl">From small repairs to full-scale demolition, our handyman and demolition services cover it all. Whether it's patching drywall, fixing fixtures, or tearing down entire structures, we deliver reliable, efficient solutions for any project size.</span>
           </div>
         </div>
+</motion.section>
       </section>
     </div>
   );
