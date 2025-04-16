@@ -151,7 +151,7 @@ export default function Home() {
        </section>
  
          {/* Finally time to cook  */}
-         <section className="py-4 bg-green-800 dark:bg-black text-white overflow-hidden relative">
+         <section className="py-4 bg-green-900 dark:bg-green-700 text-white overflow-hidden relative">
            <div className="whitespace-nowrap inline-flex animate-marquee">
                {/* mapping out the for loop for x scroll animation "_" parameter is for any, works even without it */}
                  {/* spread operatot to initialize emptry arrays ... */}
