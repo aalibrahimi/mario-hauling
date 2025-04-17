@@ -17,19 +17,21 @@ export default function Home() {
     threshold: 0.1,
   })
 
+  // const t = useTranslations('HomePage');
+
   const services = [
     // add slug at the end and the json name for it as shown in the slug file over yonder
-    { name: "Appliance Removal", icon: "🧺" , image:"/placeholder.svg?height=600&width=800", description: "Professional removal of refrigerators, washers, dryers, and other houshold appliances"},
-    { name: "Furniture Hauling", icon: "🛋️" , image:"/placeholder.svg?height=600&width=800", description: "Fast and careful removal of sofas, tables, and all types of furniture"},
-    { name: "Green Waste", icon: "🌿",  image:"/placeholder.svg?height=600&width=800", description: "Enviromentally friendly disposal of yard waste, branches, leaves, and plant material" },
-    { name: "Construction Debris", icon: "🏗️",  image:"/placeholder.svg?height=600&width=800", description: "Efficient cleanup and removal of construction  and renovation debris" },
-    { name: "Household Junk", icon: "🗑️",  image:"/placeholder.svg?height=600&width=800", description: "Complete removal of householdd clutter, junk, and unwanted items" },
-    { name: "Kitchen & Bath Demo", icon: "🚿" ,  image:"/placeholder.svg?height=600&width=800", description: "Demolition and removal services for kitchen and bathroom renovation projects"},
-    { name: "Junk Removal", icon: "📦" ,  image:"/placeholder.svg?height=600&width=800", description: "Comprehensive junk removal servicess for homes and business"},
-    { name: "Dirt Removal", icon: "🌱" ,  image:"/placeholder.svg?height=600&width=800", description: "Removal and disposal of dirt, soil, and earth from landscaping or construction projects."},
-    { name: "Concrete Removal", icon: "🧱" ,  image:"/placeholder.svg?height=600&width=800", description: "Breaking and hauling away concrete from driveways, patios, and other areas."},
-    { name: "Roof Removal", icon: "🏠" ,  image:"/placeholder.svg?height=600&width=800", description: "safe and efficient removal of old roofing materials during placement projects."},
-    { name: "Yard Clean Up", icon: "🌳" ,  image:"/placeholder.svg?height=600&width=800", description: "Complete yard cleanup including debris removal and hauling"},
+    { name: t('allServices.applianceRemoval.name'), icon: "🧺", image: "/placeholder.svg?height=600&width=800", description: t('allServices.applianceRemoval.description'), slug: "appliance-removal" },
+    { name: t('allServices.furnitureHauling.name'), icon: "🛋️", image: "/placeholder.svg?height=600&width=800", description: t('allServices.furnitureHauling.description'), slug: "furniture-hauling" },
+    { name: t('allServices.greenWaste.name'), icon: "🌿", image: "/placeholder.svg?height=600&width=800", description: t('allServices.greenWaste.description'), slug: "green-waste" },
+    { name: t('allServices.constructionDebris.name'), icon: "🏗️", image: "/placeholder.svg?height=600&width=800", description: t('allServices.constructionDebris.description'), slug: "construction-debris" },
+    { name: t('allServices.householdJunk.name'), icon: "🗑️", image: "/placeholder.svg?height=600&width=800", description: t('allServices.householdJunk.description'), slug: "household-junk" },
+    { name: t('allServices.kitchenBathDemo.name'), icon: "🚿", image: "/placeholder.svg?height=600&width=800", description: t('allServices.kitchenBathDemo.description'), slug: "kitchen-bath-demo" },
+    { name: t('allServices.junkRemoval.name'), icon: "📦", image: "/placeholder.svg?height=600&width=800", description: t('allServices.junkRemoval.description'), slug: "junk-removal" },
+    { name: t('allServices.dirtRemoval.name'), icon: "🌱", image: "/placeholder.svg?height=600&width=800", description: t('allServices.dirtRemoval.description'), slug: "dirt-removal" },
+    { name: t('allServices.concreteRemoval.name'), icon: "🧱", image: "/placeholder.svg?height=600&width=800", description: t('allServices.concreteRemoval.description'), slug: "concrete-removal" },
+    { name: t('allServices.roofRemoval.name'), icon: "🏠", image: "/placeholder.svg?height=600&width=800", description: t('allServices.roofRemoval.description'), slug: "roof-removal" },
+    { name: t('allServices.yardCleanup.name'), icon: "🌳", image: "/placeholder.svg?height=600&width=800", description: t('allServices.yardCleanup.description'), slug: "yard-cleanup" }
   ]
 
   const fadeInUp = {

@@ -69,6 +69,52 @@
       },
       "viewAllButton": "Ver todos nuestros servicios"
     },
+    "allServices": {
+  "applianceRemoval": {
+    "name": "Remoción de Electrodomésticos",
+    "description": "Remoción profesional de refrigeradores, lavadoras, secadoras y otros electrodomésticos"
+  },
+  "furnitureHauling": {
+    "name": "Transporte de Muebles",
+    "description": "Remoción rápida y cuidadosa de sofás, mesas y todo tipo de muebles"
+  },
+  "greenWaste": {
+    "name": "Residuos Verdes",
+    "description": "Eliminación ecológica de residuos de jardín, ramas, hojas y material vegetal"
+  },
+  "constructionDebris": {
+    "name": "Escombros de Construcción",
+    "description": "Limpieza y remoción eficiente de escombros de construcción y renovación"
+  },
+  "householdJunk": {
+    "name": "Basura Doméstica",
+    "description": "Eliminación completa de desorden, basura y artículos no deseados del hogar"
+  },
+  "kitchenBathDemo": {
+    "name": "Demolición de Cocinas y Baños",
+    "description": "Servicios de demolición y remoción para proyectos de renovación de cocinas y baños"
+  },
+  "junkRemoval": {
+    "name": "Remoción de Basura",
+    "description": "Servicios completos de remoción de basura para hogares y negocios"
+  },
+  "dirtRemoval": {
+    "name": "Remoción de Tierra",
+    "description": "Remoción y eliminación de tierra, suelo y materiales de proyectos de paisajismo o construcción"
+  },
+  "concreteRemoval": {
+    "name": "Remoción de Concreto",
+    "description": "Rotura y remoción de concreto de entradas, patios y otras áreas"
+  },
+  "roofRemoval": {
+    "name": "Remoción de Techos",
+    "description": "Remoción segura y eficiente de materiales viejos de techado durante proyectos de reemplazo"
+  },
+  "yardCleanup": {
+    "name": "Limpieza de Patios",
+    "description": "Limpieza completa de patios incluyendo la remoción y el transporte de escombros"
+  }
+},
     "junkBanner": {
       "title": "¿Necesita que se retire la basura hoy?",
       "description": "¡Mario está listo para ayudar 24/7!",
@@ -266,10 +312,20 @@
     }
   },
   "Footer": {
-    "compDesc": "La descripción de su empresa va aquí. Una breve descripción de lo que hace su organización y su misión.",
-    "rights": "Su Empresa. Todos los derechos reservados.",
+    "compDesc": "Servicios profesionales de transporte disponibles 24/7. Ningún trabajo es demasiado grande o pequeño.",
+    "rights": "Mario's Hauling. Todos los derechos reservados.",
     "customLink": "Github",
     "cwaMark": "Diseñado Por",
+    "contact": {
+      "title": "Contáctenos",
+      "phone": "(408) 449-2317",
+      "email": "eldulce270670@gmail.com",
+      "available": "Disponible 24/7"
+    },
+    "business": {
+      "name": "Mario's Hauling",
+      "area": "Toda el Área de la Bahía"
+    },
     "nav": {
       "company": {
         "title": "Empresa",

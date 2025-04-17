@@ -5,20 +5,10 @@ import { Link } from "@/i18n/navigation";
 import GradientText from "./GradientText";
 import { Check, Clock, MapPin, Phone, Recycle } from "lucide-react";
 
-interface FooterLink {
-  name: string;
-  href: string;
-}
-
-interface FooterGroup {
-  title: string;
-  links: FooterLink[];
-}
-
 export function Footer(): React.ReactElement {
   const t = useTranslations('Footer')
 
-  const footerLinks: FooterGroup[] = [
+  const footerLinks = [
     {
       title: t('nav.company.title'),
       links: [
@@ -48,47 +38,48 @@ export function Footer(): React.ReactElement {
   return (
     <footer className="border-t border-gray-200 dark:border-gray-800 bg-white text-green-600 dark:bg-[#000] dark:text-white mt-auto">
       <div className="container mx-auto py-10 text-center px-4">
-     
-        
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <section className="flex flex-col items-start text-center">
               <div className="flex items-center mb-4">
                 <Recycle className="h-6 w-6 text-green-400 mr-2" />
-                <h3 className="text-xl font-bold">Mario's Hauling</h3>
+                <h3 className="text-xl font-bold">{t('business.name')}</h3>
               </div>
               <p className="text-black dark:text-white mb-4">
                 <Check className="inline-flex text-green-400 mr-2" />
-                Professional hauling services available 24/7. No job too big or small.
+                {t('compDesc')}
               </p>
               <div className="flex items-center space-x-2 text-black dark:text-white">
                 <MapPin className="h-5 w-5 text-green-400" />
-                <span>All the Bay Area</span>
+                <span>{t('business.area')}</span>
               </div>
             </section>
             
             <section className="flex flex-col items-center text-center">
-              <h3 className="text-lg font-bold mb-4">Contact Us</h3>
+              <h3 className="text-lg font-bold mb-4">{t('contact.title')}</h3>
               <div className="space-y-2">
                 <p className="flex items-center">
                   <Phone className="h-5 w-5 text-green-400 mr-2" />
                   <a href="tel:4084492317" className="hover:text-green-400 text-black dark:text-white transition-colors">
-                    (408) 449-2317
+                    {t('contact.phone')}
                   </a>
                 </p>
                 <p className="flex items-center">
                   <Clock className="h-5 w-5 text-green-400 mr-2" />
-                  <span className="text-black dark:text-white">Available 24/7</span>
+                  <span className="text-black dark:text-white">{t('contact.available')}</span>
+                </p>
+                <p className="flex items-center">
+                  <a href="mailto:eldulce270670@gmail.com" className="hover:text-green-400 text-black dark:text-white transition-colors">
+                    {t('contact.email')}
+                  </a>
                 </p>
               </div>
             </section>
           </div>
           <div className="border-t border-green-600 mt-6 pt-6 text-center text-green-600 text-sm">
-            <p>&copy; {new Date().getFullYear()} Mario's Hauling. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} {t('rights')}</p>
           </div>
        
         <div className="mt-10">
-          {/* Original commented out code remains unchanged */}
-          
           <div className="mt-4 flex flex-row items-center justify-center gap-2">
             <Link href="https://codewithali.com/" draggable={false} target="_blank">
               <Image

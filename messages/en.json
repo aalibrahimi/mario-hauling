@@ -92,6 +92,53 @@
         }
       }
     },
+
+    "allServices": {
+  "applianceRemoval": {
+    "name": "Appliance Removal",
+    "description": "Professional removal of refrigerators, washers, dryers, and other household appliances"
+  },
+  "furnitureHauling": {
+    "name": "Furniture Hauling",
+    "description": "Fast and careful removal of sofas, tables, and all types of furniture"
+  },
+  "greenWaste": {
+    "name": "Green Waste",
+    "description": "Environmentally friendly disposal of yard waste, branches, leaves, and plant material"
+  },
+  "constructionDebris": {
+    "name": "Construction Debris",
+    "description": "Efficient cleanup and removal of construction and renovation debris"
+  },
+  "householdJunk": {
+    "name": "Household Junk",
+    "description": "Complete removal of household clutter, junk, and unwanted items"
+  },
+  "kitchenBathDemo": {
+    "name": "Kitchen & Bath Demo",
+    "description": "Demolition and removal services for kitchen and bathroom renovation projects"
+  },
+  "junkRemoval": {
+    "name": "Junk Removal",
+    "description": "Comprehensive junk removal services for homes and businesses"
+  },
+  "dirtRemoval": {
+    "name": "Dirt Removal",
+    "description": "Removal and disposal of dirt, soil, and earth from landscaping or construction projects"
+  },
+  "concreteRemoval": {
+    "name": "Concrete Removal",
+    "description": "Breaking and hauling away concrete from driveways, patios, and other areas"
+  },
+  "roofRemoval": {
+    "name": "Roof Removal",
+    "description": "Safe and efficient removal of old roofing materials during replacement projects"
+  },
+  "yardCleanup": {
+    "name": "Yard Clean Up",
+    "description": "Complete yard cleanup including debris removal and hauling"
+  }
+},
     "testimonials": {
       "title": "What Our Customers Say",
       "description": "Don't just take our word for it. Here's what our satisfied customers have to say.",
@@ -266,10 +313,20 @@
     }
   },
   "Footer": {
-    "compDesc": "Your company description goes here. A brief overview of what your organization does and its mission.",
-    "rights": "Your Company. All rights reserved.",
+    "compDesc": "Professional hauling services available 24/7. No job too big or small.",
+    "rights": "Mario's Hauling. All rights reserved.",
     "customLink": "Github",
     "cwaMark": "Designed By",
+    "contact": {
+      "title": "Contact Us",
+      "phone": "(408) 449-2317",
+      "email": "eldulce270670@gmail.com",
+      "available": "Available 24/7"
+    },
+    "business": {
+      "name": "Mario's Hauling",
+      "area": "All the Bay Area"
+    },
     "nav": {
       "company": {
         "title": "Company",
