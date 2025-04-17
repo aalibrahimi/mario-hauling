@@ -70,7 +70,7 @@ const ServicesSection = () => {
   };
 
   return (
-    <section className="py-20 bg-white dark:bg-black">
+    <section className="py-20 bg-white dark:bg-black bg-[url('/trees.png')] bg-no-repeat bg-cover md:bg-[url('/trees.png')] md:bg-no-repeat md:bg-contain md:bg-right">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           {/* Simple Header */}

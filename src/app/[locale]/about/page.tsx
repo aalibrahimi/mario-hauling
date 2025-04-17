@@ -150,26 +150,26 @@ export default function About() {
             </p>
           </div>
 
-          <div className="max-w-4xl mx-auto bg-green-50 dark:bg-green-900/20 rounded-xl p-8 shadow-lg">
+          <div className="max-w-4xl mx-auto bg-green-50 dark:bg-green-950 rounded-xl p-8 shadow-lg">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
                 <h3 className="text-xl font-bold text-green-800 dark:text-green-400 mb-4">How We Price</h3>
                 <ul className="space-y-4">
                   <li className="flex items-start">
                     <CheckCircle className="h-5 w-5 text-green-600 dark:text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                    <p className="dark:text-gray-300">We price based on volume (how much space your items take up in our truck)</p>
+                    <p className="dark:text-white">We price based on volume (how much space your items take up in our truck)</p>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="h-5 w-5 text-green-600 dark:text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                    <p className="dark:text-gray-300">Free, no-obligation estimates before we start</p>
+                    <p className="dark:text-white">Free, no-obligation estimates before we start</p>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="h-5 w-5 text-green-600 dark:text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                    <p className="dark:text-gray-300">Special rates for seniors, veterans, and repeat customers</p>
+                    <p className="dark:text-white">Special rates for seniors, veterans, and repeat customers</p>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="h-5 w-5 text-green-600 dark:text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                    <p className="dark:text-gray-300">Minimum charge of $75 for very small jobs</p>
+                    <p className="dark:text-white">Minimum charge of $75 for very small jobs</p>
                   </li>
                 </ul>
               </div>
@@ -213,8 +213,8 @@ export default function About() {
             </div>
             
             <div className="mt-8 text-center">
-              <p className="text-gray-500 dark:text-gray-400 italic mb-4">Prices may vary based on items, location, and accessibility. Call for an exact quote.</p>
-              <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white">
+              <p className="text-gray-500 dark:text-gray-400 italic mb-4">*Prices may vary based on items, location, and accessibility. Call for an exact quote.</p>
+              <Button size="lg" className="bg-green-700 hover:bg-green-600 text-white">
                 <Phone className="mr-2 h-4 w-4" /> Get a Free Quote
               </Button>
             </div>
@@ -228,7 +228,7 @@ export default function About() {
         whileInView="visible"
         viewport={{ once: true }}
         variants={staggerContainer}
-        className="py-20 bg-white dark:bg-black"
+        className="py-20 bg-white dark:bg-black bg-[url('/barrow_600.png')] bg-no-repeat bg-bottom-right"
       >
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
@@ -242,32 +242,32 @@ export default function About() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <motion.div variants={fadeInUp} className="bg-green-50 dark:bg-green-900/20 p-8 rounded-xl">
+            <motion.div variants={fadeInUp} className="bg-green-50 dark:bg-green-950 p-8 rounded-xl">
               <div className="bg-green-200 dark:bg-green-800 w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
-                <Truck className="h-8 w-8 dark:text-black" />
+                <Truck className="h-8 w-8 dark:text-white" />
               </div>
               <h3 className="text-xl font-bold mb-4 text-center text-green-800 dark:text-green-400">{t('whyChooseUs.features.fast.title')}</h3>
-              <p className="text-gray-600 dark:text-gray-300 text-center">
+              <p className="text-gray-600 dark:text-white text-center">
                 {t('whyChooseUs.features.fast.description')}
               </p>
             </motion.div>
 
-            <motion.div variants={fadeInUp} className="bg-green-50 dark:bg-green-900/20 p-8 rounded-xl">
+            <motion.div variants={fadeInUp} className="bg-green-50 dark:bg-green-950 p-8 rounded-xl">
               <div className="bg-green-200 dark:bg-green-800 w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
-                <Recycle className="h-8 w-8 dark:text-black" />
+                <Recycle className="h-8 w-8 dark:text-white" />
               </div>
               <h3 className="text-xl font-bold mb-4 text-center text-green-800 dark:text-green-400">{t('whyChooseUs.features.eco.title')}</h3>
-              <p className="text-gray-600 dark:text-gray-300 text-center">
+              <p className="text-gray-600 dark:text-white text-center">
                 {t('whyChooseUs.features.eco.description')}
               </p>
             </motion.div>
 
-            <motion.div variants={fadeInUp} className="bg-green-50 dark:bg-green-900/20 p-8 rounded-xl">
+            <motion.div variants={fadeInUp} className="bg-green-50 dark:bg-green-950 p-8 rounded-xl">
               <div className="bg-green-200 dark:bg-green-800 w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
-                <ShieldCheck className="h-8 w-8  dark:text-black" />
+                <ShieldCheck className="h-8 w-8  dark:text-white" />
               </div>
               <h3 className="text-xl font-bold mb-4 text-center text-green-800 dark:text-green-400">{t('whyChooseUs.features.professional.title')}</h3>
-              <p className="text-gray-600 dark:text-gray-300 text-center">
+              <p className="text-gray-600 dark:text-white text-center">
                 {t('whyChooseUs.features.professional.description')}
               </p>
             </motion.div>
@@ -330,17 +330,17 @@ export default function About() {
         whileInView="visible"
         viewport={{ once: true }}
         variants={fadeInRight}
-        className="py-20 bg-white dark:bg-black"
+        className="py-20 bg-white dark:bg-black md:bg-[url('/single_tree.png')] bg-no-repeat bg-contain"
       >
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="flex flex-col md:flex-row items-center gap-10">
               <div className="w-full md:w-1/2 order-2 md:order-1">
                 <h2 className="text-3xl font-bold mb-6 text-green-800 dark:text-green-400">{t('serviceAreas.title')}</h2>
-                <p className="text-lg mb-6 dark:text-gray-300 text-black">
+                <p className="text-lg mb-6 dark:text-white text-black dark:bg-green-950/80 2xl:dark:bg-transparent p-2 rounded-sm">
                   {t('serviceAreas.description')}
                 </p>
-                <div className="space-y-4">
+                <div className="space-y-4 dark:bg-green-950/80 2xl:dark:bg-transparent p-2 rounded-sm">
                   {[
                     t('serviceAreas.areas.sanFrancisco'),
                     t('serviceAreas.areas.oakland'),
@@ -351,7 +351,7 @@ export default function About() {
                   ].map((area, index) => (
                     <div key={index} className="flex items-center">
                       <MapPin className="h-5 w-5 text-green-600 dark:text-green-500 mr-3 flex-shrink-0" />
-                      <p className="dark:text-gray-300">{area}</p>
+                      <p className="dark:white">{area}</p>
                     </div>
                   ))}
                 </div>

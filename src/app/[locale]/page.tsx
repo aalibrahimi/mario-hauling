@@ -339,7 +339,7 @@ export default function Home() {
 </section>
        
       {/* Call to Action */}
-      <section className="py-12 bg-green-600 text-white flex text-center justify-center">
+      <section className="py-12 bg-green-700 dark:bg-green-800 text-white flex text-center justify-center">
         <div className="container px-4 md:px-6">
           <motion.div
             initial="hidden"
