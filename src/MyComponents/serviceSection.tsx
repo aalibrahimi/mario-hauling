@@ -129,7 +129,7 @@ const ServicesSection = () => {
                       <p className="text-gray-600 dark:text-gray-300">{service.description}</p>
                     </div>
                     
-                    <div className="hidden md:block">
+                    {/* <div className="hidden md:block">
                       <Button 
                         size="sm" 
                         className="bg-white dark:bg-gray-800 text-green-600 dark:text-green-400 border border-green-200 dark:border-green-700 hover:bg-green-500 dark:hover:bg-green-700 hover:text-white dark:hover:text-white group-hover:bg-green-600 dark:group-hover:bg-green-700 group-hover:text-white dark:group-hover:text-white transition-colors"
@@ -137,7 +137,7 @@ const ServicesSection = () => {
                         Get Quote
                         <ChevronRight className="h-4 w-4 ml-1 transform group-hover:translate-x-1 transition-transform" />
                       </Button>
-                    </div>
+                    </div> */}
                   </div>
                 </motion.div>
               ))}
@@ -145,7 +145,7 @@ const ServicesSection = () => {
           </AnimatePresence>
 
           {/* View All Services Link */}
-          <div className="mt-12 text-center">
+          {/* <div className="mt-12 text-center">
             <a 
               href="/services" 
               className="inline-flex items-center text-green-600 dark:text-green-400 font-medium hover:text-green-700 dark:hover:text-green-300 transition-colors"
@@ -153,7 +153,7 @@ const ServicesSection = () => {
               {t('viewAllButton')}
               <ArrowRight className="h-4 w-4 ml-1 animate-pulse" />
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
