@@ -108,6 +108,29 @@ export default function Home() {
                  >
                    Request Service
                  </Button>
+
+                {/* yelpy */}
+                <Link 
+                  href="https://www.yelp.com/biz/marios-hauling-santa-clara" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  <Button 
+                    size="lg" 
+                    variant="outline" 
+                    className="flex items-center justify-center  border-red-400 hover:bg-red-500 dark:border-red-600 dark:hover:bg-red-500"
+                  >
+                    <Image 
+                      src="/yelp-logo.png" 
+                      alt="Yelp" 
+                      width={24} 
+                      height={24} 
+                      className="mr-2" 
+                    />
+                    <span className="text-black dark:text-white">Yelp</span>
+                  </Button>
+                </Link>
+
                </motion.div>
 
                <motion.div
