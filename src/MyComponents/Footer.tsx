@@ -3,7 +3,7 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import GradientText from "./GradientText";
-import { Check, Clock, MapPin, Phone, Recycle } from "lucide-react";
+import { Check, Clock, Mail, MapPin, Phone, Recycle } from "lucide-react";
 
 export function Footer(): React.ReactElement {
   const t = useTranslations('Footer')
@@ -39,35 +39,42 @@ export function Footer(): React.ReactElement {
     <footer className="border-t border-gray-200 dark:border-gray-800 bg-white text-green-600 dark:bg-[#000] dark:text-white mt-auto">
       <div className="container mx-auto py-10 text-center px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <section className="flex flex-col items-start text-center">
+          {/*  left column */}
+            <section className="flex flex-col items-start ">
               <div className="flex items-center mb-4">
                 <Recycle className="h-6 w-6 text-green-400 mr-2" />
                 <h3 className="text-xl font-bold">{t('business.name')}</h3>
               </div>
-              <p className="text-black dark:text-white mb-4">
-                <Check className="inline-flex text-green-400 mr-2" />
-                {t('compDesc')}
-              </p>
-              <div className="flex items-center space-x-2 text-black dark:text-white">
-                <MapPin className="h-5 w-5 text-green-400" />
+              {/* description */}
+              <div className="flex items-center text-white mb-4 text-left">
+                <Check className="inline-flex text-green-400 mr-2 flex-shrink-0" />
+                <p className="text-black dark:text-white "> {t('compDesc')}</p>
+              </div>
+              {/* locaation */}
+              <div className="flex items-center text-black dark:text-white">
+                <MapPin className="h-5 w-5 text-green-400 mr-3 flex-shrink-0" />
                 <span>{t('business.area')}</span>
               </div>
             </section>
-            
+            {/* right column */}
             <section className="flex flex-col items-center text-center">
-              <h3 className="text-lg font-bold mb-4">{t('contact.title')}</h3>
+              <h3 className="text-lg font-bold mb-4 pr-28  ">{t('contact.title')}</h3>
               <div className="space-y-2">
+                {/* contact phone */}
                 <p className="flex items-center">
                   <Phone className="h-5 w-5 text-green-400 mr-2" />
                   <a href="tel:4084492317" className="hover:text-green-400 text-black dark:text-white transition-colors">
                     {t('contact.phone')}
                   </a>
                 </p>
+                {/* avaialabe contact */}
                 <p className="flex items-center">
-                  <Clock className="h-5 w-5 text-green-400 mr-2" />
+                  <Clock className="h-7 w-5 text-green-400 mr-2 py-1" />
                   <span className="text-black dark:text-white">{t('contact.available')}</span>
                 </p>
+                {/* email */}
                 <p className="flex items-center">
+                  <Mail className="h-7 w-5 text-green-400 mr-2 pt-1" />
                   <a href="mailto:eldulce270670@gmail.com" className="hover:text-green-400 text-black dark:text-white transition-colors">
                     {t('contact.email')}
                   </a>
