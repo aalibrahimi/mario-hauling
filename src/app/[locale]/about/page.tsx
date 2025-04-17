@@ -310,7 +310,7 @@ export default function About() {
               The Man Behind Mario's Hauling
             </h2>
             <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-              Meet our dedicated team of professionals committed to providing exceptional hauling services.
+              Meet the most dedicated man from the team of professionals committed to providing you with exceptional hauling services.
             </p>
           </div>
 
