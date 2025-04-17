@@ -2,12 +2,15 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Phone, ChevronRight, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useTranslations } from "next-intl";
 
 const ServicesSection = () => {
+  const t = useTranslations('HomePage.services');
+  
   const categories = [
-    { id: "household", label: "Household" },
-    { id: "construction", label: "Construction" },
-    { id: "other", label: "Other Services" }
+    { id: "household", label: t('categories.household') },
+    { id: "construction", label: t('categories.construction') },
+    { id: "other", label: t('categories.other') }
   ];
 
   const [activeCategory, setActiveCategory] = useState("household");
@@ -16,52 +19,52 @@ const ServicesSection = () => {
     household: [
       { 
         icon: "🧺", 
-        name: "Appliance Removal", 
-        description: "Refrigerators, washers, dryers, stoves" 
+        name: t('items.applianceRemoval.name'), 
+        description: t('items.applianceRemoval.description')
       },
       { 
         icon: "🛋️", 
-        name: "Furniture Hauling", 
-        description: "Sofas, tables, mattresses, cabinets" 
+        name: t('items.furnitureHauling.name'), 
+        description: t('items.furnitureHauling.description')
       },
       { 
         icon: "🗑️", 
-        name: "Household Junk", 
-        description: "Clutter, unwanted items, garage cleanouts" 
+        name: t('items.householdJunk.name'), 
+        description: t('items.householdJunk.description')
       }
     ],
     construction: [
       { 
         icon: "🏗️", 
-        name: "Construction Debris", 
-        description: "Wood, drywall, concrete, metals" 
+        name: t('items.constructionDebris.name'), 
+        description: t('items.constructionDebris.description')
       },
       { 
         icon: "🧱", 
-        name: "Concrete Removal", 
-        description: "Broken concrete, foundation materials" 
+        name: t('items.concreteRemoval.name'), 
+        description: t('items.concreteRemoval.description')
       },
       { 
         icon: "🏠", 
-        name: "Roof Removal", 
-        description: "Shingles, tiles, old roofing materials" 
+        name: t('items.roofRemoval.name'), 
+        description: t('items.roofRemoval.description')
       }
     ],
     other: [
       { 
         icon: "🌿", 
-        name: "Green Waste", 
-        description: "Yard waste, branches, leaves, plants" 
+        name: t('items.greenWaste.name'), 
+        description: t('items.greenWaste.description')
       },
       { 
         icon: "🌱", 
-        name: "Dirt Removal", 
-        description: "Soil, gravel, landscaping debris" 
+        name: t('items.dirtRemoval.name'), 
+        description: t('items.dirtRemoval.description')
       },
       { 
         icon: "🌳", 
-        name: "Yard Cleanup", 
-        description: "Complete yard debris removal" 
+        name: t('items.yardCleanup.name'), 
+        description: t('items.yardCleanup.description')
       }
     ]
   };
@@ -72,8 +75,8 @@ const ServicesSection = () => {
         <div className="max-w-4xl mx-auto">
           {/* Simple Header */}
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-green-800 dark:text-green-400 mb-3">Our Services</h2>
-            <p className="text-gray-600 dark:text-gray-300">Whatever you need hauled away, we've got you covered.</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-green-800 dark:text-green-400 mb-3">{t('title')}</h2>
+            <p className="text-gray-600 dark:text-gray-300">{t('description')}</p>
           </div>
 
           {/* Category Selection */}
@@ -105,7 +108,7 @@ const ServicesSection = () => {
               transition={{ duration: 0.3 }}
               className="space-y-6"
             >
-              {services[activeCategory].map((service : any, index : any) => (
+              {services[activeCategory].map((service, index) => (
                 <motion.div
                   key={service.name}
                   initial={{ opacity: 0, y: 20 }}
@@ -147,7 +150,7 @@ const ServicesSection = () => {
               href="/services" 
               className="inline-flex items-center text-green-600 dark:text-green-400 font-medium hover:text-green-700 dark:hover:text-green-300 transition-colors"
             >
-              View all our services
+              {t('viewAllButton')}
               <ArrowRight className="h-4 w-4 ml-1 animate-pulse" />
             </a>
           </div>
