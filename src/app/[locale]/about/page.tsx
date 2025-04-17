@@ -37,22 +37,22 @@ export default function About() {
   // Company history timeline data
   const timelineEvents = [
     {
-      year: "2015",
+      year: "2022",
       title: "Company Founded",
       description: "Mario's Hauling was established to provide reliable junk removal services to the Bay Area."
     },
     {
-      year: "2017",
+      year: "2023",
       title: "Expanded Services",
       description: "Added construction debris removal and green waste disposal to our service offerings."
     },
     {
-      year: "2019",
+      year: "2014",
       title: "Eco-Friendly Focus",
       description: "Implemented sustainable disposal practices, recycling over 60% of collected materials."
     },
     {
-      year: "2022",
+      year: "2025",
       title: "Bay Area Expansion",
       description: "Expanded operations to serve the entire Bay Area with 24/7 availability."
     }
@@ -145,7 +145,7 @@ export default function About() {
       >
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <Badge className="bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-400 mb-4">Why Choose Us</Badge>
+            <Badge className="bg-green-100 dark:bg-green-900 text-green-800 dark:text-white mb-4">Why Choose Us</Badge>
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-green-800 dark:text-green-400">
               What Sets Us Apart
             </h2>
@@ -198,7 +198,7 @@ export default function About() {
       >
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <Badge className="bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-400 mb-4">Our Journey</Badge>
+            <Badge className="bg-green-100 dark:bg-green-900 text-green-800 dark:text-white mb-4">Our Journey</Badge>
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-green-800 dark:text-green-400">
               Company History
             </h2>
@@ -220,7 +220,7 @@ export default function About() {
                   className={`relative mb-12 md:mb-24 flex ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}
                 >
                   {/* Timeline dot */}
-                  <div className="absolute left-0 md:left-1/2 transform -translate-x-1/2 w-6 h-6 rounded-full bg-green-500 border-4 border-white dark:border-black z-10"></div>
+                  <div className="absolute left-0 md:left-1/2 transform -translate-x-1/2 w-6 h-6 rounded-full bg-black dark:bg-white border-3 border-white dark:border-black z-10"></div>
                   
                   {/* Content */}
                   <div className={`ml-8 md:ml-0 md:w-1/2 ${index % 2 === 0 ? 'md:pr-12' : 'md:pl-12'}`}>
@@ -250,7 +250,7 @@ export default function About() {
             <div className="flex flex-col md:flex-row items-center gap-10">
               <div className="w-full md:w-1/2 order-2 md:order-1">
                 <h2 className="text-3xl font-bold mb-6 text-green-800 dark:text-green-400">Service Areas</h2>
-                <p className="text-lg mb-6 dark:text-gray-300">
+                <p className="text-lg mb-6 dark:text-gray-300 text-black">
                   We proudly serve the entire San Francisco Bay Area, providing prompt and reliable hauling services to both residential and commercial customers.
                 </p>
                 <div className="space-y-4">
@@ -302,41 +302,33 @@ export default function About() {
         variants={fadeInUp}
         className="py-20 bg-green-50 dark:bg-green-900/20"
       >
-        <div className="container mx-auto px-4">
+        {/* used to have container and px-auto here for the spacing between 3 cards */}
+        <div className="">
           <div className="text-center mb-16">
             <Badge className="bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-400 mb-4">Our Team</Badge>
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-green-800 dark:text-green-400">
-              The People Behind Mario's Hauling
+              The Man Behind Mario's Hauling
             </h2>
             <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
               Meet our dedicated team of professionals committed to providing exceptional hauling services.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <div className="flex flex-col justify-center items-center max-w-md mx-auto ">
             {[
               {
                 name: "Mario Rodriguez",
                 position: "Founder & Owner",
-                image: "/placeholder.svg?height=400&width=400"
+                image: "/tio.jpg"
               },
-              {
-                name: "Elena Martinez",
-                position: "Operations Manager",
-                image: "/placeholder.svg?height=400&width=400"
-              },
-              {
-                name: "David Garcia",
-                position: "Lead Hauling Specialist",
-                image: "/placeholder.svg?height=400&width=400"
-              }
+             
             ].map((member, index) => (
               <motion.div
                 key={index}
                 variants={fadeInUp}
-                className="bg-white dark:bg-green-900/40 rounded-xl overflow-hidden shadow-lg"
+                className="bg-white dark:bg-green-900/40 rounded-xl  overflow-hidden shadow-lg w-full"
               >
-                <div className="h-64 relative">
+                <div className="h-100 md:h-[500px] relative">
                   <Image 
                     src={member.image}
                     alt={member.name}
@@ -344,7 +336,7 @@ export default function About() {
                     className="object-cover"
                   />
                 </div>
-                <div className="p-6">
+                <div className="p-6 text-center ">
                   <h3 className="text-xl font-bold text-green-800 dark:text-green-400">{member.name}</h3>
                   <p className="text-gray-600 dark:text-gray-300">{member.position}</p>
                 </div>
@@ -373,7 +365,7 @@ export default function About() {
                 <Phone className="mr-2 h-5 w-5" /> Call (408) 449-2317
               </Button>
               <Link href="/contact">
-                <Button size="lg" variant="outline" className="border-green-200 text-white hover:bg-green-600">
+                <Button size="lg" variant="outline" className="border-green-200 text-black dark:text-white hover:bg-green-600">
                   Request a Quote <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </Link>
