@@ -70,7 +70,7 @@ export default function Home() {
                  transition={{ duration: 0.5 }}
                  className="inline-block bg-white dark:bg-green-800 text-green-800 dark:text-white font-bold px-3 py-1 rounded-full text-sm w-fit"
                >
-                 Available 24/7
+                 {t('hero.badge')}
                </motion.div>
  
                <motion.h1
@@ -79,7 +79,7 @@ export default function Home() {
                  transition={{ duration: 0.8, delay: 0.2 }}
                  className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight"
                >
-                 Professional Hauling & Junk Removal Services
+                 {t('hero.headline')}
                </motion.h1>
  
                <motion.p
@@ -88,7 +88,7 @@ export default function Home() {
                  transition={{ duration: 0.8, delay: 0.4 }}
                  className="text-green-100"
                >
-                 Appliances, furniture, construction debris, and more. Fast, reliable, and affordable.
+                 {t('hero.description')}
                </motion.p>
  
                <motion.div
@@ -99,14 +99,14 @@ export default function Home() {
                >
                  <Button size="lg" className="bg-white hover:bg-green-100 text-green-800 dark:bg-green-700 dark:hover:bg-green-800 dark:text-white">
                    <Phone className="mr-2 h-4 w-4" /> 
-                   <span className="text-black">Call Now: (408) 449-2317</span>
+                   <span className="text-black">{t('hero.callButton')}</span>
                  </Button>
                  <Button
                    size="lg"
                    variant="outline"
                    className="border-green-400 text-black hover:bg-white hover:text-green-500 dark:border-green-600 dark:text-white dark:hover:bg-green-800"
                  >
-                   Request Service
+                   {t('hero.requestButton')}
                  </Button>
 
                 {/* yelpy */}
@@ -127,7 +127,7 @@ export default function Home() {
                       height={24} 
                       className="mr-2" 
                     />
-                    <span className="text-black dark:text-white">Yelp</span>
+                    <span className="text-black dark:text-white">{t('hero.yelpButton')}</span>
                   </Button>
                 </Link>
 
@@ -138,7 +138,7 @@ export default function Home() {
                 animate= {{ opacity : 1, y: 0}}
                 transition = {{ duration : 0.8, delay: 0.7 }}
                >
-                <Badge className="bg-green-600 dark:bg-green-700 text-white"> Free Estimates</Badge>
+                <Badge className="bg-green-600 dark:bg-green-700 text-white">{t('hero.freeEstimates')}</Badge>
                </motion.div>
              </div>
  
@@ -151,16 +151,16 @@ export default function Home() {
                {/* hehe looks like a glass card, but really its just very light shade of green (little fun trick for ya blazey) */}
                <h3 className="font-bold text-xl mb-3 flex items-center">
                  <CheckCircle className="h-5 w-5 mr-2 text-green-300" />
-                 Why Choose Mario's Hauling
+                 {t('features.title')}
                </h3>
                {/* now to make a ul list within this "glass-card" 😉*/} 
                <ul className="spacey-y-2">
                  {[
-                   "available 24.7 for emergency service",
-                   "Fast response and same day service",
-                   "Affordable rates with no hidden fees",
-                   "Eco-friendly disposal practices",
-                   "Fully licensed and insured",
+                   t('features.items.available'),
+                   t('features.items.fastResponse'),
+                   t('features.items.affordable'),
+                   t('features.items.ecoFriendly'),
+                   t('features.items.licensed'),
                  ].map((item, i) => (
                    <li key={i} className="flex items-start">
                      <CheckCircle className='h-4 w-4 mr-2 text-green mt-1 flex-shrink-0' />
@@ -205,12 +205,12 @@ export default function Home() {
         <div className="container px-4 md:px-6 max-w-6xl ">
           <div className="flex flex-col md:flex-row items-center justify-between ">
             <div className="mb-4 md:mb-0">
-              <h3 className="text-xl font-bold">Need junk removed today?</h3>
-              <p className="text-green-100">Mario is ready to help 24/7!</p>
+              <h3 className="text-xl font-bold">{t('junkBanner.title')}</h3>
+              <p className="text-green-100">{t('junkBanner.description')}</p>
             </div>
             <Button size="lg" className="bg-white hover:bg-green-100 text-green-800 ">
               <Phone className="mr-2 h-4 w-4 dark:text-black" /> 
-                 <span className="dark:text-black">Call (408) 449-2317
+                 <span className="dark:text-black">{t('junkBanner.callButton')}
                  </span>
             </Button>
           </div>
@@ -227,9 +227,9 @@ export default function Home() {
                   variants={{fadeInUp}}
                   className="text-center mb-10"
                 >
-                  <h2 className="text-3xl font-bold mb-3 text-green-800 dark:text-black">How it works</h2>
+                  <h2 className="text-3xl font-bold mb-3 text-green-800 dark:text-black">{t('howItWorks.title')}</h2>
                   <p className="text-slate-600 max-w-2xl mx-auto dark:text-gray-100">
-                    Simple, fast, and hassle-free hauling in just three easy steps. 
+                    {t('howItWorks.description')}
                   </p>
                 </motion.div>
 
@@ -245,8 +245,8 @@ export default function Home() {
                     <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                       <Phone className="h-8 w-8 text-green-600  "/>
                     </div>
-                    <h3 className="text-xl font-bold mb-2 text-green-800 dark:text-white ">1. Call Us</h3>
-                    <p className="text-slate-600 dark:text-gray-100">Call (408) 449-2317 anytime, day or night. </p>
+                    <h3 className="text-xl font-bold mb-2 text-green-800 dark:text-white ">{t('howItWorks.steps.call.title')}</h3>
+                    <p className="text-slate-600 dark:text-gray-100">{t('howItWorks.steps.call.description')}</p>
                   </motion.div>
 
                   {/* second number */}
@@ -257,8 +257,8 @@ export default function Home() {
                     <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                       <Truck className="h-8 w-8 text-green-600"/>
                     </div>
-                    <h3 className="text-xl font-bold mb-2 text-green-800 dark:text-white ">2. We Arrive</h3>
-                    <p className="text-slate-600  dark:text-gray-100">Mario arrives promptly at the scheduledd time ready to haul</p>
+                    <h3 className="text-xl font-bold mb-2 text-green-800 dark:text-white ">{t('howItWorks.steps.arrive.title')}</h3>
+                    <p className="text-slate-600  dark:text-gray-100">{t('howItWorks.steps.arrive.description')}</p>
                   </motion.div>
 
                   {/* thirdd number */}
@@ -269,8 +269,8 @@ export default function Home() {
                     <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                       <ArrowRight className="h-8 w-8 text-green-600"/>
                     </div>
-                    <h3 className="text-xl font-bold mb-2 text-green-800 dark:text-white">3. We Haul</h3>
-                    <p className="text-slate-600 dark:text-gray-100">We Quickly load and haul away your items, leaving your space clean</p>
+                    <h3 className="text-xl font-bold mb-2 text-green-800 dark:text-white">{t('howItWorks.steps.haul.title')}</h3>
+                    <p className="text-slate-600 dark:text-gray-100">{t('howItWorks.steps.haul.description')}</p>
 
                   </motion.div>
                 </motion.div>
@@ -289,9 +289,9 @@ export default function Home() {
       variants={fadeInUp}
       className="text-center mb-10"
     >
-      <h2 className="text-3xl font-bold mb-3 text-green-800 dark:text-green-400">What Our Customers Say</h2>
+      <h2 className="text-3xl font-bold mb-3 text-green-800 dark:text-green-400">{t('testimonials.title')}</h2>
       <p className="text-slate-600 dark:text-gray-300 max-w-2xl mx-auto">
-        Don't just take our word for it. Here's what our satisfied customers have to say.
+        {t('testimonials.description')}
       </p>
     </motion.div>
 
@@ -304,19 +304,19 @@ export default function Home() {
     >
       {[
         {
-          quote: "Mario did a fast and efficient job at a very reasonable cost. I had a full load of all types of construction debris. I highly recommend his services!",
-          name: "Jeffrey B.",
-          location: "San Jose, CA"
+          quote: t('testimonials.items.jeffrey.quote'),
+          name: t('testimonials.items.jeffrey.name'),
+          location: t('testimonials.items.jeffrey.location')
         },
         {
-          quote: "Communicative, fair pricing, efficient. We filled his truck with junk from our storage section of our shop, same day after seeing his truck in the Home Depot parking lot. Very professional.",
-          name: "Arun C.",
-          location: "Seattle, WA"
+          quote: t('testimonials.items.arun.quote'),
+          name: t('testimonials.items.arun.name'),
+          location: t('testimonials.items.arun.location')
         },
         {
-          quote: "Quick response on the phone within minutes. Nice tracking system to keep customers updated live time where the crew is. Prompt phone call. Punctuate and efficient service. Great price!! Highly recommended.",
-          name: "Mai T..",
-          location: "San Francisco, CA"
+          quote: t('testimonials.items.mai.quote'),
+          name: t('testimonials.items.mai.name'),
+          location: t('testimonials.items.mai.location')
         }
       ].map((testimonial, index) => (
         <motion.div key={index} variants={fadeInUp}>
@@ -355,12 +355,12 @@ export default function Home() {
             variants={fadeInUp}
             className="text-center"
           >
-            <h2 className="text-3xl font-bold mb-3">Ready to Clear the Clutter?</h2>
+            <h2 className="text-3xl font-bold mb-3">{t('cta.title')}</h2>
             <p className="text-green-100 max-w-2xl mx-auto mb-6">
-              Mario is ready to help with all your hauling needs 24/7. One call does it all!
+              {t('cta.description')}
             </p>
             <Button size="lg" className="bg-white hover:bg-green-50 text-green-800">
-              <Phone className="mr-2 h-5 w-5" /> Call Now: (408) 449-2317
+              <Phone className="mr-2 h-5 w-5" /> {t('cta.callButton')}
             </Button>
           </motion.div>
         </div>

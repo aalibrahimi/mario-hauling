@@ -2,12 +2,15 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
+import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { CheckCircle, Truck, Recycle, Phone, MapPin, ArrowRight, CalendarClock, Users, ShieldCheck } from "lucide-react";
 import Link from "next/link";
 
 export default function About() {
+  const t = useTranslations('AboutPage');
+  
   // Animation variants
   const fadeInUp = {
     hidden: { opacity: 0, y: 30 },
@@ -37,24 +40,24 @@ export default function About() {
   // Company history timeline data
   const timelineEvents = [
     {
-      year: "2022",
-      title: "Company Founded",
-      description: "Mario's Hauling was established to provide reliable junk removal services to the Bay Area."
+      year: t('history.timeline.founded.year'),
+      title: t('history.timeline.founded.title'),
+      description: t('history.timeline.founded.description')
     },
     {
-      year: "2023",
-      title: "Expanded Services",
-      description: "Added construction debris removal and green waste disposal to our service offerings."
+      year: t('history.timeline.expanded.year'),
+      title: t('history.timeline.expanded.title'),
+      description: t('history.timeline.expanded.description')
     },
     {
-      year: "2014",
-      title: "Eco-Friendly Focus",
-      description: "Implemented sustainable disposal practices, recycling over 60% of collected materials."
+      year: t('history.timeline.ecoFriendly.year'),
+      title: t('history.timeline.ecoFriendly.title'),
+      description: t('history.timeline.ecoFriendly.description')
     },
     {
-      year: "2025",
-      title: "Bay Area Expansion",
-      description: "Expanded operations to serve the entire Bay Area with 24/7 availability."
+      year: t('history.timeline.bayArea.year'),
+      title: t('history.timeline.bayArea.title'),
+      description: t('history.timeline.bayArea.description')
     }
   ];
 
@@ -82,10 +85,10 @@ export default function About() {
         
         <div className="container relative z-10 mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center text-white">
-            <Badge className="bg-white dark:bg-green-700 text-green-800 dark:text-white mb-5 px-3 py-1 text-sm">Our Story</Badge>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">About Mario's Hauling</h1>
+            <Badge className="bg-white dark:bg-green-700 text-green-800 dark:text-white mb-5 px-3 py-1 text-sm">{t('hero.badge')}</Badge>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">{t('hero.title')}</h1>
             <p className="text-xl text-green-100">
-              San Francisco Bay Area's trusted hauling partner since 2015, providing professional, reliable, and eco-friendly hauling services.
+              {t('hero.description')}
             </p>
           </div>
         </div>
@@ -112,16 +115,16 @@ export default function About() {
                 />
               </div>
               <div className="w-full md:w-1/2">
-                <h2 className="text-3xl font-bold mb-6 text-green-800 dark:text-green-400">Our Mission</h2>
+                <h2 className="text-3xl font-bold mb-6 text-green-800 dark:text-green-400">{t('mission.title')}</h2>
                 <p className="text-lg mb-6 dark:text-gray-300">
-                  Our mission is to provide top-quality hauling and junk removal services while minimizing environmental impact through responsible disposal and recycling practices.
+                  {t('mission.description')}
                 </p>
                 <div className="space-y-4">
                   {[
-                    "Customer satisfaction guaranteed on every job",
-                    "Eco-friendly disposal and recycling practices",
-                    "Fast response and same-day service availability",
-                    "Fully licensed, insured, and professional team"
+                    t('mission.features.satisfaction'),
+                    t('mission.features.ecoFriendly'),
+                    t('mission.features.fastResponse'),
+                    t('mission.features.licensed')
                   ].map((item, index) => (
                     <div key={index} className="flex items-start">
                       <CheckCircle className="h-6 w-6 text-green-600 dark:text-green-500 mr-3 mt-0.5 flex-shrink-0" />
@@ -145,12 +148,12 @@ export default function About() {
       >
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <Badge className="bg-green-100 dark:bg-green-900 text-green-800 dark:text-white mb-4">Why Choose Us</Badge>
+            <Badge className="bg-green-100 dark:bg-green-900 text-green-800 dark:text-white mb-4">{t('whyChooseUs.badge')}</Badge>
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-green-800 dark:text-green-400">
-              What Sets Us Apart
+              {t('whyChooseUs.title')}
             </h2>
             <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-              With years of experience and a dedication to excellence, we've built our reputation on reliability, quality service, and customer satisfaction.
+              {t('whyChooseUs.description')}
             </p>
           </div>
 
@@ -159,9 +162,9 @@ export default function About() {
               <div className="bg-green-200 dark:bg-green-800 w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
                 <Truck className="h-8 w-8 text-green-700 dark:text-green-300" />
               </div>
-              <h3 className="text-xl font-bold mb-4 text-center text-green-800 dark:text-green-400">Fast & Reliable</h3>
+              <h3 className="text-xl font-bold mb-4 text-center text-green-800 dark:text-green-400">{t('whyChooseUs.features.fast.title')}</h3>
               <p className="text-gray-600 dark:text-gray-300 text-center">
-                Same-day service available with prompt arrival and efficient completion of all hauling jobs, no matter the size.
+                {t('whyChooseUs.features.fast.description')}
               </p>
             </motion.div>
 
@@ -169,9 +172,9 @@ export default function About() {
               <div className="bg-green-200 dark:bg-green-800 w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
                 <Recycle className="h-8 w-8 text-green-700 dark:text-green-300" />
               </div>
-              <h3 className="text-xl font-bold mb-4 text-center text-green-800 dark:text-green-400">Eco-Friendly</h3>
+              <h3 className="text-xl font-bold mb-4 text-center text-green-800 dark:text-green-400">{t('whyChooseUs.features.eco.title')}</h3>
               <p className="text-gray-600 dark:text-gray-300 text-center">
-                Committed to sustainable disposal practices, recycling, and minimizing environmental impact with every job.
+                {t('whyChooseUs.features.eco.description')}
               </p>
             </motion.div>
 
@@ -179,9 +182,9 @@ export default function About() {
               <div className="bg-green-200 dark:bg-green-800 w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
                 <ShieldCheck className="h-8 w-8 text-green-700 dark:text-green-300" />
               </div>
-              <h3 className="text-xl font-bold mb-4 text-center text-green-800 dark:text-green-400">Professional Team</h3>
+              <h3 className="text-xl font-bold mb-4 text-center text-green-800 dark:text-green-400">{t('whyChooseUs.features.professional.title')}</h3>
               <p className="text-gray-600 dark:text-gray-300 text-center">
-                Our experienced team is fully licensed, insured, and trained to handle all types of hauling jobs safely and professionally.
+                {t('whyChooseUs.features.professional.description')}
               </p>
             </motion.div>
           </div>
@@ -198,12 +201,12 @@ export default function About() {
       >
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <Badge className="bg-green-100 dark:bg-green-900 text-green-800 dark:text-white mb-4">Our Journey</Badge>
+            <Badge className="bg-green-100 dark:bg-green-900 text-green-800 dark:text-white mb-4">{t('history.badge')}</Badge>
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-green-800 dark:text-green-400">
-              Company History
+              {t('history.title')}
             </h2>
             <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-              From our humble beginnings to becoming the Bay Area's trusted hauling service, our journey has been built on quality and commitment.
+              {t('history.description')}
             </p>
           </div>
 
@@ -249,18 +252,18 @@ export default function About() {
           <div className="max-w-4xl mx-auto">
             <div className="flex flex-col md:flex-row items-center gap-10">
               <div className="w-full md:w-1/2 order-2 md:order-1">
-                <h2 className="text-3xl font-bold mb-6 text-green-800 dark:text-green-400">Service Areas</h2>
+                <h2 className="text-3xl font-bold mb-6 text-green-800 dark:text-green-400">{t('serviceAreas.title')}</h2>
                 <p className="text-lg mb-6 dark:text-gray-300 text-black">
-                  We proudly serve the entire San Francisco Bay Area, providing prompt and reliable hauling services to both residential and commercial customers.
+                  {t('serviceAreas.description')}
                 </p>
                 <div className="space-y-4">
                   {[
-                    "San Francisco",
-                    "Oakland",
-                    "San Jose",
-                    "Fremont",
-                    "Palo Alto",
-                    "And all surrounding Bay Area communities"
+                    t('serviceAreas.areas.sanFrancisco'),
+                    t('serviceAreas.areas.oakland'),
+                    t('serviceAreas.areas.sanJose'),
+                    t('serviceAreas.areas.fremont'),
+                    t('serviceAreas.areas.paloAlto'),
+                    t('serviceAreas.areas.surrounding')
                   ].map((area, index) => (
                     <div key={index} className="flex items-center">
                       <MapPin className="h-5 w-5 text-green-600 dark:text-green-500 mr-3 flex-shrink-0" />
@@ -270,7 +273,7 @@ export default function About() {
                 </div>
                 <div className="mt-8">
                   <Button className="bg-green-600 hover:bg-green-700 text-white">
-                    <Phone className="mr-2 h-4 w-4" /> Call For Service
+                    <Phone className="mr-2 h-4 w-4" /> {t('serviceAreas.callButton')}
                   </Button>
                 </div>
               </div>
@@ -284,8 +287,8 @@ export default function About() {
                     className="rounded-xl shadow-lg"
                   />
                   <div className="absolute -bottom-5 -right-5 bg-green-600 text-white p-4 rounded-lg shadow-lg">
-                    <h3 className="font-bold text-xl">Bay Area Coverage</h3>
-                    <p>Serving you 24/7</p>
+                    <h3 className="font-bold text-xl">{t('serviceAreas.coverage.title')}</h3>
+                    <p>{t('serviceAreas.coverage.description')}</p>
                   </div>
                 </div>
               </div>
@@ -305,20 +308,20 @@ export default function About() {
         {/* used to have container and px-auto here for the spacing between 3 cards */}
         <div className="">
           <div className="text-center mb-16">
-            <Badge className="bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-400 mb-4">Our Team</Badge>
+            <Badge className="bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-400 mb-4">{t('team.badge')}</Badge>
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-green-800 dark:text-green-400">
-              The Man Behind Mario's Hauling
+              {t('team.title')}
             </h2>
             <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-              Meet the most dedicated man from the team of professionals committed to providing you with exceptional hauling services.
+              {t('team.description')}
             </p>
           </div>
 
           <div className="flex flex-col justify-center items-center max-w-md mx-auto ">
             {[
               {
-                name: "Mario Rodriguez",
-                position: "Founder & Owner",
+                name: t('team.mario.name'),
+                position: t('team.mario.position'),
                 image: "/tio.jpg"
               },
              
@@ -356,17 +359,17 @@ export default function About() {
       >
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Clear the Clutter?</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">{t('cta.title')}</h2>
             <p className="text-xl text-green-100 mb-8">
-              Contact Mario's Hauling today for fast, reliable, and eco-friendly hauling services.
+              {t('cta.description')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-white hover:bg-green-100 text-green-800">
-                <Phone className="mr-2 h-5 w-5" /> Call (408) 449-2317
+                <Phone className="mr-2 h-5 w-5" /> {t('cta.callButton')}
               </Button>
               <Link href="/contact">
                 <Button size="lg" variant="outline" className="border-green-200 text-black dark:text-white hover:bg-green-600">
-                  Request a Quote <ArrowRight className="ml-2 h-5 w-5" />
+                  {t('cta.quoteButton')} <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </Link>
             </div>
