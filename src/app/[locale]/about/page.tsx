@@ -223,7 +223,7 @@ export default function About() {
                   className={`relative mb-12 md:mb-24 flex ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}
                 >
                   {/* Timeline dot */}
-                  <div className="absolute left-0 md:left-1/2 transform -translate-x-1/2 w-6 h-6 rounded-full bg-black dark:bg-white border-3 border-white dark:border-black z-10"></div>
+                  <div className="absolute left-0 md:left-1/2 transform -translate-x-1/2 w-6 h-6 rounded-full bg-black dark:bg-green-100 border-3 border-white dark:border-black z-10"></div>
                   
                   {/* Content */}
                   <div className={`ml-8 md:ml-0 md:w-1/2 ${index % 2 === 0 ? 'md:pr-12' : 'md:pl-12'}`}>

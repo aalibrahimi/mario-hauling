@@ -201,7 +201,7 @@ export default function Home() {
      
     {/* junk removal */}
      {/* Call to Action Banner */}
-     <section className="bg-green-700 text-white py-6 flex text-center justify-center">
+     <section className="bg-green-900 dark:bg-green-700 text-white py-6 flex text-center justify-center">
         <div className="container px-4 md:px-6 max-w-6xl ">
           <div className="flex flex-col md:flex-row items-center justify-between ">
             <div className="mb-4 md:mb-0">
@@ -218,7 +218,7 @@ export default function Home() {
       </section>
  
  {/* How it works */}
-            <section className="py-16 bg-green-50 flex text-center justify-center dark:bg-green-700 ">
+            <section className="py-16 bg-green-200 flex text-center justify-center dark:bg-green-800 ">
               <div className="container px-4 md:px-6">
                 <motion.div
                   initial="hidden"
@@ -242,7 +242,7 @@ export default function Home() {
                 >
                   <motion.div
                   variants={fadeInUp} className="text-center">
-                    <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <div className="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                       <Phone className="h-8 w-8 text-green-600  "/>
                     </div>
                     <h3 className="text-xl font-bold mb-2 text-green-800 dark:text-white ">{t('howItWorks.steps.call.title')}</h3>
@@ -254,7 +254,7 @@ export default function Home() {
                     variants={fadeInUp}
                     className="text-center"
                   >
-                    <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <div className="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                       <Truck className="h-8 w-8 text-green-600"/>
                     </div>
                     <h3 className="text-xl font-bold mb-2 text-green-800 dark:text-white ">{t('howItWorks.steps.arrive.title')}</h3>
@@ -266,7 +266,7 @@ export default function Home() {
                   variants={fadeInUp}
                   className="text-center"
                   >
-                    <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <div className="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                       <ArrowRight className="h-8 w-8 text-green-600"/>
                     </div>
                     <h3 className="text-xl font-bold mb-2 text-green-800 dark:text-white">{t('howItWorks.steps.haul.title')}</h3>
@@ -332,7 +332,7 @@ export default function Home() {
               </p>
               <div className="flex items-center">
                 <div className="w-10 h-10 rounded-full bg-green-100 dark:bg-green-900 mr-3"></div>
-                <div>
+                <div className="flex flex-col items-start">
                   <p className="font-medium text-green-600 dark:text-green-400">{testimonial.name}</p>
                   <p className="text-sm dark:text-gray-400">{testimonial.location}</p>
                 </div>

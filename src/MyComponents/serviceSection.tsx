@@ -108,7 +108,7 @@ const ServicesSection = () => {
               transition={{ duration: 0.3 }}
               className="space-y-6"
             >
-              {services[activeCategory].map((service, index) => (
+              {services[activeCategory].map((service: any, index: any) => (
                 <motion.div
                   key={service.name}
                   initial={{ opacity: 0, y: 20 }}
@@ -119,7 +119,7 @@ const ServicesSection = () => {
                   }}
                   className="group"
                 >
-                  <div className="flex items-center border-b border-gray-100 dark:border-gray-700 pb-6">
+                  <div className="flex items-center rounded-sm border-b border-gray-100 dark:border-gray-700 pb-6">
                     <div className="bg-green-50 dark:bg-green-900/30 rounded-full p-4 mr-6">
                       <span className="text-3xl">{service.icon}</span>
                     </div>
