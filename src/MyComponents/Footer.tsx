@@ -41,10 +41,21 @@ export function Footer(): React.ReactElement {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/*  left column */}
             <section className="flex flex-col items-start ">
-              <div className="flex items-center mb-4">
+
+              <div className="flex items-center mb-4 ">
                 <Recycle className="h-6 w-6 text-green-400 mr-2" />
-                <h3 className="text-xl font-bold">{t('business.name')}</h3>
+
+                <h3 className="text-xl font-bold w-fit group">
+                  <span className="relative pb-1">
+
+                  {t('business.name')}
+                  <span className="absolute left-0 bottom-0 h-0.5 bg-green-600 w-0 group-hover:w-full transition-all duration-300"></span>
+                  </span>
+                  
+                  
+                  </h3>
               </div>
+              
               {/* description */}
               <div className="flex items-center text-white mb-4 text-left">
                 <Check className="inline-flex text-green-400 mr-2 flex-shrink-0" />
@@ -58,7 +69,17 @@ export function Footer(): React.ReactElement {
             </section>
             {/* right column */}
             <section className="flex flex-col items-center text-center">
-              <h3 className="text-lg font-bold mb-4 pr-28  ">{t('contact.title')}</h3>
+              <h3 
+              // unneccesary fun heh
+                  className="text-lg font-bold mb-4 pr-28 relative w-fit group ">
+                    <span className="relative pb-1">
+                      {t('contact.title')}
+                      <span className="absolute left-0 bottom-0 h-0.5 bg-green-600 w-0 group-hover:w-full transition-all duration-300 "></span>
+
+                    </span>
+             </h3>
+
+
               <div className="space-y-2">
                 {/* contact phone */}
                 <p className="flex items-center">
