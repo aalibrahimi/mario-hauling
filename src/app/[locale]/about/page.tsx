@@ -130,6 +130,98 @@ export default function About() {
         </div>
       </motion.section>
 
+      {/* Pricing Guide - NEW SECTION testing this out*/}
+      {/* I like this,  going through with it, just change it to spanish when you can */}
+      <motion.section
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={fadeInUp}
+        className="py-20 bg-white dark:bg-black"
+      >
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <Badge className="bg-green-100 dark:bg-green-900 text-green-800 dark:text-white mb-4">Our Rates</Badge>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-green-800 dark:text-green-400">
+              Transparent Pricing
+            </h2>
+            <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+              We believe in honest, upfront pricing with no hidden fees. Our rates are based on volume, with discounts for larger jobs.
+            </p>
+          </div>
+
+          <div className="max-w-4xl mx-auto bg-green-50 dark:bg-green-900/20 rounded-xl p-8 shadow-lg">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div>
+                <h3 className="text-xl font-bold text-green-800 dark:text-green-400 mb-4">How We Price</h3>
+                <ul className="space-y-4">
+                  <li className="flex items-start">
+                    <CheckCircle className="h-5 w-5 text-green-600 dark:text-green-500 mr-3 mt-0.5 flex-shrink-0" />
+                    <p className="dark:text-gray-300">We price based on volume (how much space your items take up in our truck)</p>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-5 w-5 text-green-600 dark:text-green-500 mr-3 mt-0.5 flex-shrink-0" />
+                    <p className="dark:text-gray-300">Free, no-obligation estimates before we start</p>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-5 w-5 text-green-600 dark:text-green-500 mr-3 mt-0.5 flex-shrink-0" />
+                    <p className="dark:text-gray-300">Special rates for seniors, veterans, and repeat customers</p>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-5 w-5 text-green-600 dark:text-green-500 mr-3 mt-0.5 flex-shrink-0" />
+                    <p className="dark:text-gray-300">Minimum charge of $75 for very small jobs</p>
+                  </li>
+                </ul>
+              </div>
+              
+              <div>
+                <h3 className="text-xl font-bold text-green-800 dark:text-green-400 mb-4">Price Ranges</h3>
+                <div className="space-y-4">
+                  <div className="border-b border-green-200 dark:border-green-700 pb-3">
+                    <div className="flex justify-between mb-1">
+                      <span>Small Load (1/8 truck)</span>
+                      <span className="font-semibold">$75-125</span>
+                    </div>
+                    <p className="text-sm text-gray-500 dark:text-gray-400">Few small items, single appliance</p>
+                  </div>
+                  
+                  <div className="border-b border-green-200 dark:border-green-700 pb-3">
+                    <div className="flex justify-between mb-1">
+                      <span>Medium Load (1/4 truck)</span>
+                      <span className="font-semibold">$150-250</span>
+                    </div>
+                    <p className="text-sm text-gray-500 dark:text-gray-400">Small furniture set, partial garage cleanout</p>
+                  </div>
+                  
+                  <div className="border-b border-green-200 dark:border-green-700 pb-3">
+                    <div className="flex justify-between mb-1">
+                      <span>Large Load (1/2 truck)</span>
+                      <span className="font-semibold">$275-375</span>
+                    </div>
+                    <p className="text-sm text-gray-500 dark:text-gray-400">Full room of furniture, complete garage cleanout</p>
+                  </div>
+                  
+                  <div>
+                    <div className="flex justify-between mb-1">
+                      <span>Full Truck Load</span>
+                      <span className="font-semibold">$450-550</span>
+                    </div>
+                    <p className="text-sm text-gray-500 dark:text-gray-400">Complete home cleanout, large construction debris</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="mt-8 text-center">
+              <p className="text-gray-500 dark:text-gray-400 italic mb-4">Prices may vary based on items, location, and accessibility. Call for an exact quote.</p>
+              <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white">
+                <Phone className="mr-2 h-4 w-4" /> Get a Free Quote
+              </Button>
+            </div>
+          </div>
+        </div>
+      </motion.section>
+
       {/* Why Choose Us Section */}
       <motion.section
         initial="hidden"
