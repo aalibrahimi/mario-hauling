@@ -54,15 +54,6 @@ export default function Home() {
    {/* hero section here we gooo */}
             {/* Hero Section - Reduced Height */}
             <section className="relative py-12 md:py-16 flex items-center justify-center overflow-hidden bg-gradient-to-r from-green-800 to-green-700 dark:from-green-900 dark:to-green-950 text-white">
-         <div className="absolute inset-0 z-0 opacity-20">
-           <Image
-             src="/placeholder.svg?height=800&width=1920"
-             alt="Hauling background"
-             fill
-             className="object-cover"
-             priority
-           />
-         </div>
          <div className="container relative z-10 px-4 md:px-6">
            <div className="grid md:grid-cols-2 gap-8 items-center">
              <div className="flex flex-col space-y-4">

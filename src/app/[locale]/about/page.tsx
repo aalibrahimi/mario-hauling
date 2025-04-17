@@ -72,15 +72,7 @@ export default function About() {
       >
         <div className="absolute inset-0 z-0 bg-gradient-to-r from-green-800 to-green-700 dark:from-green-900 dark:to-green-800">
           <div className="absolute inset-0 bg-black/30 dark:bg-black/50"></div>
-          <div className="absolute inset-0 opacity-20">
-            <Image
-              src="/placeholder.svg?height=800&width=1920"
-              alt="Hauling background"
-              fill
-              className="object-cover"
-              priority
-            />
-          </div>
+         
         </div>
         
         <div className="container relative z-10 mx-auto px-4">
@@ -160,7 +152,7 @@ export default function About() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <motion.div variants={fadeInUp} className="bg-green-50 dark:bg-green-900/20 p-8 rounded-xl">
               <div className="bg-green-200 dark:bg-green-800 w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
-                <Truck className="h-8 w-8 text-green-700 dark:text-green-300" />
+                <Truck className="h-8 w-8 dark:text-black" />
               </div>
               <h3 className="text-xl font-bold mb-4 text-center text-green-800 dark:text-green-400">{t('whyChooseUs.features.fast.title')}</h3>
               <p className="text-gray-600 dark:text-gray-300 text-center">
@@ -170,7 +162,7 @@ export default function About() {
 
             <motion.div variants={fadeInUp} className="bg-green-50 dark:bg-green-900/20 p-8 rounded-xl">
               <div className="bg-green-200 dark:bg-green-800 w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
-                <Recycle className="h-8 w-8 text-green-700 dark:text-green-300" />
+                <Recycle className="h-8 w-8 dark:text-black" />
               </div>
               <h3 className="text-xl font-bold mb-4 text-center text-green-800 dark:text-green-400">{t('whyChooseUs.features.eco.title')}</h3>
               <p className="text-gray-600 dark:text-gray-300 text-center">
@@ -180,7 +172,7 @@ export default function About() {
 
             <motion.div variants={fadeInUp} className="bg-green-50 dark:bg-green-900/20 p-8 rounded-xl">
               <div className="bg-green-200 dark:bg-green-800 w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
-                <ShieldCheck className="h-8 w-8 text-green-700 dark:text-green-300" />
+                <ShieldCheck className="h-8 w-8  dark:text-black" />
               </div>
               <h3 className="text-xl font-bold mb-4 text-center text-green-800 dark:text-green-400">{t('whyChooseUs.features.professional.title')}</h3>
               <p className="text-gray-600 dark:text-gray-300 text-center">
