@@ -61,6 +61,7 @@ export function Navbar(): React.ReactElement {
   const languages: Language[] = [
     { code: "en", name: "English", flag: "🇺🇸" },
     { code: "es", name: "Español", flag: "🇪🇸" },
+    // { code: "ar", name: "العربية", flag: "🇸🇦" },
   ];
 
   const locale = useLocale();

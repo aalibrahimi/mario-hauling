@@ -1,7 +1,218 @@
 {
   "HomePage": {
     "title": "¡Hola mundo!",
-    "about": "Ir a la página de información"
+    "about": "Ir a la página de información",
+    "hero": {
+      "badge": "Disponible 24/7",
+      "headline": "Servicios Profesionales de Transporte y Remoción de Basura",
+      "description": "Electrodomésticos, muebles, escombros de construcción y más. Rápido, confiable y asequible.",
+      "callButton": "Llame ahora: (408) 449-2317",
+      "requestButton": "Solicitar Servicio",
+      "yelpButton": "Yelp",
+      "freeEstimates": "Presupuestos Gratuitos"
+    },
+    "features": {
+      "title": "Por Qué Elegir Mario's Hauling",
+      "items": {
+        "available": "disponible 24/7 para servicio de emergencia",
+        "fastResponse": "Respuesta rápida y servicio el mismo día",
+        "affordable": "Tarifas accesibles sin cargos ocultos",
+        "ecoFriendly": "Prácticas de eliminación ecológicas",
+        "licensed": "Completamente licenciado y asegurado"
+      }
+    },
+    "services": {
+      "title": "Nuestros Servicios",
+      "description": "Sea lo que sea que necesite transportar, nosotros lo cubrimos.",
+      "categories": {
+        "household": "Hogar",
+        "construction": "Construcción",
+        "other": "Otros Servicios"
+      },
+      "items": {
+        "applianceRemoval": {
+          "name": "Remoción de Electrodomésticos",
+          "description": "Refrigeradores, lavadoras, secadoras, estufas"
+        },
+        "furnitureHauling": {
+          "name": "Transporte de Muebles",
+          "description": "Sofás, mesas, colchones, gabinetes"
+        },
+        "householdJunk": {
+          "name": "Basura Doméstica",
+          "description": "Desorden, artículos no deseados, limpieza de garajes"
+        },
+        "constructionDebris": {
+          "name": "Escombros de Construcción",
+          "description": "Madera, paneles de yeso, concreto, metales"
+        },
+        "concreteRemoval": {
+          "name": "Remoción de Concreto",
+          "description": "Concreto roto, materiales de cimentación"
+        },
+        "roofRemoval": {
+          "name": "Remoción de Techos",
+          "description": "Tejas, baldosas, materiales viejos de techado"
+        },
+        "greenWaste": {
+          "name": "Residuos Verdes",
+          "description": "Residuos de jardín, ramas, hojas, plantas"
+        },
+        "dirtRemoval": {
+          "name": "Remoción de Tierra",
+          "description": "Suelo, grava, escombros de jardinería"
+        },
+        "yardCleanup": {
+          "name": "Limpieza de Patios",
+          "description": "Eliminación completa de escombros del patio"
+        }
+      },
+      "viewAllButton": "Ver todos nuestros servicios"
+    },
+    "junkBanner": {
+      "title": "¿Necesita que se retire la basura hoy?",
+      "description": "¡Mario está listo para ayudar 24/7!",
+      "callButton": "Llame al (408) 449-2317"
+    },
+    "howItWorks": {
+      "title": "Cómo funciona",
+      "description": "Transporte simple, rápido y sin complicaciones en solo tres sencillos pasos.",
+      "steps": {
+        "call": {
+          "title": "1. Llámenos",
+          "description": "Llame al (408) 449-2317 en cualquier momento, día o noche."
+        },
+        "arrive": {
+          "title": "2. Llegamos",
+          "description": "Mario llega puntualmente a la hora programada listo para transportar"
+        },
+        "haul": {
+          "title": "3. Transportamos",
+          "description": "Cargamos y retiramos rápidamente sus artículos, dejando su espacio limpio"
+        }
+      }
+    },
+    "testimonials": {
+      "title": "Lo Que Dicen Nuestros Clientes",
+      "description": "No solo tome nuestra palabra. Esto es lo que dicen nuestros clientes satisfechos.",
+      "items": {
+        "jeffrey": {
+          "quote": "Mario hizo un trabajo rápido y eficiente a un costo muy razonable. Tenía una carga completa de todo tipo de escombros de construcción. ¡Recomiendo ampliamente sus servicios!",
+          "name": "Jeffrey B.",
+          "location": "San José, CA"
+        },
+        "arun": {
+          "quote": "Comunicativo, precios justos, eficiente. Llenamos su camión con basura de nuestra sección de almacenamiento de nuestra tienda, el mismo día después de ver su camión en el estacionamiento de Home Depot. Muy profesional.",
+          "name": "Arun C.",
+          "location": "Seattle, WA"
+        },
+        "mai": {
+          "quote": "Respuesta rápida por teléfono en minutos. Buen sistema de seguimiento para mantener a los clientes actualizados en tiempo real sobre dónde está el equipo. Llamada telefónica puntual. Servicio puntual y eficiente. ¡¡Gran precio!! Muy recomendable.",
+          "name": "Mai T..",
+          "location": "San Francisco, CA"
+        }
+      }
+    },
+    "cta": {
+      "title": "¿Listo para Deshacerse del Desorden?",
+      "description": "Mario está listo para ayudar con todas sus necesidades de transporte 24/7. ¡Una llamada lo resuelve todo!",
+      "callButton": "Llame Ahora: (408) 449-2317"
+    }
+  },
+  "AboutPage": {
+    "hero": {
+      "badge": "Nuestra Historia",
+      "title": "Acerca de Mario's Hauling",
+      "description": "Socio de transporte de confianza del Área de la Bahía de San Francisco desde 2015, proporcionando servicios de transporte profesionales, confiables y ecológicos."
+    },
+    "mission": {
+      "title": "Nuestra Misión",
+      "description": "Nuestra misión es proporcionar servicios de transporte y remoción de basura de alta calidad mientras minimizamos el impacto ambiental a través de prácticas responsables de eliminación y reciclaje.",
+      "features": {
+        "satisfaction": "Satisfacción del cliente garantizada en cada trabajo",
+        "ecoFriendly": "Prácticas de eliminación y reciclaje ecológicas",
+        "fastResponse": "Respuesta rápida y disponibilidad de servicio el mismo día",
+        "licensed": "Equipo completamente licenciado, asegurado y profesional"
+      }
+    },
+    "whyChooseUs": {
+      "badge": "Por Qué Elegirnos",
+      "title": "Lo Que Nos Distingue",
+      "description": "Con años de experiencia y una dedicación a la excelencia, hemos construido nuestra reputación en la confiabilidad, el servicio de calidad y la satisfacción del cliente.",
+      "features": {
+        "fast": {
+          "title": "Rápido y Confiable",
+          "description": "Servicio el mismo día disponible con llegada puntual y finalización eficiente de todos los trabajos de transporte, sin importar el tamaño."
+        },
+        "eco": {
+          "title": "Ecológico",
+          "description": "Comprometidos con prácticas sostenibles de eliminación, reciclaje y minimización del impacto ambiental en cada trabajo."
+        },
+        "professional": {
+          "title": "Equipo Profesional",
+          "description": "Nuestro experimentado equipo está completamente licenciado, asegurado y capacitado para manejar todo tipo de trabajos de transporte de manera segura y profesional."
+        }
+      }
+    },
+    "history": {
+      "badge": "Nuestro Recorrido",
+      "title": "Historia de la Empresa",
+      "description": "Desde nuestros humildes comienzos hasta convertirnos en el servicio de transporte de confianza del Área de la Bahía, nuestro recorrido se ha construido sobre la calidad y el compromiso.",
+      "timeline": {
+        "founded": {
+          "year": "2022",
+          "title": "Fundación de la Empresa",
+          "description": "Mario's Hauling fue establecido para proporcionar servicios confiables de remoción de basura al Área de la Bahía."
+        },
+        "expanded": {
+          "year": "2023",
+          "title": "Expansión de Servicios",
+          "description": "Agregamos remoción de escombros de construcción y eliminación de residuos verdes a nuestras ofertas de servicios."
+        },
+        "ecoFriendly": {
+          "year": "2014",
+          "title": "Enfoque Ecológico",
+          "description": "Implementamos prácticas sostenibles de eliminación, reciclando más del 60% de los materiales recolectados."
+        },
+        "bayArea": {
+          "year": "2025",
+          "title": "Expansión al Área de la Bahía",
+          "description": "Expandimos operaciones para servir a toda el Área de la Bahía con disponibilidad 24/7."
+        }
+      }
+    },
+    "serviceAreas": {
+      "title": "Áreas de Servicio",
+      "description": "Orgullosamente servimos a toda el Área de la Bahía de San Francisco, proporcionando servicios de transporte rápidos y confiables tanto a clientes residenciales como comerciales.",
+      "areas": {
+        "sanFrancisco": "San Francisco",
+        "oakland": "Oakland",
+        "sanJose": "San José",
+        "fremont": "Fremont",
+        "paloAlto": "Palo Alto",
+        "surrounding": "Y todas las comunidades circundantes del Área de la Bahía"
+      },
+      "callButton": "Llame Para Servicio",
+      "coverage": {
+        "title": "Cobertura del Área de la Bahía",
+        "description": "Sirviéndole 24/7"
+      }
+    },
+    "team": {
+      "badge": "Nuestro Equipo",
+      "title": "El Hombre Detrás de Mario's Hauling",
+      "description": "Conozca al hombre más dedicado del equipo de profesionales comprometidos a proporcionarle servicios excepcionales de transporte.",
+      "mario": {
+        "name": "Mario Rodriguez",
+        "position": "Fundador y Propietario"
+      }
+    },
+    "cta": {
+      "title": "¿Listo para Deshacerse del Desorden?",
+      "description": "Contacte a Mario's Hauling hoy para servicios de transporte rápidos, confiables y ecológicos.",
+      "callButton": "Llame al (408) 449-2317",
+      "quoteButton": "Solicitar un Presupuesto"
+    }
   },
   "NavBar": {
     "labelSwitchLang": "Cambiar Idioma",

@@ -1,7 +1,218 @@
 {
   "HomePage": {
     "title": "Hello world!",
-    "about": "Go to the about page"
+    "about": "Go to the about page",
+    "hero": {
+      "badge": "Available 24/7",
+      "headline": "Professional Hauling & Junk Removal Services",
+      "description": "Appliances, furniture, construction debris, and more. Fast, reliable, and affordable.",
+      "callButton": "Call Now: (408) 449-2317",
+      "requestButton": "Request Service",
+      "yelpButton": "Yelp",
+      "freeEstimates": "Free Estimates"
+    },
+    "features": {
+      "title": "Why Choose Mario's Hauling",
+      "items": {
+        "available": "available 24.7 for emergency service",
+        "fastResponse": "Fast response and same day service",
+        "affordable": "Affordable rates with no hidden fees",
+        "ecoFriendly": "Eco-friendly disposal practices",
+        "licensed": "Fully licensed and insured"
+      }
+    },
+    "services": {
+      "title": "Our Services",
+      "description": "Whatever you need hauled away, we've got you covered.",
+      "categories": {
+        "household": "Household",
+        "construction": "Construction",
+        "other": "Other Services"
+      },
+      "items": {
+        "applianceRemoval": {
+          "name": "Appliance Removal",
+          "description": "Refrigerators, washers, dryers, stoves"
+        },
+        "furnitureHauling": {
+          "name": "Furniture Hauling",
+          "description": "Sofas, tables, mattresses, cabinets"
+        },
+        "householdJunk": {
+          "name": "Household Junk",
+          "description": "Clutter, unwanted items, garage cleanouts"
+        },
+        "constructionDebris": {
+          "name": "Construction Debris",
+          "description": "Wood, drywall, concrete, metals"
+        },
+        "concreteRemoval": {
+          "name": "Concrete Removal",
+          "description": "Broken concrete, foundation materials"
+        },
+        "roofRemoval": {
+          "name": "Roof Removal",
+          "description": "Shingles, tiles, old roofing materials"
+        },
+        "greenWaste": {
+          "name": "Green Waste",
+          "description": "Yard waste, branches, leaves, plants"
+        },
+        "dirtRemoval": {
+          "name": "Dirt Removal",
+          "description": "Soil, gravel, landscaping debris"
+        },
+        "yardCleanup": {
+          "name": "Yard Cleanup",
+          "description": "Complete yard debris removal"
+        }
+      },
+      "viewAllButton": "View all our services"
+    },
+    "junkBanner": {
+      "title": "Need junk removed today?",
+      "description": "Mario is ready to help 24/7!",
+      "callButton": "Call (408) 449-2317"
+    },
+    "howItWorks": {
+      "title": "How it works",
+      "description": "Simple, fast, and hassle-free hauling in just three easy steps.",
+      "steps": {
+        "call": {
+          "title": "1. Call Us",
+          "description": "Call (408) 449-2317 anytime, day or night."
+        },
+        "arrive": {
+          "title": "2. We Arrive",
+          "description": "Mario arrives promptly at the scheduledd time ready to haul"
+        },
+        "haul": {
+          "title": "3. We Haul",
+          "description": "We Quickly load and haul away your items, leaving your space clean"
+        }
+      }
+    },
+    "testimonials": {
+      "title": "What Our Customers Say",
+      "description": "Don't just take our word for it. Here's what our satisfied customers have to say.",
+      "items": {
+        "jeffrey": {
+          "quote": "Mario did a fast and efficient job at a very reasonable cost. I had a full load of all types of construction debris. I highly recommend his services!",
+          "name": "Jeffrey B.",
+          "location": "San Jose, CA"
+        },
+        "arun": {
+          "quote": "Communicative, fair pricing, efficient. We filled his truck with junk from our storage section of our shop, same day after seeing his truck in the Home Depot parking lot. Very professional.",
+          "name": "Arun C.",
+          "location": "Seattle, WA"
+        },
+        "mai": {
+          "quote": "Quick response on the phone within minutes. Nice tracking system to keep customers updated live time where the crew is. Prompt phone call. Punctuate and efficient service. Great price!! Highly recommended.",
+          "name": "Mai T..",
+          "location": "San Francisco, CA"
+        }
+      }
+    },
+    "cta": {
+      "title": "Ready to Clear the Clutter?",
+      "description": "Mario is ready to help with all your hauling needs 24/7. One call does it all!",
+      "callButton": "Call Now: (408) 449-2317"
+    }
+  },
+  "AboutPage": {
+    "hero": {
+      "badge": "Our Story",
+      "title": "About Mario's Hauling",
+      "description": "San Francisco Bay Area's trusted hauling partner since 2015, providing professional, reliable, and eco-friendly hauling services."
+    },
+    "mission": {
+      "title": "Our Mission",
+      "description": "Our mission is to provide top-quality hauling and junk removal services while minimizing environmental impact through responsible disposal and recycling practices.",
+      "features": {
+        "satisfaction": "Customer satisfaction guaranteed on every job",
+        "ecoFriendly": "Eco-friendly disposal and recycling practices",
+        "fastResponse": "Fast response and same-day service availability",
+        "licensed": "Fully licensed, insured, and professional team"
+      }
+    },
+    "whyChooseUs": {
+      "badge": "Why Choose Us",
+      "title": "What Sets Us Apart",
+      "description": "With years of experience and a dedication to excellence, we've built our reputation on reliability, quality service, and customer satisfaction.",
+      "features": {
+        "fast": {
+          "title": "Fast & Reliable",
+          "description": "Same-day service available with prompt arrival and efficient completion of all hauling jobs, no matter the size."
+        },
+        "eco": {
+          "title": "Eco-Friendly",
+          "description": "Committed to sustainable disposal practices, recycling, and minimizing environmental impact with every job."
+        },
+        "professional": {
+          "title": "Professional Team",
+          "description": "Our experienced team is fully licensed, insured, and trained to handle all types of hauling jobs safely and professionally."
+        }
+      }
+    },
+    "history": {
+      "badge": "Our Journey",
+      "title": "Company History",
+      "description": "From our humble beginnings to becoming the Bay Area's trusted hauling service, our journey has been built on quality and commitment.",
+      "timeline": {
+        "founded": {
+          "year": "2022",
+          "title": "Company Founded",
+          "description": "Mario's Hauling was established to provide reliable junk removal services to the Bay Area."
+        },
+        "expanded": {
+          "year": "2023",
+          "title": "Expanded Services",
+          "description": "Added construction debris removal and green waste disposal to our service offerings."
+        },
+        "ecoFriendly": {
+          "year": "2014",
+          "title": "Eco-Friendly Focus",
+          "description": "Implemented sustainable disposal practices, recycling over 60% of collected materials."
+        },
+        "bayArea": {
+          "year": "2025",
+          "title": "Bay Area Expansion",
+          "description": "Expanded operations to serve the entire Bay Area with 24/7 availability."
+        }
+      }
+    },
+    "serviceAreas": {
+      "title": "Service Areas",
+      "description": "We proudly serve the entire San Francisco Bay Area, providing prompt and reliable hauling services to both residential and commercial customers.",
+      "areas": {
+        "sanFrancisco": "San Francisco",
+        "oakland": "Oakland",
+        "sanJose": "San Jose",
+        "fremont": "Fremont",
+        "paloAlto": "Palo Alto",
+        "surrounding": "And all surrounding Bay Area communities"
+      },
+      "callButton": "Call For Service",
+      "coverage": {
+        "title": "Bay Area Coverage",
+        "description": "Serving you 24/7"
+      }
+    },
+    "team": {
+      "badge": "Our Team",
+      "title": "The Man Behind Mario's Hauling",
+      "description": "Meet the most dedicated man from the team of professionals committed to providing you with exceptional hauling services.",
+      "mario": {
+        "name": "Mario Rodriguez",
+        "position": "Founder & Owner"
+      }
+    },
+    "cta": {
+      "title": "Ready to Clear the Clutter?",
+      "description": "Contact Mario's Hauling today for fast, reliable, and eco-friendly hauling services.",
+      "callButton": "Call (408) 449-2317",
+      "quoteButton": "Request a Quote"
+    }
   },
   "NavBar": {
     "labelSwitchLang": "Switch Language",
