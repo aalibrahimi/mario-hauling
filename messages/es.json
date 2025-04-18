@@ -1,7 +1,5 @@
 {
   "HomePage": {
-    "title": "¡Hola mundo!",
-    "about": "Ir a la página de información",
     "hero": {
       "badge": "Disponible 24/7",
       "headline": "Servicios Profesionales de Transporte y Remoción de Basura",
@@ -14,7 +12,7 @@
     "features": {
       "title": "Por Qué Elegir Mario's Hauling",
       "items": {
-        "available": "disponible 24/7 para servicio de emergencia",
+        "available": "Disponible 24/7 para servicio de emergencia",
         "fastResponse": "Respuesta rápida y servicio el mismo día",
         "affordable": "Tarifas accesibles sin cargos ocultos",
         "ecoFriendly": "Prácticas de eliminación ecológicas",
@@ -298,6 +296,7 @@
     }
   },
   "NavBar": {
+    "getQuote": "Obtener un Presupuesto",
     "labelSwitchLang": "Cambiar Idioma",
     "labelSelectLang": "Seleccionar Idioma",
     "dropdown": {

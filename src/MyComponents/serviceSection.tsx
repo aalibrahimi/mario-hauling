@@ -123,8 +123,8 @@ const ServicesSection = () => {
                   }}
                   className="group"
                 >
-                  <div className="flex items-center rounded-sm border-b border-gray-100 dark:border-gray-700 pb-6">
-                    <div className="bg-green-50 dark:bg-green-900/30 rounded-full p-4 mr-6">
+                  <div className="flex items-center h-22 w-auto pl-2 bg-green-100 dark:bg-green-800 rounded-sm border-b border-gray-300 dark:border-gray-700 hover:shadow-[5px_5px_10px_-5px] shadow-black/20 dark:shadow-none transition-shadow duration-200">
+                    <div className="bg-green-50 dark:bg-green-500/50 rounded-full p-4 mr-6">
                       <span className="text-3xl">{service.icon}</span>
                     </div>
 

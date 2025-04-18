@@ -306,10 +306,10 @@ export default function Home() {
             variants={{ fadeInUp }}
             className="text-center mb-10"
           >
-            <h2 className="text-3xl font-bold mb-3 text-green-800 dark:text-black">
+            <h2 className="text-3xl font-bold mb-3 text-green-800 dark:text-white">
               {t("howItWorks.title")}
             </h2>
-            <p className="text-slate-600 max-w-2xl mx-auto dark:text-gray-100">
+            <p className="text-black max-w-2xl mx-auto dark:text-white italic">
               {t("howItWorks.description")}
             </p>
           </motion.div>
@@ -328,7 +328,7 @@ export default function Home() {
               <h3 className="text-xl font-bold mb-2 text-green-800 dark:text-white ">
                 {t("howItWorks.steps.call.title")}
               </h3>
-              <p className="text-slate-600 dark:text-gray-100">
+              <p className="text-black dark:text-gray-100">
                 {t("howItWorks.steps.call.description")}
               </p>
             </motion.div>
@@ -341,7 +341,7 @@ export default function Home() {
               <h3 className="text-xl font-bold mb-2 text-green-800 dark:text-white ">
                 {t("howItWorks.steps.arrive.title")}
               </h3>
-              <p className="text-slate-600  dark:text-gray-100">
+              <p className="text-black  dark:text-gray-100">
                 {t("howItWorks.steps.arrive.description")}
               </p>
             </motion.div>
@@ -354,7 +354,7 @@ export default function Home() {
               <h3 className="text-xl font-bold mb-2 text-green-800 dark:text-white">
                 {t("howItWorks.steps.haul.title")}
               </h3>
-              <p className="text-slate-600 dark:text-gray-100">
+              <p className="text-black dark:text-gray-100">
                 {t("howItWorks.steps.haul.description")}
               </p>
             </motion.div>

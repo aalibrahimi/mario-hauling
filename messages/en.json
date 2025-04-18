@@ -1,7 +1,5 @@
 {
   "HomePage": {
-    "title": "Hello world!",
-    "about": "Go to the about page",
     "hero": {
       "badge": "Available 24/7",
       "headline": "Professional Hauling & Junk Removal Services",
@@ -14,7 +12,7 @@
     "features": {
       "title": "Why Choose Mario's Hauling",
       "items": {
-        "available": "available 24.7 for emergency service",
+        "available": "Available 24.7 for emergency service",
         "fastResponse": "Fast response and same day service",
         "affordable": "Affordable rates with no hidden fees",
         "ecoFriendly": "Eco-friendly disposal practices",
@@ -299,6 +297,7 @@
     }
   },
   "NavBar": {
+    "getQuote": "Get a Quote",
     "labelSwitchLang": "Switch Language",
     "labelSelectLang": "Select Language",
     "dropdown": {

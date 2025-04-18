@@ -158,7 +158,7 @@ export function Navbar(): React.ReactElement {
                       legacyBehavior
                       passHref
                     >
-                      <NavigationMenuLink className="navItems text-black dark:text-white hover:bg-transparent transition-colors px-3 py-2 rounded-md font-medium text-center">
+                      <NavigationMenuLink className="navItems text-black dark:text-white hover:bg-transparent active:bg-green-100 dark:active:text-black transition-colors px-3 py-2 rounded-md font-medium text-center">
                         {route.title}
                       </NavigationMenuLink>
                     </Link>
@@ -184,7 +184,7 @@ export function Navbar(): React.ReactElement {
               size="sm"
               className="ml-4 bg-green-600 hover:bg-greeen-700 hover:cursor-pointer text-white"
             >
-              Get a Quote
+              {t('getQuote')}
             </Button>
           </div>
 
