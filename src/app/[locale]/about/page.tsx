@@ -72,7 +72,8 @@ export default function About() {
   ];
 
   return (
-    <div className="bg-white dark:bg-black min-h-screen text-black dark:text-white">
+    // Added overflow-x-clip so scrollbar on X-axis doesnt show due to 'Service Areas' section initial position
+    <div className="bg-white dark:bg-black min-h-screen text-black dark:text-white overflow-x-clip">
       {/* Hero Section */}
       <motion.section
         initial="hidden"
@@ -110,7 +111,7 @@ export default function About() {
             <div className="flex flex-col md:flex-row items-center gap-10">
               <div className="w-full md:w-1/2">
                 <Image
-                  src="/image1.jpg"
+                  src="/image3.jpg"
                   alt="Company mission"
                   width={600}
                   height={600}
