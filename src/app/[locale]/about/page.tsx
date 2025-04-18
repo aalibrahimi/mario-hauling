@@ -155,7 +155,7 @@ export default function About() {
       >
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <Badge className="bg-green-100 dark:bg-green-900 text-green-800 dark:text-white mb-4">
+            <Badge className="bg-green-100 dark:bg-green-900 text-green-800 dark:text-white text-sm mb-4">
               {t("pricing.badge")}
             </Badge>
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-green-800 dark:text-green-400">
@@ -273,7 +273,7 @@ export default function About() {
       >
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <Badge className="bg-green-100 dark:bg-green-900 text-green-800 dark:text-white mb-4">
+            <Badge className="bg-green-100 dark:bg-green-900 text-green-800 dark:text-white text-sm mb-4">
               {t("whyChooseUs.badge")}
             </Badge>
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-green-800 dark:text-green-400">
@@ -343,7 +343,7 @@ export default function About() {
       >
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <Badge className="bg-green-100 dark:bg-green-900 text-green-800 dark:text-white mb-4">
+            <Badge className="bg-green-100 dark:bg-green-900 text-green-800 dark:text-white text-sm mb-4">
               {t("history.badge")}
             </Badge>
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-green-800 dark:text-green-400">
@@ -463,7 +463,7 @@ export default function About() {
         {/* used to have container and px-auto here for the spacing between 3 cards */}
         <div className="">
           <div className="text-center mb-16">
-            <Badge className="bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-400 mb-4">
+            <Badge className="bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-400 text-sm mb-4">
               {t("team.badge")}
             </Badge>
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-green-800 dark:text-green-400">

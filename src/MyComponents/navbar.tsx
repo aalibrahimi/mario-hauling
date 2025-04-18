@@ -100,8 +100,7 @@ export function Navbar(): React.ReactElement {
             draggable={false}
             className="flex items-center space-x-2"
           >
-            <Recycle className="h-6 w-6 text-green-600 dark:text-green-400 mr-2" />
-            {/* <Image src="/logoPlaceholder.png" alt="Logo" draggable={false} height={45} width={45} /> */}
+            <Image src="/MarioHauling_Logo.png" alt="MarioHauling Logo" draggable={false} height={500} width={500} className="w-12 h-auto" />
             <span className="font-bold text-green-800 dark:text-green-500 text-lg">
               Mario's Hauling
             </span>
@@ -158,7 +157,7 @@ export function Navbar(): React.ReactElement {
                       legacyBehavior
                       passHref
                     >
-                      <NavigationMenuLink className="navItems text-black dark:text-white hover:bg-transparent active:bg-green-100 dark:active:text-black transition-colors px-3 py-2 rounded-md font-medium text-center">
+                      <NavigationMenuLink className="navItems text-black dark:text-white hover:bg-transparent active:bg-green-100 focus:bg-green-100 dark:active:text-black transition-colors px-3 py-2 rounded-md font-medium text-center">
                         {route.title}
                       </NavigationMenuLink>
                     </Link>

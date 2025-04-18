@@ -9,8 +9,8 @@ import { getLangDir } from "rtl-detect";
 
 // This will show up when you paste the website link as preview
 export const metadata = {
-  title: "Website Template",
-  description: "CodeWithAli's Website Template",
+  title: "Mario's Hauling",
+  description: "Professional Hauling & Junk Removal Services",
 };
 
 export default async function LocaleLayout({
