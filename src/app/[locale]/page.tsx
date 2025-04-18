@@ -124,14 +124,14 @@ export default function Home() {
       },
     },
   };
-
+  
   return (
     <main className="flex min-h-screen flex-col bg-white ">
       {/* hero section here we gooo */}
       {/* Hero Section - Reduced Height */}
-      <section className="relative py-12 md:py-16 flex items-center justify-center overflow-hidden bg-gradient-to-r from-green-800 to-green-700 dark:from-green-900 dark:to-green-950 text-white">
+      <section className="relative py-12 md:py-16 flex items-center justify-center overflow-hidden bg-bottom-right bg-gradient-to-r from-green-800 to-green-700 dark:from-green-900 dark:to-green-950 text-white">
         <div className="container relative z-10 px-4 md:px-6">
-          <div className="grid md:grid-cols-2 gap-8 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 items-center">
             <div className="flex flex-col space-y-4">
               <motion.div
                 initial={{ scale: 0.8, opacity: 0 }}
@@ -166,17 +166,21 @@ export default function Home() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="flex flex-col sm:flex-row gap-3"
               >
-                <Button
-                  size="lg"
-                  className="bg-white hover:bg-green-100 text-green-800 dark:bg-green-700 dark:hover:bg-green-800 dark:text-white"
+                <Link
+                  href="tel: (408) 449 2317"
                 >
-                  <Phone className="mr-2 h-4 w-4" />
-                  <span className="text-black">{t("hero.callButton")}</span>
-                </Button>
+                  <Button
+                    size="lg"
+                    className="bg-white hover:cursor-pointer hover:bg-green-100 text-green-800 dark:bg-green-700 dark:hover:bg-green-800 dark:text-white"
+                  >
+                    <Phone className="mr-2 h-4 w-4" />
+                    <span className="text-black">{t("hero.callButton")}</span>
+                  </Button>
+                </Link>
                 <Button
                   size="lg"
                   variant="outline"
-                  className="border-green-400 text-black hover:bg-white hover:text-green-500 dark:border-green-600 dark:text-white dark:hover:bg-green-800"
+                  className="border-green-400 hover:cursor-pointer text-black hover:bg-white hover:text-green-500 dark:border-green-600 dark:text-white dark:hover:bg-green-800"
                 >
                   {t("hero.requestButton")}
                 </Button>
@@ -190,7 +194,7 @@ export default function Home() {
                   <Button
                     size="lg"
                     variant="outline"
-                    className="flex items-center justify-center  border-red-400 hover:bg-red-500 dark:border-red-600 dark:hover:bg-red-500"
+                    className="flex items-center justify-center hover:cursor-pointer border-red-400 hover:bg-red-500 dark:border-red-600 dark:hover:bg-red-500"
                   >
                     <Image
                       src="/yelp-logo.png"
@@ -221,7 +225,7 @@ export default function Home() {
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="bg-white/10 backdrop-blur-sm p-5 rounded-lg border border-white/20 hidden md:block"
+              className="bg-white/10 backdrop-blur-sm p-5 lg:col-start-2 rounded-lg border border-white/20"
             >
               {/* hehe looks like a glass card, but really its just very light shade of green (little fun trick for ya blazey) */}
               <h3 className="font-bold text-xl mb-3 flex items-center">

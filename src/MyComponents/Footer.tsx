@@ -38,9 +38,9 @@ export function Footer(): React.ReactElement {
   return (
     <footer className="border-t border-gray-200 dark:border-gray-800 bg-white text-green-600 dark:bg-[#000] dark:text-white mt-auto">
       <div className="container mx-auto py-10 text-center px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-[0.4fr_0.4fr] gap-6">
           {/*  left column */}
-          <section className="flex flex-col items-start sm:items-start  ">
+          <section className="flex flex-col items-start">
             <div className="flex items-center mb-4  ">
               <Recycle className="h-6 w-6 text-green-400 mr-2" />
 
@@ -64,7 +64,7 @@ export function Footer(): React.ReactElement {
             </div>
           </section>
           {/* right column */}
-          <section className="flex flex-col items-center md:items-end sm:items-start text-center">
+          <section className="flex flex-col md:items-end items-start text-center">
             <h3
               // unneccesary fun heh
               className="text-lg font-bold mb-4 pr-28 relative w-fit group "

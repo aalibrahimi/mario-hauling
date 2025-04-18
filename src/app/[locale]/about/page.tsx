@@ -104,7 +104,7 @@ export default function About() {
         whileInView="visible"
         viewport={{ once: true }}
         variants={fadeInUp}
-        className="py-20 bg-green-50 dark:bg-green-900/20"
+        className="py-20 bg-green-100 dark:bg-green-900/20"
       >
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
