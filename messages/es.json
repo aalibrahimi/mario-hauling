@@ -309,7 +309,7 @@
     "labelLang": "Idioma",
     "routes": {
       "home": "Inicio",
-      "about": "Acerca de",
+      "about": "Nosotros",
       "contact": "Contacto",
       "features": {
         "title": "Características",

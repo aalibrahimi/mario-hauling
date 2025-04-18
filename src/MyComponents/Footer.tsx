@@ -121,11 +121,11 @@ export function Footer(): React.ReactElement {
             >
               <Image
                 src="/codewithali.png"
-                className="w-auto isolate"
+                className="w-10 h-auto isolate"
                 alt="CodeWithAli Logo"
                 draggable={false}
-                width={30}
-                height={30}
+                width={500}
+                height={500}
                 quality={100}
               />
             </Link>
