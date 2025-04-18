@@ -182,6 +182,43 @@
         "licensed": "Fully licensed, insured, and professional team"
       }
     },
+    "pricing": {
+      "badge": "Our Rates",
+      "title": "Transparent Pricing",
+      "description": "We believe in honest, upfront pricing with no hidden fees. Our rates are based on volume, with discounts for larger jobs.",
+      "howPrice": {
+        "title": "How We Price",
+        "bullet": {
+          "1": "We price based on volume (how much space your items take up in our truck)",
+          "2": "Free, no-obligation estimates before we start",
+          "3": "Special rates for seniors, veterans, and repeat customers",
+          "4": "Minimum charge of $75 for very small jobs"
+        }
+      },
+      "priceRanges": {
+        "title": "Price Ranges",
+        "range": {
+          "1": {
+            "title": "Small Load (1/8 truck)",
+            "desc": "Few small items, single appliance"
+          },
+          "2": {
+            "title": "Medium Load (1/4 truck)",
+            "desc": "Small furniture set, partial garage cleanout"
+          },
+          "3": {
+            "title": "Large Load (1/2 truck)",
+            "desc": "Full room of furniture, complete garage cleanout"
+          },
+          "4": {
+            "title": "Full Truck Load",
+            "desc": "Complete home cleanout, large construction debris"
+          }
+        }
+      },
+      "footNote": "Prices may vary based on items, location, and accessibility. Call for an exact quote.",
+      "getQuote": "Get a Free Quote"
+    },
     "whyChooseUs": {
       "badge": "Why Choose Us",
       "title": "What Sets Us Apart",

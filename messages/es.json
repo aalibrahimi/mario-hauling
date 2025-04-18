@@ -181,6 +181,43 @@
         "licensed": "Equipo completamente licenciado, asegurado y profesional"
       }
     },
+    "pricing": {
+  "badge": "Nuestras Tarifas",
+  "title": "Precios Transparentes",
+  "description": "Creemos en precios honestos y claros sin cargos ocultos. Nuestras tarifas se basan en el volumen, con descuentos para trabajos más grandes.",
+  "howPrice": {
+    "title": "Cómo Establecemos Precios",
+    "bullet": {
+      "1": "Establecemos precios según el volumen (cuánto espacio ocupan sus artículos en nuestro camión)",
+      "2": "Presupuestos gratuitos y sin compromiso antes de comenzar",
+      "3": "Tarifas especiales para personas mayores, veteranos y clientes habituales",
+      "4": "Cargo mínimo de $75 para trabajos muy pequeños"
+    }
+  },
+  "priceRanges": {
+    "title": "Rangos de Precios",
+    "range": {
+      "1": {
+        "title": "Carga Pequeña (1/8 del camión)",
+        "desc": "Pocos artículos pequeños, un solo electrodoméstico"
+      },
+      "2": {
+        "title": "Carga Media (1/4 del camión)",
+        "desc": "Pequeño conjunto de muebles, limpieza parcial de garaje"
+      },
+      "3": {
+        "title": "Carga Grande (1/2 camión)",
+        "desc": "Habitación completa de muebles, limpieza completa de garaje"
+      },
+      "4": {
+        "title": "Carga Completa del Camión",
+        "desc": "Limpieza completa de casa, grandes escombros de construcción"
+      }
+    }
+    },
+    "footNote": "Los precios pueden variar según los artículos, la ubicación y la accesibilidad. Llame para obtener un presupuesto exacto.",
+    "getQuote": "Obtener un Presupuesto Gratuito"
+  },
     "whyChooseUs": {
       "badge": "Por Qué Elegirnos",
       "title": "Lo Que Nos Distingue",

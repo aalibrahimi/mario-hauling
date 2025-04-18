@@ -5,68 +5,68 @@ import { Button } from "@/components/ui/button";
 import { useTranslations } from "next-intl";
 
 const ServicesSection = () => {
-  const t = useTranslations('HomePage.services');
-  
+  const t = useTranslations("HomePage.services");
+
   const categories = [
-    { id: "household", label: t('categories.household') },
-    { id: "construction", label: t('categories.construction') },
-    { id: "other", label: t('categories.other') }
+    { id: "household", label: t("categories.household") },
+    { id: "construction", label: t("categories.construction") },
+    { id: "other", label: t("categories.other") },
   ];
 
   const [activeCategory, setActiveCategory] = useState("household");
 
   const services = {
     household: [
-      { 
-        icon: "🧺", 
-        name: t('items.applianceRemoval.name'), 
-        description: t('items.applianceRemoval.description')
+      {
+        icon: "🧺",
+        name: t("items.applianceRemoval.name"),
+        description: t("items.applianceRemoval.description"),
       },
-      { 
-        icon: "🛋️", 
-        name: t('items.furnitureHauling.name'), 
-        description: t('items.furnitureHauling.description')
+      {
+        icon: "🛋️",
+        name: t("items.furnitureHauling.name"),
+        description: t("items.furnitureHauling.description"),
       },
-      { 
-        icon: "🗑️", 
-        name: t('items.householdJunk.name'), 
-        description: t('items.householdJunk.description')
-      }
+      {
+        icon: "🗑️",
+        name: t("items.householdJunk.name"),
+        description: t("items.householdJunk.description"),
+      },
     ],
     construction: [
-      { 
-        icon: "🏗️", 
-        name: t('items.constructionDebris.name'), 
-        description: t('items.constructionDebris.description')
+      {
+        icon: "🏗️",
+        name: t("items.constructionDebris.name"),
+        description: t("items.constructionDebris.description"),
       },
-      { 
-        icon: "🧱", 
-        name: t('items.concreteRemoval.name'), 
-        description: t('items.concreteRemoval.description')
+      {
+        icon: "🧱",
+        name: t("items.concreteRemoval.name"),
+        description: t("items.concreteRemoval.description"),
       },
-      { 
-        icon: "🏠", 
-        name: t('items.roofRemoval.name'), 
-        description: t('items.roofRemoval.description')
-      }
+      {
+        icon: "🏠",
+        name: t("items.roofRemoval.name"),
+        description: t("items.roofRemoval.description"),
+      },
     ],
     other: [
-      { 
-        icon: "🌿", 
-        name: t('items.greenWaste.name'), 
-        description: t('items.greenWaste.description')
+      {
+        icon: "🌿",
+        name: t("items.greenWaste.name"),
+        description: t("items.greenWaste.description"),
       },
-      { 
-        icon: "🌱", 
-        name: t('items.dirtRemoval.name'), 
-        description: t('items.dirtRemoval.description')
+      {
+        icon: "🌱",
+        name: t("items.dirtRemoval.name"),
+        description: t("items.dirtRemoval.description"),
       },
-      { 
-        icon: "🌳", 
-        name: t('items.yardCleanup.name'), 
-        description: t('items.yardCleanup.description')
-      }
-    ]
+      {
+        icon: "🌳",
+        name: t("items.yardCleanup.name"),
+        description: t("items.yardCleanup.description"),
+      },
+    ],
   };
 
   return (
@@ -75,8 +75,12 @@ const ServicesSection = () => {
         <div className="max-w-4xl mx-auto">
           {/* Simple Header */}
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-green-800 dark:text-green-400 mb-3">{t('title')}</h2>
-            <p className="text-gray-600 dark:text-gray-300">{t('description')}</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-green-800 dark:text-green-400 mb-3">
+              {t("title")}
+            </h2>
+            <p className="text-gray-600 dark:text-gray-300">
+              {t("description")}
+            </p>
           </div>
 
           {/* Category Selection */}
@@ -112,10 +116,10 @@ const ServicesSection = () => {
                 <motion.div
                   key={service.name}
                   initial={{ opacity: 0, y: 20 }}
-                  animate={{ 
-                    opacity: 1, 
+                  animate={{
+                    opacity: 1,
                     y: 0,
-                    transition: { delay: index * 0.1 } 
+                    transition: { delay: index * 0.1 },
                   }}
                   className="group"
                 >
@@ -123,12 +127,16 @@ const ServicesSection = () => {
                     <div className="bg-green-50 dark:bg-green-900/30 rounded-full p-4 mr-6">
                       <span className="text-3xl">{service.icon}</span>
                     </div>
-                    
+
                     <div className="flex-grow">
-                      <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-1">{service.name}</h3>
-                      <p className="text-gray-600 dark:text-gray-300">{service.description}</p>
+                      <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-1">
+                        {service.name}
+                      </h3>
+                      <p className="text-gray-600 dark:text-gray-300">
+                        {service.description}
+                      </p>
                     </div>
-                    
+
                     {/* <div className="hidden md:block">
                       <Button 
                         size="sm" 
