@@ -19,6 +19,7 @@ import { useTranslations } from "next-intl";
 import Link from "next/link";
 import ServicesSection from "@/MyComponents/serviceSection";
 import { Badge } from "@/components/ui/badge";
+import Capitalize from "@/MyComponents/capitalize";
 
 export default function Home() {
   const t = useTranslations("HomePage");
@@ -412,8 +413,8 @@ export default function Home() {
               },
             ].map((testimonial, index) => (
               <motion.div key={index} variants={fadeInUp}>
-                <Card className="h-full border-green-400 dark:border-green-800 bg-white dark:bg-gray-900">
-                  <CardContent className="p-6">
+                <Card className="h-fit sm:h-full border-green-400 dark:border-green-800 bg-white dark:bg-gray-900">
+                  <CardContent className="px-6">
                     <div className="flex mb-4">
                       {[...Array(5)].map((_, i) => (
                         <Star
@@ -426,7 +427,7 @@ export default function Home() {
                       "{testimonial.quote}"
                     </p>
                     <div className="flex items-center">
-                      <div className="w-10 h-10 rounded-full bg-green-100 dark:bg-green-900 mr-3"></div>
+                      <div className="flex items-center justify-center text-green-500 dark:text-green-700 w-10 h-10 rounded-full bg-green-100 dark:bg-green-900 mr-3">{Capitalize(testimonial.name.charAt(1))}</div>
                       <div className="flex flex-col items-start">
                         <p className="font-medium text-green-600 dark:text-green-400">
                           {testimonial.name}

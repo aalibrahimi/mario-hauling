@@ -461,7 +461,7 @@ export default function About() {
         className="py-20 bg-green-50 dark:bg-green-900/20"
       >
         {/* used to have container and px-auto here for the spacing between 3 cards */}
-        <div className="">
+        <div className="px-4">
           <div className="text-center mb-16">
             <Badge className="bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-400 text-sm mb-4">
               {t("team.badge")}
@@ -474,7 +474,7 @@ export default function About() {
             </p>
           </div>
 
-          <div className="flex flex-col justify-center items-center max-w-md mx-auto ">
+          <div className="flex flex-col justify-center items-center max-w-md mx-auto">
             {[
               {
                 name: t("team.mario.name"),
