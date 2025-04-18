@@ -124,7 +124,7 @@ export default function Home() {
       },
     },
   };
-  
+
   return (
     <main className="flex min-h-screen flex-col bg-white ">
       {/* hero section here we gooo */}
@@ -166,24 +166,24 @@ export default function Home() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="flex flex-col sm:flex-row gap-3"
               >
-                <Link
-                  href="tel: (408) 449 2317"
-                >
+                <Link href="tel: (408) 449 2317">
                   <Button
                     size="lg"
-                    className="bg-white hover:cursor-pointer hover:bg-green-100 text-green-800 dark:bg-green-700 dark:hover:bg-green-800 dark:text-white"
+                    className="bg-white w-54 sm:w-max hover:cursor-pointer hover:bg-green-100 text-green-800 dark:bg-green-700 dark:hover:bg-green-800 dark:text-white"
                   >
                     <Phone className="mr-2 h-4 w-4" />
                     <span className="text-black">{t("hero.callButton")}</span>
                   </Button>
                 </Link>
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="border-green-400 hover:cursor-pointer text-black hover:bg-white hover:text-green-500 dark:border-green-600 dark:text-white dark:hover:bg-green-800"
-                >
-                  {t("hero.requestButton")}
-                </Button>
+                <Link href="mailto:eldulce270670@gmail.com">
+                  <Button
+                    size="lg"
+                    variant="outline"
+                    className="border-green-400 w-54 sm:w-max hover:cursor-pointer text-black hover:bg-white hover:text-green-500 dark:border-green-600 dark:text-white dark:hover:bg-green-800"
+                  >
+                    {t("hero.requestButton")}
+                  </Button>
+                </Link>
 
                 {/* yelpy */}
                 <Link
@@ -194,7 +194,7 @@ export default function Home() {
                   <Button
                     size="lg"
                     variant="outline"
-                    className="flex items-center justify-center hover:cursor-pointer border-red-400 hover:bg-red-500 dark:border-red-600 dark:hover:bg-red-500"
+                    className="flex items-center w-54 sm:w-max justify-center hover:cursor-pointer border-red-400 hover:bg-red-500 dark:border-red-600 dark:hover:bg-red-500"
                   >
                     <Image
                       src="/yelp-logo.png"
@@ -264,8 +264,10 @@ export default function Home() {
               {/* The "?" makes it so that this only runs if 'services' is defined and is iterable */}
               {services?.map((service, index) => (
                 <div key={index} className="flex items-center space-x-2 mx-4">
-                  <span className="text-2xl">{service.icon}</span>
-                  <span className="text-lg font-semi-bold">{service.name}</span>
+                  <span className="text-md sm:text-2xl">{service.icon}</span>
+                  <span className="text-md sm:text-lg font-semi-bold">
+                    {service.name}
+                  </span>
                   <span className="text-green-300 mx-4">•</span>
                 </div>
               ))}

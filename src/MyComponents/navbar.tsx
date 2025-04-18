@@ -100,8 +100,15 @@ export function Navbar(): React.ReactElement {
             draggable={false}
             className="flex items-center space-x-2"
           >
-            <Image src="/MarioHauling_Logo.png" alt="MarioHauling Logo" draggable={false} height={500} width={500} className="w-12 h-auto" />
-            <span className="font-bold text-green-800 dark:text-green-500 text-lg">
+            <Image
+              src="/MarioHauling_Logo.png"
+              alt="MarioHauling Logo"
+              draggable={false}
+              height={500}
+              width={500}
+              className="w-12 h-auto"
+            />
+            <span className="font-bold text-green-800 dark:text-green-500 text-[15px] sm:text-lg">
               Mario's Hauling
             </span>
           </Link>
@@ -181,9 +188,9 @@ export function Navbar(): React.ReactElement {
             </Link> */}
             <Button
               size="sm"
-              className="ml-4 bg-green-600 hover:bg-greeen-700 hover:cursor-pointer text-white"
+              className="hidden sm:block ml-4 bg-green-600 hover:bg-greeen-700 hover:cursor-pointer text-white"
             >
-              {t('getQuote')}
+              {t("getQuote")}
             </Button>
           </div>
 
@@ -259,6 +266,12 @@ export function Navbar(): React.ReactElement {
             </div>
             <div className="my-2 border-t border-gray-200 dark:border-gray-800"></div>
           </div>
+          <Button
+            size="sm"
+            className="block bg-green-600 hover:bg-greeen-700 hover:cursor-pointer text-white"
+          >
+            {t("getQuote")}
+          </Button>
           {routes.map((route, index) => {
             if (route.content) {
               return (

@@ -269,7 +269,7 @@ export default function About() {
         whileInView="visible"
         viewport={{ once: true }}
         variants={staggerContainer}
-        className="py-20 bg-white dark:bg-black bg-[url('/barrow_600.png')] bg-no-repeat bg-bottom-right"
+        className="py-20 bg-white dark:bg-black sm:bg-[url('/barrow_600.png')] bg-no-repeat bg-bottom-right"
       >
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
