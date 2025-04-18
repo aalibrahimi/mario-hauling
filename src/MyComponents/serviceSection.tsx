@@ -123,16 +123,16 @@ const ServicesSection = () => {
                   }}
                   className="group"
                 >
-                  <div className="flex items-center h-22 w-auto pl-2 bg-green-100 dark:bg-green-800 rounded-sm border-b border-gray-300 dark:border-gray-700 hover:shadow-[5px_5px_10px_-5px] shadow-black/20 dark:shadow-none transition-shadow duration-200">
-                    <div className="bg-green-50 dark:bg-green-500/50 rounded-full p-4 mr-6">
+                  <div className="flex items-center h-22 w-auto pl-2 bg-green-100 dark:bg-white/90 rounded-sm border-b border-gray-300 dark:border-gray-700 hover:shadow-[5px_5px_10px_-5px] shadow-black/20 dark:shadow-none transition-shadow duration-200">
+                    <div className="bg-green-50 dark:bg-green-600 rounded-full p-4 mr-6">
                       <span className="text-3xl">{service.icon}</span>
                     </div>
 
                     <div className="flex-grow">
-                      <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-1">
+                      <h3 className="text-xl font-bold text-gray-900 dark:text-black mb-1">
                         {service.name}
                       </h3>
-                      <p className="text-gray-600 dark:text-gray-300">
+                      <p className="text-gray-600 dark:text-black">
                         {service.description}
                       </p>
                     </div>

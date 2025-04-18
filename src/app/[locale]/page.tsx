@@ -138,7 +138,7 @@ export default function Home() {
                 initial={{ scale: 0.8, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.5 }}
-                className="inline-block bg-white dark:bg-green-800 text-green-800 dark:text-white font-bold px-3 py-1 rounded-full text-sm w-fit"
+                className="inline-block bg-white dark:bg-black text-green-800 dark:text-white font-bold px-3 py-1 rounded-full text-sm w-fit"
               >
                 {t("hero.badge")}
               </motion.div>
@@ -369,7 +369,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Testimonials */}
       {/* Testimonials */}
       <section className="py-16 bg-white flex text-center justify-center dark:bg-[#000]">
         <div className="container px-4 md:px-6">
