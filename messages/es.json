@@ -4,7 +4,7 @@
       "badge": "Disponible 24/7",
       "headline": "Servicios Profesionales de Transporte y Remoción de Basura",
       "description": "Electrodomésticos, muebles, escombros de construcción y más. Rápido, confiable y asequible.",
-      "callButton": "Llame ahora: (408) 449-2317",
+      "callButton": "Llame ahora: (669) 261-0549",
       "requestButton": "Solicitar Servicio",
       "yelpButton": "Yelp",
       "freeEstimates": "Presupuestos Gratuitos"
@@ -25,7 +25,8 @@
       "categories": {
         "household": "Hogar",
         "construction": "Construcción",
-        "other": "Otros Servicios"
+        "yard": "Patio",
+        "commercial": "Comercial"
       },
       "items": {
         "applianceRemoval": {
@@ -63,6 +64,18 @@
         "yardCleanup": {
           "name": "Limpieza de Patios",
           "description": "Eliminación completa de escombros del patio"
+        },
+        "commercial": {
+          "name": "Remoción Comercial",
+          "description": "Remoción de basura de oficina y negocios"
+        },
+        "residential": {
+          "name": "Remoción de basura Residencial",
+          "description": "Remoción de basura y desorden del hogar"
+        },
+        "warehouse": {
+          "name": "Limpieza de Depósito",
+          "description": "Despeje a gran escala de espacios de almacenamiento comercial"
         }
       },
       "viewAllButton": "Ver todos nuestros servicios"
@@ -111,12 +124,24 @@
   "yardCleanup": {
     "name": "Limpieza de Patios",
     "description": "Limpieza completa de patios incluyendo la remoción y el transporte de escombros"
+  },
+  "commercial": {
+    "name": "Remoción Comercial",
+    "description": "Remoción de basura de oficina y negocios"
+  },
+  "residential": {
+    "name": "Remoción de basura Residencial",
+    "description": "Remoción de basura y desorden del hogar"
+  },
+  "warehouse": {
+    "name": "Limpieza de Depósito",
+    "description": "Despeje a gran escala de espacios de almacenamiento comercial"
   }
 },
     "junkBanner": {
       "title": "¿Necesita que se retire la basura hoy?",
       "description": "¡Mario está listo para ayudar 24/7!",
-      "callButton": "Llame al (408) 449-2317"
+      "callButton": "Llame al (669) 261-0549"
     },
     "howItWorks": {
       "title": "Cómo funciona",
@@ -124,7 +149,7 @@
       "steps": {
         "call": {
           "title": "1. Llámenos",
-          "description": "Llame al (408) 449-2317 en cualquier momento, día o noche."
+          "description": "Llame al (669) 261-0549 en cualquier momento, día o noche."
         },
         "arrive": {
           "title": "2. Llegamos",
@@ -160,7 +185,7 @@
     "cta": {
       "title": "¿Listo para Deshacerse del Desorden?",
       "description": "Mario está listo para ayudar con todas sus necesidades de transporte 24/7. ¡Una llamada lo resuelve todo!",
-      "callButton": "Llame Ahora: (408) 449-2317"
+      "callButton": "Llame Ahora: (669) 261-0549"
     }
   },
   "AboutPage": {
@@ -284,14 +309,14 @@
       "title": "El Hombre Detrás de Mario's Hauling",
       "description": "Conozca al hombre más dedicado del equipo de profesionales comprometidos a proporcionarle servicios excepcionales de transporte.",
       "mario": {
-        "name": "Mario Santos Vería",
+        "name": "Mario",
         "position": "Fundador y Propietario"
       }
     },
     "cta": {
       "title": "¿Listo para Deshacerse del Desorden?",
       "description": "Contacte a Mario's Hauling hoy para servicios de transporte rápidos, confiables y ecológicos.",
-      "callButton": "Llame al (408) 449-2317",
+      "callButton": "Llame al (669) 261-0549",
       "quoteButton": "Solicitar un Presupuesto"
     }
   },
@@ -354,7 +379,7 @@
     "cwaMark": "Diseñado Por",
     "contact": {
       "title": "Contáctenos",
-      "phone": "(408) 449-2317",
+      "phone": "(669) 261-0549",
       "email": "eldulce270670@gmail.com",
       "available": "Disponible 24/7"
     },

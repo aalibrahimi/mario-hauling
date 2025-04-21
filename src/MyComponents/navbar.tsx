@@ -180,11 +180,11 @@ export function Navbar(): React.ReactElement {
           {/* Phone + Quote */}
           <div className="flex items-center">
             {/* <Link
-              href="tel: (408) 449-2317 "
+              href="tel: (669) 261-0549 "
               className="flex items-center text-green-700 font-medium hover:text-green-500 transition-colors"
             >
               <Phone className="h-4 w-4 mr-1" />
-              <span className="hidden sm:inline">(408) 449-2317</span>
+              <span className="hidden sm:inline">(669) 261-0549</span>
             </Link> */}
             <Button
               size="sm"

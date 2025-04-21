@@ -3,7 +3,7 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import GradientText from "./GradientText";
-import { Check, Clock, Mail, MapPin, Phone, Recycle } from "lucide-react";
+import { Check, Clock, Facebook, Mail, MapPin, Phone, Recycle } from "lucide-react";
 
 export function Footer(): React.ReactElement {
   const t = useTranslations("Footer");
@@ -80,10 +80,20 @@ export function Footer(): React.ReactElement {
               <p className="flex items-center">
                 <Phone className="h-5 w-5 text-green-400 mr-2" />
                 <a
-                  href="tel:4084492317"
+                  href="tel:(669) 261-0549"
                   className="hover:text-green-400 text-black dark:text-white transition-colors"
                 >
                   {t("contact.phone")}
+                </a>
+              </p>
+
+              {/* Secondary phone */}
+              <p className="flex flex-col justify-end items-center w-41">
+                <a
+                  href="tel: (408) 449-2317"
+                  className="hover:text-green-400 text-black dark:text-white transition-colors"
+                >
+                 (408) 449-2317
                 </a>
               </p>
               {/* avaialabe contact */}
