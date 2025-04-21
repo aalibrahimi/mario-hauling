@@ -12,6 +12,7 @@ import {
   Recycle,
   CheckCircle,
   ChevronRight,
+  Facebook,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -167,28 +168,31 @@ export default function Home() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="flex flex-col sm:flex-row gap-3"
               >
-                <Link href="tel: (408) 449 2317">
+                <Link href="tel: (669) 261-0549">
                   <Button
                     size="lg"
                     className="bg-white w-54 sm:w-max hover:cursor-pointer hover:bg-green-100 text-green-800 dark:bg-green-700 dark:hover:bg-green-800 dark:text-white"
                   >
                     <Phone className="mr-2 h-4 w-4" />
-                    <span className="text-black">{t("hero.callButton")}</span>
+                    <span className="text-black dark:text-white">{t("hero.callButton")}</span>
                   </Button>
                 </Link>
-                <Link href="mailto:eldulce270670@gmail.com">
+
+                {/* Facebook */}
+                <Link href="https://www.facebook.com/profile.php?id=100090850370886&mibextid=wwXIfr&mibextid=wwXIfr" target="_blank"
+                >
                   <Button
-                    size="lg"
-                    variant="outline"
-                    className="border-green-400 w-54 sm:w-max hover:cursor-pointer text-black hover:bg-white hover:text-green-500 dark:border-green-600 dark:text-white dark:hover:bg-green-800"
+                  size={"lg"}
+                  className="border-black border-2 bg-blue-700 flex items-center justify-center w-54 sm:w-max hover:cursor-pointer text-white hover:bg-blue-800 dark:border-black dark:text-white dark:hover:bg-blue-800"
                   >
-                    {t("hero.requestButton")}
+                    <Facebook className="mr-2 h-4 w-4" />
+                    <span className="text-white">Facebook</span>
                   </Button>
                 </Link>
 
                 {/* yelpy */}
                 <Link
-                  href="https://www.yelp.com/biz/marios-hauling-santa-clara"
+                  href="https://www.yelp.com/biz/mario-s-hauling-santa-clara-2"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

@@ -4,7 +4,7 @@
       "badge": "Available 24/7",
       "headline": "Professional Hauling & Junk Removal Services",
       "description": "Appliances, furniture, construction debris, and more. Fast, reliable, and affordable.",
-      "callButton": "Call Now: (408) 449-2317",
+      "callButton": "Call Now: (669) 261-0549",
       "requestButton": "Request Service",
       "yelpButton": "Yelp",
       "freeEstimates": "Free Estimates"
@@ -25,7 +25,8 @@
       "categories": {
         "household": "Household",
         "construction": "Construction",
-        "other": "Other Services"
+        "yard": "Yard",
+        "commercial": "Commercial"
       },
       "items": {
         "applianceRemoval": {
@@ -63,6 +64,18 @@
         "yardCleanup": {
           "name": "Yard Cleanup",
           "description": "Complete yard debris removal"
+        },
+        "commercial": {
+          "name": "Commercial Junk Removal",
+          "description": "Office and Business junk removal"
+        },
+        "residential": {
+          "name": "Residential Junk Removal",
+          "description": "Household junk and clutter removal"
+        },
+        "warehouse": {
+          "name": "Warehouse Cleanout",
+          "description": "Full-scale clearing of commercial storage spaces"
         }
       },
       "viewAllButton": "View all our services"
@@ -70,7 +83,7 @@
     "junkBanner": {
       "title": "Need junk removed today?",
       "description": "Mario is ready to help 24/7!",
-      "callButton": "Call (408) 449-2317"
+      "callButton": "Call (669) 261-0549"
     },
     "howItWorks": {
       "title": "How it works",
@@ -78,7 +91,7 @@
       "steps": {
         "call": {
           "title": "1. Call Us",
-          "description": "Call (408) 449-2317 anytime, day or night."
+          "description": "Call (669) 261-0549 anytime, day or night."
         },
         "arrive": {
           "title": "2. We Arrive",
@@ -135,6 +148,18 @@
   "yardCleanup": {
     "name": "Yard Clean Up",
     "description": "Complete yard cleanup including debris removal and hauling"
+  },
+  "commercial": {
+    "name": "Commercial Junk Removal",
+    "description": "Office and Business junk removal"
+  },
+  "residential": {
+    "name": "Residential Junk Removal",
+    "description": "Household junk and clutter removal"
+  },
+  "warehouse": {
+    "name": "Warehouse Cleanout",
+    "description": "Full-scale clearing of commercial storage spaces"
   }
 },
     "testimonials": {
@@ -161,7 +186,7 @@
     "cta": {
       "title": "Ready to Clear the Clutter?",
       "description": "Mario is ready to help with all your hauling needs 24/7. One call does it all!",
-      "callButton": "Call Now: (408) 449-2317"
+      "callButton": "Call Now: (669) 261-0549"
     }
   },
   "AboutPage": {
@@ -285,14 +310,14 @@
       "title": "The Man Behind Mario's Hauling",
       "description": "Meet the most dedicated man from the team of professionals committed to providing you with exceptional hauling services.",
       "mario": {
-        "name": "Mario Rodriguez",
+        "name": "Mario",
         "position": "Founder & Owner"
       }
     },
     "cta": {
       "title": "Ready to Clear the Clutter?",
       "description": "Contact Mario's Hauling today for fast, reliable, and eco-friendly hauling services.",
-      "callButton": "Call (408) 449-2317",
+      "callButton": "Call (669) 261-0549",
       "quoteButton": "Request a Quote"
     }
   },
@@ -355,7 +380,7 @@
     "cwaMark": "Designed By",
     "contact": {
       "title": "Contact Us",
-      "phone": "(408) 449-2317",
+      "phone": "(669) 261-0549",
       "email": "eldulce270670@gmail.com",
       "available": "Available 24/7"
     },

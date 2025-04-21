@@ -10,7 +10,8 @@ const ServicesSection = () => {
   const categories = [
     { id: "household", label: t("categories.household") },
     { id: "construction", label: t("categories.construction") },
-    { id: "other", label: t("categories.other") },
+    { id: "yard", label: t("categories.yard") },
+    { id: "commercial", label: t("categories.commercial") },
   ];
 
   const [activeCategory, setActiveCategory] = useState("household");
@@ -50,7 +51,7 @@ const ServicesSection = () => {
         description: t("items.roofRemoval.description"),
       },
     ],
-    other: [
+    yard: [
       {
         icon: "🌿",
         name: t("items.greenWaste.name"),
@@ -65,6 +66,23 @@ const ServicesSection = () => {
         icon: "🌳",
         name: t("items.yardCleanup.name"),
         description: t("items.yardCleanup.description"),
+      },
+    ],
+    commercial: [
+      {
+        icon: "🏢",
+        name: t("items.commercial.name"),
+        description: t("items.commercial.description"),
+      },
+      {
+        icon: "🏘️",
+        name: t("items.residential.name"),
+        description: t("items.residential.description"),
+      },
+      {
+        icon: "📦",
+        name: t("items.warehouse.name"),
+        description: t("items.warehouse.description"),
       },
     ],
   };
@@ -90,7 +108,7 @@ const ServicesSection = () => {
                 <button
                   key={category.id}
                   onClick={() => setActiveCategory(category.id)}
-                  className={`px-5 py-2 rounded-md text-sm font-medium transition-all duration-200 ${
+                  className={`px-3 sm:px-5 py-2 rounded-md text-sm font-medium transition-all duration-200 ${
                     activeCategory === category.id
                       ? "bg-green-600 text-white shadow-md dark:bg-green-700"
                       : "text-gray-600 hover:text-green-600 dark:text-gray-300 dark:hover:text-green-400"
