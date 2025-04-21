@@ -405,10 +405,10 @@ export default function About() {
                 <h2 className="text-3xl font-bold mb-6 text-green-800 dark:text-green-400">
                   {t("serviceAreas.title")}
                 </h2>
-                <p className="text-lg mb-6 dark:text-white text-black dark:bg-green-950/80 2xl:dark:bg-transparent p-2 rounded-sm">
+                <p className="text-lg mb-6 text-white 2xl:text-black 2xl:dark:text-white bg-green-800/80 dark:bg-green-950/80 2xl:bg-green-100/80 2xl:dark:bg-transparent p-2 rounded-sm">
                   {t("serviceAreas.description")}
                 </p>
-                <div className="space-y-4 dark:bg-green-950/80 2xl:dark:bg-transparent p-2 rounded-sm">
+                <div className="space-y-4 text-white 2xl:font-medium 2xl:text-black 2xl:dark:text-white bg-green-800/80 dark:bg-green-950/80 2xl:bg-green-100/80 2xl:dark:bg-transparent p-2 rounded-sm">
                   {[
                     t("serviceAreas.areas.sanFrancisco"),
                     t("serviceAreas.areas.oakland"),
