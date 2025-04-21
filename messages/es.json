@@ -167,7 +167,7 @@
     "hero": {
       "badge": "Nuestra Historia",
       "title": "Acerca de Mario's Hauling",
-      "description": "Socio de transporte de confianza del Área de la Bahía de San Francisco desde 2022, proporcionando servicios de transporte profesionales, confiables y ecológicos."
+      "description": "Socio de transporte de confianza del Área de la Bahía de San Francisco desde 2018, proporcionando servicios de transporte profesionales, confiables y ecológicos."
     },
     "mission": {
       "title": "Nuestra Misión",
@@ -241,17 +241,17 @@
       "description": "Desde nuestros humildes comienzos hasta convertirnos en el servicio de transporte de confianza del Área de la Bahía, nuestro recorrido se ha construido sobre la calidad y el compromiso.",
       "timeline": {
         "founded": {
-          "year": "2022",
+          "year": "2018",
           "title": "Fundación de la Empresa",
           "description": "Mario's Hauling fue establecido para proporcionar servicios confiables de remoción de basura al Área de la Bahía."
         },
         "expanded": {
-          "year": "2023",
+          "year": "2020",
           "title": "Expansión de Servicios",
           "description": "Agregamos remoción de escombros de construcción y eliminación de residuos verdes a nuestras ofertas de servicios."
         },
         "ecoFriendly": {
-          "year": "2024",
+          "year": "2023",
           "title": "Enfoque Ecológico",
           "description": "Implementamos prácticas sostenibles de eliminación, reciclando más del 60% de los materiales recolectados."
         },

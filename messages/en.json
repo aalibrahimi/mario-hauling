@@ -168,7 +168,7 @@
     "hero": {
       "badge": "Our Story",
       "title": "About Mario's Hauling",
-      "description": "San Francisco Bay Area's trusted hauling partner since 2022, providing professional, reliable, and eco-friendly hauling services."
+      "description": "San Francisco Bay Area's trusted hauling partner since 2018, providing professional, reliable, and eco-friendly hauling services."
     },
     "mission": {
       "title": "Our Mission",
@@ -242,17 +242,17 @@
       "description": "From our humble beginnings to becoming the Bay Area's trusted hauling service, our journey has been built on quality and commitment.",
       "timeline": {
         "founded": {
-          "year": "2022",
+          "year": "2018",
           "title": "Company Founded",
           "description": "Mario's Hauling was established to provide reliable junk removal services to the Bay Area."
         },
         "expanded": {
-          "year": "2023",
+          "year": "2020",
           "title": "Expanded Services",
           "description": "Added construction debris removal and green waste disposal to our service offerings."
         },
         "ecoFriendly": {
-          "year": "2024",
+          "year": "2023",
           "title": "Eco-Friendly Focus",
           "description": "Implemented sustainable disposal practices, recycling over 60% of collected materials."
         },
