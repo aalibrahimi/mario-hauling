@@ -12,8 +12,6 @@ import {
   Phone,
   MapPin,
   ArrowRight,
-  CalendarClock,
-  Users,
   ShieldCheck,
 } from "lucide-react";
 import Link from "next/link";

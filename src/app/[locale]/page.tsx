@@ -1,17 +1,12 @@
 "use client";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
 import {
   Phone,
-  Clock,
   Truck,
   ArrowRight,
-  MapPin,
   Star,
-  Recycle,
   CheckCircle,
-  ChevronRight,
   Facebook,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -24,10 +19,10 @@ import Capitalize from "@/MyComponents/capitalize";
 
 export default function Home() {
   const t = useTranslations("HomePage");
-  const [servicesRef, servicesInView] = useInView({
-    triggerOnce: true,
-    threshold: 0.1,
-  });
+  // const [servicesRef, servicesInView] = useInView({
+  //   triggerOnce: true,
+  //   threshold: 0.1,
+  // });
 
   // const t = useTranslations('HomePage');
 
@@ -427,7 +422,7 @@ export default function Home() {
                       ))}
                     </div>
                     <p className="mb-4 dark:text-gray-300">
-                      "{testimonial.quote}"
+                      &quot;{testimonial.quote}&quot;
                     </p>
                     <div className="flex items-center">
                       <div className="flex items-center justify-center text-green-500 dark:text-green-700 w-10 h-10 rounded-full bg-green-100 dark:bg-green-900 mr-3">{Capitalize(testimonial.name.charAt(0))}</div>

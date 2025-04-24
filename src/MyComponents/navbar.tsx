@@ -11,7 +11,6 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 import { ModeToggle } from "@/components/ui/modetoggle";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -21,7 +20,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { cn } from "@/lib/utils";
-import { Menu, X, Globe, Recycle, Phone } from "lucide-react"; // Import icons for menu toggle and language
+import { Menu, X, Globe } from "lucide-react"; // Import icons for menu toggle and language
 import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
@@ -109,7 +108,7 @@ export function Navbar(): React.ReactElement {
               className="w-12 h-auto"
             />
             <span className="font-bold text-green-800 dark:text-green-500 text-[15px] sm:text-lg">
-              Mario's Hauling
+              Mario&apos;s Hauling
             </span>
           </Link>
 
