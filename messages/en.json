@@ -95,11 +95,11 @@
         },
         "arrive": {
           "title": "2. We Arrive",
-          "description": "Mario arrives promptly at the scheduledd time ready to haul"
+          "description": "Mario arrives promptly at the scheduled time ready to haul."
         },
         "haul": {
           "title": "3. We Haul",
-          "description": "We Quickly load and haul away your items, leaving your space clean"
+          "description": "We Quickly load and haul away your items, leaving your space clean."
         }
       }
     },
