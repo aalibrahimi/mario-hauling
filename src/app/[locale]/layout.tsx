@@ -6,6 +6,7 @@ import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { getLangDir } from "rtl-detect";
+import NotAvailable from "@/MyComponents/notAvalable";
 
 // This will show up when you paste the website link as preview
 export const metadata = {
@@ -31,7 +32,7 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} dir={direction} suppressHydrationWarning>
       <body className="min-h-screen flex flex-col">
-        <NextIntlClientProvider>
+        {/* <NextIntlClientProvider>
           <ThemeProvider
             attribute="class"
             defaultTheme="system"
@@ -44,7 +45,8 @@ export default async function LocaleLayout({
               <Footer />
             </div>
           </ThemeProvider>
-        </NextIntlClientProvider>
+        </NextIntlClientProvider> */}
+        <NotAvailable />
       </body>
     </html>
   );
