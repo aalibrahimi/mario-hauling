@@ -1,9 +1,16 @@
 // import { ThemeProvider } from "next-themes";
+import { hasLocale, NextIntlClientProvider } from "next-intl";
 import "./globals.css";
 // import { notFound } from "next/navigation";
 // import { routing } from "@/i18n/routing";
 // import { getLangDir } from "rtl-detect";
-import NotAvailable from "@/MyComponents/notAvalable";
+// import NotAvailable from "@/MyComponents/notAvalable";
+import { ThemeProvider } from "next-themes";
+import { Navbar } from "@/MyComponents/navbar";
+import { Footer } from "@/MyComponents/Footer";
+import { notFound } from "next/navigation";
+import { getLangDir } from "rtl-detect";
+import { routing } from "@/i18n/routing";
 
 // This will show up when you paste the website link as preview
 export const metadata = {
@@ -12,25 +19,24 @@ export const metadata = {
 };
 
 export default async function LocaleLayout({
-  // children,
-  // params,
+  children,
+  params,
 }: Readonly<{
   children: React.ReactNode;
   params: Promise<{ locale: string }>;
 }>) {
   // Ensure that the incoming `locale` is valid
-  // const { locale } = await params;
-  // if (!hasLocale(routing.locales, locale)) {
-  //   notFound();
-  // }
+  const { locale } = await params;
+  if (!hasLocale(routing.locales, locale)) {
+    notFound();
+  }
   // Checks if the language is RTL ( right to left ) or not
-  // const direction = getLangDir(locale);
+  const direction = getLangDir(locale);
 
   return (
-    // <html lang={locale} dir={direction} suppressHydrationWarning>
-    <html suppressHydrationWarning>
+    <html lang={locale} dir={direction} suppressHydrationWarning>
       <body className="min-h-screen flex flex-col">
-        {/* <NextIntlClientProvider>
+        <NextIntlClientProvider>
           <ThemeProvider
             attribute="class"
             defaultTheme="system"
@@ -43,8 +49,7 @@ export default async function LocaleLayout({
               <Footer />
             </div>
           </ThemeProvider>
-        </NextIntlClientProvider> */}
-        <NotAvailable />
+        </NextIntlClientProvider>
       </body>
     </html>
   );
