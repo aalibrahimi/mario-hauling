@@ -66,6 +66,11 @@ const ServicesSection = () => {
         name: t("items.yardCleanup.name"),
         description: t("items.yardCleanup.description"),
       },
+      {
+        icon: "🌲",
+        name: t("items.treeWork.name"),
+        description: t("items.treeWork.description"),
+      },
     ],
     commercial: [
       {

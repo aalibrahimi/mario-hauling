@@ -261,6 +261,47 @@ export default function About() {
         </div>
       </motion.section>
 
+      {/* Tree Work Section */}
+      <motion.section
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={fadeInUp}
+        className="py-20 bg-green-100 dark:bg-green-900/20"
+      >
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12">
+              <Badge className="bg-green-200 dark:bg-green-900 text-green-800 dark:text-white text-sm mb-4">
+                {t("treeWork.badge")}
+              </Badge>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-green-800 dark:text-green-400">
+                {t("treeWork.title")}
+              </h2>
+              <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+                {t("treeWork.description")}
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {[
+                { icon: "🌲", text: t("treeWork.items.removal") },
+                { icon: "✂️", text: t("treeWork.items.trimming") },
+                { icon: "🍃", text: t("treeWork.items.cleanup") },
+              ].map((item, index) => (
+                <div
+                  key={index}
+                  className="bg-white dark:bg-green-900/40 p-6 rounded-xl shadow-sm flex flex-col items-center text-center"
+                >
+                  <span className="text-4xl mb-4">{item.icon}</span>
+                  <p className="text-gray-700 dark:text-gray-300">{item.text}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </motion.section>
+
       {/* Why Choose Us Section */}
       <motion.section
         initial="hidden"

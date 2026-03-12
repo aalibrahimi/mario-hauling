@@ -105,6 +105,13 @@ export default function Home() {
       description: t("allServices.yardCleanup.description"),
       slug: "yard-cleanup",
     },
+    {
+      name: t("allServices.treeWork.name"),
+      icon: "🌲",
+      image: "/placeholder.svg?height=600&width=800",
+      description: t("allServices.treeWork.description"),
+      slug: "tree-work",
+    },
   ];
 
   const fadeInUp = {

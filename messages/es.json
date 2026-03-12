@@ -65,6 +65,10 @@
           "name": "Limpieza de Patios",
           "description": "Eliminación completa de escombros del patio"
         },
+        "treeWork": {
+          "name": "Trabajo de Árboles",
+          "description": "Remoción de árboles, poda, recorte y limpieza de escombros"
+        },
         "commercial": {
           "name": "Remoción Comercial",
           "description": "Remoción de basura de oficina y negocios"
@@ -136,6 +140,10 @@
   "warehouse": {
     "name": "Limpieza de Depósito",
     "description": "Despeje a gran escala de espacios de almacenamiento comercial"
+  },
+  "treeWork": {
+    "name": "Trabajo de Árboles",
+    "description": "Ofrecemos servicios profesionales de remoción, poda y limpieza de árboles. Ya sea que necesite talar un árbol, podar ramas o retirar escombros, lo tenemos cubierto."
   }
 },
     "junkBanner": {
@@ -241,6 +249,16 @@
     "footNote": "Los precios pueden variar según los artículos, la ubicación y la accesibilidad. Llame para obtener un presupuesto exacto.",
     "getQuote": "Obtener un Presupuesto Gratuito"
   },
+    "treeWork": {
+      "badge": "Nuevo Servicio",
+      "title": "Ahora Ofrecemos Trabajo de Árboles",
+      "description": "Además de nuestros servicios de transporte, Mario's Hauling ahora ofrece trabajo profesional de árboles en toda el Área de la Bahía. Ya sea que necesite remover un árbol peligroso, poda de rutina o limpiar escombros después de una tormenta, nos encargamos de todo.",
+      "items": {
+        "removal": "Remoción de árboles — talamos y retiramos árboles de cualquier tamaño de forma segura",
+        "trimming": "Poda y recorte de árboles — mantenga sus árboles saludables y su propiedad segura",
+        "cleanup": "Limpieza de escombros — ramas, tocones y residuos verdes removidos y eliminados de forma responsable"
+      }
+    },
     "whyChooseUs": {
       "badge": "Por Qué Elegirnos",
       "title": "Lo Que Nos Distingue",

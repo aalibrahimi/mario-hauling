@@ -65,6 +65,10 @@
           "name": "Yard Cleanup",
           "description": "Complete yard debris removal"
         },
+        "treeWork": {
+          "name": "Tree Work",
+          "description": "Tree removal, trimming, pruning, and debris cleanup"
+        },
         "commercial": {
           "name": "Commercial Junk Removal",
           "description": "Office and Business junk removal"
@@ -95,7 +99,7 @@
         },
         "arrive": {
           "title": "2. We Arrive",
-          "description": "Mario arrives promptly at the scheduled time ready to haul."
+          "description": "Mario Arrives promptly at the scheduled time ready to haul."
         },
         "haul": {
           "title": "3. We Haul",
@@ -160,6 +164,10 @@
   "warehouse": {
     "name": "Warehouse Cleanout",
     "description": "Full-scale clearing of commercial storage spaces"
+  },
+  "treeWork": {
+    "name": "Tree Work",
+    "description": "We offer professional tree removal, trimming, and cleanup services. Whether you need a tree cut down, branches pruned, or debris hauled away, we've got you covered."
   }
 },
     "testimonials": {
@@ -241,6 +249,16 @@
       },
       "footNote": "Prices may vary based on items, location, and accessibility. Call for an exact quote.",
       "getQuote": "Get a Free Quote"
+    },
+    "treeWork": {
+      "badge": "New Service",
+      "title": "Now Offering Tree Work",
+      "description": "In addition to our hauling services, Mario's Hauling now offers professional tree work throughout the Bay Area. Whether you need a hazardous tree removed, routine trimming, or debris hauled after a storm, we handle it all.",
+      "items": {
+        "removal": "Tree removal — safely cut down and haul away trees of any size",
+        "trimming": "Tree trimming & pruning — keep your trees healthy and your property safe",
+        "cleanup": "Tree debris cleanup — branches, stumps, and green waste removed and disposed of responsibly"
+      }
     },
     "whyChooseUs": {
       "badge": "Why Choose Us",
