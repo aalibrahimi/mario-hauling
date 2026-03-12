@@ -1,11 +1,16 @@
-import { ThemeProvider } from "next-themes";
+// import { ThemeProvider } from "next-themes";
+import { hasLocale, NextIntlClientProvider } from "next-intl";
 import "./globals.css";
+// import { notFound } from "next/navigation";
+// import { routing } from "@/i18n/routing";
+// import { getLangDir } from "rtl-detect";
+// import NotAvailable from "@/MyComponents/notAvalable";
+import { ThemeProvider } from "next-themes";
 import { Navbar } from "@/MyComponents/navbar";
 import { Footer } from "@/MyComponents/Footer";
-import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
-import { routing } from "@/i18n/routing";
 import { getLangDir } from "rtl-detect";
+import { routing } from "@/i18n/routing";
 
 // This will show up when you paste the website link as preview
 export const metadata = {
